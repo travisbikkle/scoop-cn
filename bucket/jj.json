@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/martinvonz/jj/releases/download/v0.16.0/jj-v0.16.0-x86_64-pc-windows-msvc.zip",
+            "url": "https://gh-proxy.com/https://github.com/martinvonz/jj/releases/download/v0.16.0/jj-v0.16.0-x86_64-pc-windows-msvc.zip",
             "hash": "920fa2a6bdc8ca1fb122a6438066b30b85a1d056924a14680ded07b168ca2def"
         }
     },
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/martinvonz/jj/releases/download/v$version/jj-v$version-x86_64-pc-windows-msvc.zip"
+                "url": "https://gh-proxy.com/https://github.com/martinvonz/jj/releases/download/v$version/jj-v$version-x86_64-pc-windows-msvc.zip"
             }
         }
     }

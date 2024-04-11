@@ -5,7 +5,7 @@
     "license": "Apache 2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/gptscript-ai/gptscript/releases/download/v0.4.2/gptscript-v0.4.2-windows-amd64.zip",
+            "url": "https://gh-proxy.com/https://github.com/gptscript-ai/gptscript/releases/download/v0.4.2/gptscript-v0.4.2-windows-amd64.zip",
             "hash": "10395fd4a20ddbc47cbabfb0228a66ee43deaa03e81545b9091c4fc8f3aadd4e"
         }
     },
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/gptscript-ai/gptscript/releases/download/v$version/gptscript-v$version-windows-amd64.zip"
+                "url": "https://gh-proxy.com/https://github.com/gptscript-ai/gptscript/releases/download/v$version/gptscript-v$version-windows-amd64.zip"
             }
         },
         "hash": {

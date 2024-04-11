@@ -5,7 +5,7 @@
     "license": "CC-BY-SA-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/eibol/ffmpeg_batch/releases/download/v3.0.5/FFBatch_AV_Converter_3.0.5_64bit.exe",
+            "url": "https://gh-proxy.com/https://github.com/eibol/ffmpeg_batch/releases/download/v3.0.5/FFBatch_AV_Converter_3.0.5_64bit.exe",
             "hash": "04f397699fb6b64949ebe6c11e646766d1c9435f965613270e2dbe42b0e375a8"
         }
     },
@@ -29,7 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/eibol/ffmpeg_batch/releases/download/v$version/FFBatch_AV_Converter_$version_64bit.exe"
+                "url": "https://gh-proxy.com/https://github.com/eibol/ffmpeg_batch/releases/download/v$version/FFBatch_AV_Converter_$version_64bit.exe"
             }
         }
     }

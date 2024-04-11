@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/pulsar-edit/pulsar/releases/download/v1.115.0/Windows.Pulsar-1.115.0-win.zip",
+            "url": "https://gh-proxy.com/https://github.com/pulsar-edit/pulsar/releases/download/v1.115.0/Windows.Pulsar-1.115.0-win.zip",
             "hash": "8f49f91a8e85ba1ccaa9950e697759f1669a6531609c88de169d5e22bf46ad03"
         }
     },
@@ -34,7 +34,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/pulsar-edit/pulsar/releases/download/v$version/Windows.Pulsar-$version-win.zip"
+                "url": "https://gh-proxy.com/https://github.com/pulsar-edit/pulsar/releases/download/v$version/Windows.Pulsar-$version-win.zip"
             }
         },
         "hash": {

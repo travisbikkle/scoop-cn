@@ -12,7 +12,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1277/test-ava-ryujinx-1.1.1277-win_x64.zip",
+            "url": "https://gh-proxy.com/https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1277/test-ava-ryujinx-1.1.1277-win_x64.zip",
             "hash": "7740d3c5b6fd93de0c4c6d2a5efbe0261d85ae9bbe01cdf5a9d3a3d884fe602e"
         }
     },
@@ -41,7 +41,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/Ryujinx/release-channel-master/releases/download/$version/test-ava-ryujinx-$version-win_x64.zip"
+                "url": "https://gh-proxy.com/https://github.com/Ryujinx/release-channel-master/releases/download/$version/test-ava-ryujinx-$version-win_x64.zip"
             }
         }
     }

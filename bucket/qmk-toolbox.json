@@ -3,7 +3,7 @@
     "description": "Toolbox to flash and manage keyboards running the QMK firmware.",
     "homepage": "https://qmk.fm/toolbox/",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/qmk/qmk_toolbox/releases/download/0.3.1/qmk_toolbox.exe",
+    "url": "https://gh-proxy.com/https://github.com/qmk/qmk_toolbox/releases/download/0.3.1/qmk_toolbox.exe",
     "hash": "aadba309079fb87ce8de498f47606e7b3fb0fffdfb555a530ab92daf18f20166",
     "bin": "qmk_toolbox.exe",
     "shortcuts": [
@@ -16,6 +16,6 @@
         "github": "https://github.com/qmk/qmk_toolbox"
     },
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/qmk/qmk_toolbox/releases/download/$version/qmk_toolbox.exe"
+        "url": "https://gh-proxy.com/https://github.com/qmk/qmk_toolbox/releases/download/$version/qmk_toolbox.exe"
     }
 }

@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/kovidgoyal/calibre/releases/download/v7.8.0/calibre-64bit-7.8.0.msi",
+            "url": "https://gh-proxy.com/https://github.com/kovidgoyal/calibre/releases/download/v7.8.0/calibre-64bit-7.8.0.msi",
             "hash": "69b63200ed1cffba94f2e29cf4f264619c2e662a25169e1f2f4248305d70d00d",
             "extract_dir": "PFiles\\Calibre2"
         }
@@ -54,7 +54,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/kovidgoyal/calibre/releases/download/v$version/calibre-64bit-$version.msi"
+                "url": "https://gh-proxy.com/https://github.com/kovidgoyal/calibre/releases/download/v$version/calibre-64bit-$version.msi"
             }
         }
     }

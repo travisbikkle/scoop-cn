@@ -8,15 +8,15 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/russellbanks/Komac/releases/download/v2.2.0/KomacPortable-x64.exe#/Komac.exe",
+            "url": "https://gh-proxy.com/https://github.com/russellbanks/Komac/releases/download/v2.2.0/KomacPortable-x64.exe#/Komac.exe",
             "hash": "464972a2e75c93efd6923b0a54001583de5f3a067d00afd5b7b0fd4edd1de367"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/russellbanks/Komac/releases/download/v2.2.0/KomacPortable-x86.exe#/Komac.exe",
+            "url": "https://gh-proxy.com/https://github.com/russellbanks/Komac/releases/download/v2.2.0/KomacPortable-x86.exe#/Komac.exe",
             "hash": "79daa08a86af1b1445ee85768f3e0a707a7c556d7424254792e188756dedb13b"
         },
         "arm64": {
-            "url": "https://$github_proxy/https://github.com/russellbanks/Komac/releases/download/v2.2.0/KomacPortable-arm64.exe#/Komac.exe",
+            "url": "https://gh-proxy.com/https://github.com/russellbanks/Komac/releases/download/v2.2.0/KomacPortable-arm64.exe#/Komac.exe",
             "hash": "ae57ce2ebf99a9c1cae4a42083c19d118513d421ae2668a04842bdcd433eea6c"
         }
     },
@@ -25,13 +25,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/russellbanks/Komac/releases/download/v$version/KomacPortable-x64.exe#/Komac.exe"
+                "url": "https://gh-proxy.com/https://github.com/russellbanks/Komac/releases/download/v$version/KomacPortable-x64.exe#/Komac.exe"
             },
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/russellbanks/Komac/releases/download/v$version/KomacPortable-x86.exe#/Komac.exe"
+                "url": "https://gh-proxy.com/https://github.com/russellbanks/Komac/releases/download/v$version/KomacPortable-x86.exe#/Komac.exe"
             },
             "arm64": {
-                "url": "https://$github_proxy/https://github.com/russellbanks/Komac/releases/download/v$version/KomacPortable-arm64.exe#/Komac.exe"
+                "url": "https://gh-proxy.com/https://github.com/russellbanks/Komac/releases/download/v$version/KomacPortable-arm64.exe#/Komac.exe"
             }
         },
         "hash": {

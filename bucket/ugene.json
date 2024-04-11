@@ -5,7 +5,7 @@
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/ugeneunipro/ugene/releases/download/49.1/ugene-49.1-win-x86-64.zip",
+            "url": "https://gh-proxy.com/https://github.com/ugeneunipro/ugene/releases/download/49.1/ugene-49.1-win-x86-64.zip",
             "hash": "2484187311b8ad9a22815f7c59d6d3f65df1463f96c50894518e51ff7454cab9"
         }
     },
@@ -29,7 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/ugeneunipro/ugene/releases/download/$version/ugene-$version-win-x86-64.zip"
+                "url": "https://gh-proxy.com/https://github.com/ugeneunipro/ugene/releases/download/$version/ugene-$version-win-x86-64.zip"
             }
         },
         "extract_dir": "ugene-$version"

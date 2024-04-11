@@ -5,7 +5,7 @@
     "license": "MIT-0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/marler8997/zigup/releases/download/v2024_03_13/zigup.windows-latest-x86_64.zip",
+            "url": "https://gh-proxy.com/https://github.com/marler8997/zigup/releases/download/v2024_03_13/zigup.windows-latest-x86_64.zip",
             "hash": "f4c518ca9a6f16f0514eb9406c6b8bbe491d2b28bd8e9cd41830fe2ec06e7c51"
         }
     },
@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/marler8997/zigup/releases/download/v$version/zigup.windows-latest-x86_64.zip"
+                "url": "https://gh-proxy.com/https://github.com/marler8997/zigup/releases/download/v$version/zigup.windows-latest-x86_64.zip"
             }
         }
     }

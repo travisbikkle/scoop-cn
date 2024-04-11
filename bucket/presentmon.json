@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/GameTechDev/PresentMon/releases/download/v2.0.0/PresentMon-2.0.0-x64.exe#/PresentMon.exe",
+            "url": "https://gh-proxy.com/https://github.com/GameTechDev/PresentMon/releases/download/v2.0.0/PresentMon-2.0.0-x64.exe#/PresentMon.exe",
             "hash": "faad881ef4996853e75359b5be52087b289d8c06f420aec3fcb4d7a4e4a994f5"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/GameTechDev/PresentMon/releases/download/v2.0.0/PresentMon-2.0.0-x86.exe#/PresentMon.exe",
+            "url": "https://gh-proxy.com/https://github.com/GameTechDev/PresentMon/releases/download/v2.0.0/PresentMon-2.0.0-x86.exe#/PresentMon.exe",
             "hash": "c8b2fff23874f46b06eeda35eba7b1ed49fc963d7b9cc144db4b43e8893c8c26"
         }
     },
@@ -18,10 +18,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version-x64.exe#/PresentMon.exe"
+                "url": "https://gh-proxy.com/https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version-x64.exe#/PresentMon.exe"
             },
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version-x86.exe#/PresentMon.exe"
+                "url": "https://gh-proxy.com/https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version-x86.exe#/PresentMon.exe"
             }
         }
     }

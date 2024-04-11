@@ -5,11 +5,11 @@
     "license": "GPL-2.0-only WITH Classpath-exception-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11+7-ea-beta/OpenJDK17U-jre_x64_windows_hotspot_17.0.11_7-ea.zip",
+            "url": "https://gh-proxy.com/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11+7-ea-beta/OpenJDK17U-jre_x64_windows_hotspot_17.0.11_7-ea.zip",
             "hash": "045ca75c9203e5e45a967e285da7a0517b8f171438f6936967a548893f14d506"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11+7-ea-beta/OpenJDK17U-jre_x86-32_windows_hotspot_17.0.11_7-ea.zip",
+            "url": "https://gh-proxy.com/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11+7-ea-beta/OpenJDK17U-jre_x86-32_windows_hotspot_17.0.11_7-ea.zip",
             "hash": "95a6c6df5f0ae96def92930d40eca17222e1f62bf3942f9e42604fabcc3867b7"
         }
     },

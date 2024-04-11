@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/supabase/cli/releases/download/v1.153.4/supabase_windows_amd64.tar.gz",
+            "url": "https://gh-proxy.com/https://github.com/supabase/cli/releases/download/v1.153.4/supabase_windows_amd64.tar.gz",
             "hash": "78ccdbc933459f634c0cfa2eacaea4c4f03b11fa9ad772de8462bfa6fa0fc4d7"
         },
         "arm64": {
-            "url": "https://$github_proxy/https://github.com/supabase/cli/releases/download/v1.153.4/supabase_windows_arm64.tar.gz",
+            "url": "https://gh-proxy.com/https://github.com/supabase/cli/releases/download/v1.153.4/supabase_windows_arm64.tar.gz",
             "hash": "29a51c06c8fe30d6a75c0b36d99c9808debc9e94fb80ad8831ec59311d73a71f"
         }
     },
@@ -20,10 +20,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/supabase/cli/releases/download/v$version/supabase_windows_amd64.tar.gz"
+                "url": "https://gh-proxy.com/https://github.com/supabase/cli/releases/download/v$version/supabase_windows_amd64.tar.gz"
             },
             "arm64": {
-                "url": "https://$github_proxy/https://github.com/supabase/cli/releases/download/v$version/supabase_windows_arm64.tar.gz"
+                "url": "https://gh-proxy.com/https://github.com/supabase/cli/releases/download/v$version/supabase_windows_arm64.tar.gz"
             }
         },
         "hash": {

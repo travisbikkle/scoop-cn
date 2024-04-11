@@ -3,7 +3,7 @@
     "description": "This font contains all Nerd Fonts symbols and is intended to be used as fallback or together with fontconfig.",
     "homepage": "https://github.com/ryanoasis/nerd-fonts/tree/v3.2.0/patched-fonts/NerdFontsSymbolsOnly",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/NerdFontsSymbolsOnly.zip",
+    "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/NerdFontsSymbolsOnly.zip",
     "hash": "025e64ad8afacb11cbb2bd14b1aea97966ccf0b67dd8ffa1cf4f179cdbd2863c",
     "installer": {
         "script": [
@@ -89,7 +89,7 @@
         "github": "https://github.com/ryanoasis/nerd-fonts"
     },
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/NerdFontsSymbolsOnly.zip",
+        "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/NerdFontsSymbolsOnly.zip",
         "homepage": "https://github.com/ryanoasis/nerd-fonts/tree/v$version/patched-fonts/NerdFontsSymbolsOnly"
     }
 }

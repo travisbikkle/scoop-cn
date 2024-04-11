@@ -6,11 +6,11 @@
     "notes": "Configuration file cannot be persisted, but will be retained during the update",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/ares-emulator/ares/releases/download/v137/ares-windows.zip",
+            "url": "https://gh-proxy.com/https://github.com/ares-emulator/ares/releases/download/v137/ares-windows.zip",
             "hash": "f94f715db667a6aba99a504dc7dfcd28eeebacb80cfdd62143def87b64febf6a"
         },
         "arm64": {
-            "url": "https://$github_proxy/https://github.com/ares-emulator/ares/releases/download/v137/ares-windows-msvc-arm64.zip",
+            "url": "https://gh-proxy.com/https://github.com/ares-emulator/ares/releases/download/v137/ares-windows-msvc-arm64.zip",
             "hash": "f84d25d67162d5bbdd59dd1e0aa808ee25d8a9e4d67708971213ae9e2a34bdb1"
         }
     },
@@ -52,10 +52,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/ares-emulator/ares/releases/download/v$cleanVersion/ares-windows.zip"
+                "url": "https://gh-proxy.com/https://github.com/ares-emulator/ares/releases/download/v$cleanVersion/ares-windows.zip"
             },
             "arm64": {
-                "url": "https://$github_proxy/https://github.com/ares-emulator/ares/releases/download/v$cleanVersion/ares-windows-msvc-arm64.zip"
+                "url": "https://gh-proxy.com/https://github.com/ares-emulator/ares/releases/download/v$cleanVersion/ares-windows-msvc-arm64.zip"
             }
         },
         "extract_dir": "ares-v$cleanVersion"

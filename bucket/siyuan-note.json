@@ -5,7 +5,7 @@
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/siyuan-note/siyuan/releases/download/v3.0.9/siyuan-3.0.9-win.exe#/dl.7z",
+            "url": "https://gh-proxy.com/https://github.com/siyuan-note/siyuan/releases/download/v3.0.9/siyuan-3.0.9-win.exe#/dl.7z",
             "hash": "90f88c61f6a4f44ec9a398d157ff7b8404f363b012be17ed9ec93b41c43b877d",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/siyuan-note/siyuan/releases/download/v$version/siyuan-$version-win.exe#/dl.7z"
+                "url": "https://gh-proxy.com/https://github.com/siyuan-note/siyuan/releases/download/v$version/siyuan-$version-win.exe#/dl.7z"
             }
         }
     }

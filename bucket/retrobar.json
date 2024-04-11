@@ -5,15 +5,15 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/dremin/RetroBar/releases/download/v1.15.33/RetroBar.64-bit.zip",
+            "url": "https://gh-proxy.com/https://github.com/dremin/RetroBar/releases/download/v1.15.33/RetroBar.64-bit.zip",
             "hash": "e51f5295bef80bded05b8b13bd7c32d731de5718a4823e0dc89dce87a0b52ac4"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/dremin/RetroBar/releases/download/v1.15.33/RetroBar.32-bit.zip",
+            "url": "https://gh-proxy.com/https://github.com/dremin/RetroBar/releases/download/v1.15.33/RetroBar.32-bit.zip",
             "hash": "1bd163b01cd931b18e5f10ba33f47d40115b55c11180cdeeca5cf2dcb60b4add"
         },
         "arm64": {
-            "url": "https://$github_proxy/https://github.com/dremin/RetroBar/releases/download/v1.15.33/RetroBar.ARM64.zip",
+            "url": "https://gh-proxy.com/https://github.com/dremin/RetroBar/releases/download/v1.15.33/RetroBar.ARM64.zip",
             "hash": "3a513dd23ded6e69b56db8ed410b9c77bc04116f904efc5287d1fc7993ccc818"
         }
     },
@@ -28,13 +28,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.64-bit.zip"
+                "url": "https://gh-proxy.com/https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.64-bit.zip"
             },
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.32-bit.zip"
+                "url": "https://gh-proxy.com/https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.32-bit.zip"
             },
             "arm64": {
-                "url": "https://$github_proxy/https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.ARM64.zip"
+                "url": "https://gh-proxy.com/https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.ARM64.zip"
             }
         }
     }

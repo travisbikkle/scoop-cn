@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/pnpm/pnpm/releases/download/v8.15.6/pnpm-win-x64.exe#/pnpm.exe",
+            "url": "https://gh-proxy.com/https://github.com/pnpm/pnpm/releases/download/v8.15.6/pnpm-win-x64.exe#/pnpm.exe",
             "hash": "8b52aacd406fbfa0155efe749f4c72c3b5760dfcccfaf26b598366996348360d"
         }
     },
@@ -31,6 +31,6 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/pnpm/pnpm/releases/download/v$version/pnpm-win-x64.exe#/pnpm.exe"
+        "url": "https://gh-proxy.com/https://github.com/pnpm/pnpm/releases/download/v$version/pnpm-win-x64.exe#/pnpm.exe"
     }
 }

@@ -5,17 +5,17 @@
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/SagerNet/sing-box/releases/download/v1.8.11/sing-box-1.8.11-windows-amd64.zip",
+            "url": "https://gh-proxy.com/https://github.com/SagerNet/sing-box/releases/download/v1.8.11/sing-box-1.8.11-windows-amd64.zip",
             "hash": "97cad89399551b887d6087380b74a84efac677d81b505fca32ebb5dddd6be03d",
             "extract_dir": "sing-box-1.8.11-windows-amd64"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/SagerNet/sing-box/releases/download/v1.8.11/sing-box-1.8.11-windows-386.zip",
+            "url": "https://gh-proxy.com/https://github.com/SagerNet/sing-box/releases/download/v1.8.11/sing-box-1.8.11-windows-386.zip",
             "hash": "7cc8bb00ccf28fa669a1048d030116f9e9c10f2b7ebb8cbddc3308e028e4179c",
             "extract_dir": "sing-box-1.8.11-windows-386"
         },
         "arm64": {
-            "url": "https://$github_proxy/https://github.com/SagerNet/sing-box/releases/download/v1.8.11/sing-box-1.8.11-windows-arm64.zip",
+            "url": "https://gh-proxy.com/https://github.com/SagerNet/sing-box/releases/download/v1.8.11/sing-box-1.8.11-windows-arm64.zip",
             "hash": "77a293d235eed17280922da96228f0842ed56ccb3c5515d0cbbf42473205c23c",
             "extract_dir": "sing-box-1.8.11-windows-arm64"
         }
@@ -28,15 +28,15 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/SagerNet/sing-box/releases/download/$matchTag/sing-box-$version-windows-amd64.zip",
+                "url": "https://gh-proxy.com/https://github.com/SagerNet/sing-box/releases/download/$matchTag/sing-box-$version-windows-amd64.zip",
                 "extract_dir": "sing-box-$version-windows-amd64"
             },
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/SagerNet/sing-box/releases/download/$matchTag/sing-box-$version-windows-386.zip",
+                "url": "https://gh-proxy.com/https://github.com/SagerNet/sing-box/releases/download/$matchTag/sing-box-$version-windows-386.zip",
                 "extract_dir": "sing-box-$version-windows-386"
             },
             "arm64": {
-                "url": "https://$github_proxy/https://github.com/SagerNet/sing-box/releases/download/$matchTag/sing-box-$version-windows-arm64.zip",
+                "url": "https://gh-proxy.com/https://github.com/SagerNet/sing-box/releases/download/$matchTag/sing-box-$version-windows-arm64.zip",
                 "extract_dir": "sing-box-$version-windows-arm64"
             }
         }

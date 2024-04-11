@@ -5,7 +5,7 @@
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.553/quarto-1.4.553-win.zip",
+            "url": "https://gh-proxy.com/https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.553/quarto-1.4.553-win.zip",
             "hash": "14176fd7f687470309d96b5b317648e52f3f2d40be7ff656f331da5a6af0f408"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/quarto-dev/quarto-cli/releases/download/v$version/quarto-$version-win.zip"
+                "url": "https://gh-proxy.com/https://github.com/quarto-dev/quarto-cli/releases/download/v$version/quarto-$version-win.zip"
             }
         },
         "hash": {

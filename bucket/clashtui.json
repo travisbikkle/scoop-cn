@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/JohanChane/clashtui/releases/download/v0.2.0/clashtui-windows-amd64-v0.2.0.zip",
+            "url": "https://gh-proxy.com/https://github.com/JohanChane/clashtui/releases/download/v0.2.0/clashtui-windows-amd64-v0.2.0.zip",
             "hash": "4516AB109C9314458CD35857F3D15C008F2D240D258B153D00FFAC9F72197C1B"
         }
     },
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/JohanChane/clashtui/releases/download/v$version/clashtui-windows-amd64-v$version.zip"
+                "url": "https://gh-proxy.com/https://github.com/JohanChane/clashtui/releases/download/v$version/clashtui-windows-amd64-v$version.zip"
             }
         }
     }

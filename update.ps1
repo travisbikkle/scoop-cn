@@ -44,14 +44,14 @@ Remove-Item -Path .\scoop-sysinternals -Recurse -Force
 
 Get-ChildItem -Recurse -Path .\bucket | ForEach-Object -Process {
     # GitHub Releases
-    (Get-Content $_.FullName) -replace '(github\.com/.+/releases/.*download)', '$github_proxy/https://$1' | Set-Content -Path $_.FullName
+    (Get-Content $_.FullName) -replace '(github\.com/.+/releases/.*download)', "$github_proxy/https://`$1" | Set-Content -Path $_.FullName
 
     # GitHub Archive
-    (Get-Content $_.FullName) -replace '(github\.com/.+/archive/)', '$github_proxy/https://$1' | Set-Content -Path $_.FullName
+    (Get-Content $_.FullName) -replace '(github\.com/.+/archive/)', "$github_proxy/https://`$1" | Set-Content -Path $_.FullName
 
     # GitHub Raw
-    (Get-Content $_.FullName) -replace '(raw\.githubusercontent\.com)', '$github_proxy/https://$1' | Set-Content -Path $_.FullName
-    (Get-Content $_.FullName) -replace '(github\.com/.+/raw/)', '$github_proxy/https://$1'          | Set-Content -Path $_.FullName
+    (Get-Content $_.FullName) -replace '(raw\.githubusercontent\.com)', "$github_proxy/https://`$1" | Set-Content -Path $_.FullName
+    (Get-Content $_.FullName) -replace '(github\.com/.+/raw/)', "$github_proxy/https://`$1"          | Set-Content -Path $_.FullName
 
     # SourceForge
     # Use jaist

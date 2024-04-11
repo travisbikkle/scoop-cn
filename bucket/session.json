@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/oxen-io/session-desktop/releases/download/v1.12.1/session-desktop-win-x64-1.12.1.exe#/dl.7z",
+            "url": "https://gh-proxy.com/https://github.com/oxen-io/session-desktop/releases/download/v1.12.1/session-desktop-win-x64-1.12.1.exe#/dl.7z",
             "hash": "sha512:74892ebc5d7e4b2e1f22ea45d0554afe90e0a626235762a4b371ee3d95ddb8c65db13af33a25dc14a2c5e210e2ba258cae6070d0f28a4215d5fac8218ee375a0",
             "installer": {
                 "script": [
@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/oxen-io/session-desktop/releases/download/v$version/session-desktop-win-x64-$version.exe#/dl.7z"
+                "url": "https://gh-proxy.com/https://github.com/oxen-io/session-desktop/releases/download/v$version/session-desktop-win-x64-$version.exe#/dl.7z"
             }
         },
         "hash": {

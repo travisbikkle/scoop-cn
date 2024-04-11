@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/stern/stern/releases/download/v1.28.0/stern_1.28.0_windows_amd64.tar.gz",
+            "url": "https://gh-proxy.com/https://github.com/stern/stern/releases/download/v1.28.0/stern_1.28.0_windows_amd64.tar.gz",
             "hash": "5a9a7dbe7b8d4f4e553766ecae981694cee12fa9efb6c6a2fb1a4e82c94a97bb"
         }
     },
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/stern/stern/releases/download/v$version/stern_$version_windows_amd64.tar.gz"
+                "url": "https://gh-proxy.com/https://github.com/stern/stern/releases/download/v$version/stern_$version_windows_amd64.tar.gz"
             }
         },
         "hash": {

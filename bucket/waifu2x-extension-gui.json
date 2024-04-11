@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.112.01/Waifu2x-Extension-GUI-v3.112.01-Win64.7z",
+            "url": "https://gh-proxy.com/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.112.01/Waifu2x-Extension-GUI-v3.112.01-Win64.7z",
             "hash": "61183a1b0b63386a569a6a276a60736ff87c0f45b6a684f3057056a3ecb80c26",
             "extract_dir": "waifu2x-extension-gui"
         }
@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v$version/Waifu2x-Extension-GUI-v$version-Win64.7z",
+                "url": "https://gh-proxy.com/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v$version/Waifu2x-Extension-GUI-v$version-Win64.7z",
                 "hash": {
                     "url": "https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v$version",
                     "regex": "$basename\\n$sha256"
