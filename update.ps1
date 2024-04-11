@@ -1,11 +1,6 @@
 param(
-    [Parameter()]
-    [String]$github_proxy
-)
-if ($github_proxy -eq "") {
-    # $github_proxy
     $github_proxy="mirror.ghproxy.com"
-}
+)
 
 # 开启调试
 # Set-PSDebug -Trace 1
