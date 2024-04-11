@@ -6,7 +6,7 @@
     "suggest": {
         "JDK": "scoop-cn/openjdk"
     },
-    "url": "https://mirror.ghproxy.com/https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.19.0/selenium-server-4.19.0.jar#/selenium.jar",
+    "url": "https://$github_proxy/https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.19.0/selenium-server-4.19.0.jar#/selenium.jar",
     "hash": "f1cc3afb41115def18618e978e0018e8b0a6c66af23df3fa0785438cd0b4b5a0",
     "bin": "selenium.jar",
     "checkver": {
@@ -14,6 +14,6 @@
         "regex": "selenium-([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/SeleniumHQ/selenium/releases/download/selenium-$version/selenium-server-$version.jar#/selenium.jar"
+        "url": "https://$github_proxy/https://github.com/SeleniumHQ/selenium/releases/download/selenium-$version/selenium-server-$version.jar#/selenium.jar"
     }
 }

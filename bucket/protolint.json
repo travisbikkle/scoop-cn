@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/yoheimuta/protolint/releases/download/v0.49.4/protolint_0.49.4_windows_amd64.tar.gz",
+            "url": "https://$github_proxy/https://github.com/yoheimuta/protolint/releases/download/v0.49.4/protolint_0.49.4_windows_amd64.tar.gz",
             "hash": "dc0e3ece2c2bba2429fe6758bee91b54a1d657b618805b6a91438413fd535401"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/yoheimuta/protolint/releases/download/v0.49.4/protolint_0.49.4_windows_arm64.tar.gz",
+            "url": "https://$github_proxy/https://github.com/yoheimuta/protolint/releases/download/v0.49.4/protolint_0.49.4_windows_arm64.tar.gz",
             "hash": "bd29dad8af58a9317d7d48a7e2cfd392500d0cda1e1ab06f14c63e19a53c13e0"
         }
     },
@@ -21,10 +21,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_windows_amd64.tar.gz"
+                "url": "https://$github_proxy/https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_windows_amd64.tar.gz"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_windows_arm64.tar.gz"
+                "url": "https://$github_proxy/https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_windows_arm64.tar.gz"
             }
         },
         "hash": {

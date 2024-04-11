@@ -5,11 +5,11 @@
     "license": "LGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/Tribler/tribler/releases/download/v7.13.3/Tribler_7.13.3_x64.exe#/dl.7z",
+            "url": "https://$github_proxy/https://github.com/Tribler/tribler/releases/download/v7.13.3/Tribler_7.13.3_x64.exe#/dl.7z",
             "hash": "169c0981485bc121629a7d20466c17bf49ea66261eb9e269a4bebdfb143cee03"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/Tribler/tribler/releases/download/v7.13.3/Tribler_7.13.3_x86.exe#/dl.7z",
+            "url": "https://$github_proxy/https://github.com/Tribler/tribler/releases/download/v7.13.3/Tribler_7.13.3_x86.exe#/dl.7z",
             "hash": "dc5051e397ee969fa30496213f577725b7b688e2872d6889653825cee38e53b2"
         }
     },
@@ -27,10 +27,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/Tribler/tribler/releases/download/v$version/Tribler_$version_x64.exe#/dl.7z"
+                "url": "https://$github_proxy/https://github.com/Tribler/tribler/releases/download/v$version/Tribler_$version_x64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/Tribler/tribler/releases/download/v$version/Tribler_$version_x86.exe#/dl.7z"
+                "url": "https://$github_proxy/https://github.com/Tribler/tribler/releases/download/v$version/Tribler_$version_x86.exe#/dl.7z"
             }
         },
         "hash": {

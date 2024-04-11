@@ -9,9 +9,9 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://mirror.ghproxy.com/https://github.com/bazelbuild/buildtools/releases/download/v7.1.0/buildifier-windows-amd64.exe#/buildifier.exe",
-                "https://mirror.ghproxy.com/https://github.com/bazelbuild/buildtools/releases/download/v7.1.0/buildozer-windows-amd64.exe#/buildozer.exe",
-                "https://mirror.ghproxy.com/https://github.com/bazelbuild/buildtools/releases/download/v7.1.0/unused_deps-windows-amd64.exe#/unused_deps.exe"
+                "https://$github_proxy/https://github.com/bazelbuild/buildtools/releases/download/v7.1.0/buildifier-windows-amd64.exe#/buildifier.exe",
+                "https://$github_proxy/https://github.com/bazelbuild/buildtools/releases/download/v7.1.0/buildozer-windows-amd64.exe#/buildozer.exe",
+                "https://$github_proxy/https://github.com/bazelbuild/buildtools/releases/download/v7.1.0/unused_deps-windows-amd64.exe#/unused_deps.exe"
             ],
             "hash": [
                 "3380d12a4c77a6b0015ea2850210a431144a79dbcb429c6e4537dbb4cd2ffbba",
@@ -30,9 +30,9 @@
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://mirror.ghproxy.com/https://github.com/bazelbuild/buildtools/releases/download/v$version/buildifier-windows-amd64.exe#/buildifier.exe",
-                    "https://mirror.ghproxy.com/https://github.com/bazelbuild/buildtools/releases/download/v$version/buildozer-windows-amd64.exe#/buildozer.exe",
-                    "https://mirror.ghproxy.com/https://github.com/bazelbuild/buildtools/releases/download/v$version/unused_deps-windows-amd64.exe#/unused_deps.exe"
+                    "https://$github_proxy/https://github.com/bazelbuild/buildtools/releases/download/v$version/buildifier-windows-amd64.exe#/buildifier.exe",
+                    "https://$github_proxy/https://github.com/bazelbuild/buildtools/releases/download/v$version/buildozer-windows-amd64.exe#/buildozer.exe",
+                    "https://$github_proxy/https://github.com/bazelbuild/buildtools/releases/download/v$version/unused_deps-windows-amd64.exe#/unused_deps.exe"
                 ]
             }
         }

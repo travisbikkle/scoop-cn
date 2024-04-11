@@ -5,17 +5,17 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/AdguardTeam/dnsproxy/releases/download/v0.69.1/dnsproxy-windows-amd64-v0.69.1.zip",
+            "url": "https://$github_proxy/https://github.com/AdguardTeam/dnsproxy/releases/download/v0.69.1/dnsproxy-windows-amd64-v0.69.1.zip",
             "hash": "efdd2f0cf2d848bfb8311e21cff6be825abbc38d9a3b14b3e6d453f9ea5946a6",
             "extract_dir": "windows-amd64"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/AdguardTeam/dnsproxy/releases/download/v0.69.1/dnsproxy-windows-386-v0.69.1.zip",
+            "url": "https://$github_proxy/https://github.com/AdguardTeam/dnsproxy/releases/download/v0.69.1/dnsproxy-windows-386-v0.69.1.zip",
             "hash": "0f0729a7ff0dffe68ff0cc39899e503b8baa51a28596397516b9472b97f04780",
             "extract_dir": "windows-386"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/AdguardTeam/dnsproxy/releases/download/v0.69.1/dnsproxy-windows-arm64-v0.69.1.zip",
+            "url": "https://$github_proxy/https://github.com/AdguardTeam/dnsproxy/releases/download/v0.69.1/dnsproxy-windows-arm64-v0.69.1.zip",
             "hash": "b7a32f787721db51e812a3c1dd168771696daacf36b5802f428d7c15e6384a7d",
             "extract_dir": "windows-arm64"
         }
@@ -25,13 +25,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-amd64-v$version.zip"
+                "url": "https://$github_proxy/https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-amd64-v$version.zip"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-386-v$version.zip"
+                "url": "https://$github_proxy/https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-386-v$version.zip"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-arm64-v$version.zip"
+                "url": "https://$github_proxy/https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-arm64-v$version.zip"
             }
         }
     }

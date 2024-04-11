@@ -6,11 +6,11 @@
     "notes": ".NET Framework 4.6.1 or higher is required.",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/AAndyProgram/SCrawler/releases/download/2024.4.10.0/SCrawler_2024.4.10.0_x64.zip",
+            "url": "https://$github_proxy/https://github.com/AAndyProgram/SCrawler/releases/download/2024.4.10.0/SCrawler_2024.4.10.0_x64.zip",
             "hash": "389d5028a7b962765d5c1cda3af82883fc75242e76c0621a746b637e3ae74a79"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/AAndyProgram/SCrawler/releases/download/2024.4.10.0/SCrawler_2024.4.10.0_x86.zip",
+            "url": "https://$github_proxy/https://github.com/AAndyProgram/SCrawler/releases/download/2024.4.10.0/SCrawler_2024.4.10.0_x86.zip",
             "hash": "0f9e7e4e25a0f478d35c10bea736fff7ba0cfdbcb58f5519ce3c80bc5507729f"
         }
     },
@@ -29,10 +29,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/AAndyProgram/SCrawler/releases/download/$version/SCrawler_$version_x64.zip"
+                "url": "https://$github_proxy/https://github.com/AAndyProgram/SCrawler/releases/download/$version/SCrawler_$version_x64.zip"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/AAndyProgram/SCrawler/releases/download/$version/SCrawler_$version_x86.zip"
+                "url": "https://$github_proxy/https://github.com/AAndyProgram/SCrawler/releases/download/$version/SCrawler_$version_x86.zip"
             }
         }
     }

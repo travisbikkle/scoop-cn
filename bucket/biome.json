@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/biomejs/biome/releases/download/cli%2Fv1.6.4/biome-win32-x64.exe#/biome.exe",
+            "url": "https://$github_proxy/https://github.com/biomejs/biome/releases/download/cli%2Fv1.6.4/biome-win32-x64.exe#/biome.exe",
             "hash": "df7a3f2c256b666a05d6c5eeb72a3fc0d836a836566d918f8fa619abb2c7ccf4"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/biomejs/biome/releases/download/cli%2Fv1.6.4/biome-win32-arm64.exe#/biome.exe",
+            "url": "https://$github_proxy/https://github.com/biomejs/biome/releases/download/cli%2Fv1.6.4/biome-win32-arm64.exe#/biome.exe",
             "hash": "13566c0cdf892cf8e67256f56e7de6a07c8e9f5b78c6494c49a0f7a7752a6aa1"
         }
     },
@@ -21,10 +21,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/biomejs/biome/releases/download/cli%2Fv$version/biome-win32-x64.exe#/biome.exe"
+                "url": "https://$github_proxy/https://github.com/biomejs/biome/releases/download/cli%2Fv$version/biome-win32-x64.exe#/biome.exe"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/biomejs/biome/releases/download/cli%2Fv$version/biome-win32-arm64.exe#/biome.exe"
+                "url": "https://$github_proxy/https://github.com/biomejs/biome/releases/download/cli%2Fv$version/biome-win32-arm64.exe#/biome.exe"
             }
         }
     }

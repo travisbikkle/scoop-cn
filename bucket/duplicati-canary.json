@@ -10,7 +10,7 @@
         "To remove Duplicati from startup, run: (requires administrator privileges)",
         "start \"$dir\\Duplicati.WindowsService.exe\" -Verb 'RunAs' -ArgumentList 'uninstall'"
     ],
-    "url": "https://mirror.ghproxy.com/https://github.com/duplicati/duplicati/releases/download/v2.0.7.102-2.0.7.102_canary_2024-04-03/duplicati-2.0.7.102_canary_2024-04-03.zip",
+    "url": "https://$github_proxy/https://github.com/duplicati/duplicati/releases/download/v2.0.7.102-2.0.7.102_canary_2024-04-03/duplicati-2.0.7.102_canary_2024-04-03.zip",
     "hash": "46df0472bce7e63554808dd6924b957eb2cd4d7c08b76129d590c2d3c9aa40c2",
     "bin": [
         "Duplicati.CommandLine.exe",
@@ -40,6 +40,6 @@
         "regex": "v(?<half>[\\d.]+)-([\\d.]+_canary_[\\d-]+)"
     },
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/duplicati/duplicati/releases/download/v$matchHalf-$version/duplicati-$version.zip"
+        "url": "https://$github_proxy/https://github.com/duplicati/duplicati/releases/download/v$matchHalf-$version/duplicati-$version.zip"
     }
 }

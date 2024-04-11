@@ -5,15 +5,15 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/max-niederman/ttyper/releases/download/v1.4.1/ttyper-x86_64-pc-windows-msvc.zip",
+            "url": "https://$github_proxy/https://github.com/max-niederman/ttyper/releases/download/v1.4.1/ttyper-x86_64-pc-windows-msvc.zip",
             "hash": "6955d6613854c8a6af101e99fc4afcaa45c1f0ac97fdff43f08ab079fcd09354"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/max-niederman/ttyper/releases/download/v1.4.1/ttyper-i686-pc-windows-msvc.zip",
+            "url": "https://$github_proxy/https://github.com/max-niederman/ttyper/releases/download/v1.4.1/ttyper-i686-pc-windows-msvc.zip",
             "hash": "58cc16d0247a6e588337c3737a25d118709c718ca5cfb83a48d1d079b8004d96"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/max-niederman/ttyper/releases/download/v1.4.1/ttyper-aarch64-pc-windows-msvc.zip",
+            "url": "https://$github_proxy/https://github.com/max-niederman/ttyper/releases/download/v1.4.1/ttyper-aarch64-pc-windows-msvc.zip",
             "hash": "aa77c4eb44d3b8d8075d9ef0c4231e76fbdaaa929fcb46ef51cc64e55f941e53"
         }
     },
@@ -26,13 +26,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-x86_64-pc-windows-msvc.zip"
+                "url": "https://$github_proxy/https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-x86_64-pc-windows-msvc.zip"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-i686-pc-windows-msvc.zip"
+                "url": "https://$github_proxy/https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-i686-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-aarch64-pc-windows-msvc.zip"
+                "url": "https://$github_proxy/https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-aarch64-pc-windows-msvc.zip"
             }
         },
         "hash": {

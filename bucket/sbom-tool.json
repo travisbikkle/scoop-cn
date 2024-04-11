@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/sbom-tool/releases/download/v2.2.4/sbom-tool-win-x64.exe",
+            "url": "https://$github_proxy/https://github.com/microsoft/sbom-tool/releases/download/v2.2.4/sbom-tool-win-x64.exe",
             "hash": "1aba6ae8a08a25b7c3eebf7a7a59472ca1214f16b6c0cd30f612fee59c10d755"
         }
     },
@@ -13,7 +13,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/microsoft/sbom-tool/releases/download/v$version/sbom-tool-win-x64.exe",
+                "url": "https://$github_proxy/https://github.com/microsoft/sbom-tool/releases/download/v$version/sbom-tool-win-x64.exe",
                 "hash": {
                     "url": "$baseurl/win-x64-manifest.spdx.json",
                     "jsonpath": "$.files[?(@.fileName == './$basename')].checksums[?(@.algorithm == 'SHA256')].checksumValue"

@@ -10,7 +10,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/LGUG2Z/komorebi/releases/download/v0.1.24/komorebi-0.1.24-x86_64-pc-windows-msvc.zip",
+            "url": "https://$github_proxy/https://github.com/LGUG2Z/komorebi/releases/download/v0.1.24/komorebi-0.1.24-x86_64-pc-windows-msvc.zip",
             "hash": "8ac95afb0e6af4cfba8cb568bd74ff437a6aca0ed64daf64e43a8bd01d5c101f"
         }
     },
@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/LGUG2Z/komorebi/releases/download/v$version/komorebi-$version-x86_64-pc-windows-msvc.zip"
+                "url": "https://$github_proxy/https://github.com/LGUG2Z/komorebi/releases/download/v$version/komorebi-$version-x86_64-pc-windows-msvc.zip"
             }
         }
     }

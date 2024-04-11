@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/FelixdelasPozas/TrayWeather/releases/download/1.28.0/TrayWeather_v1.28.0_Portable.7z",
+            "url": "https://$github_proxy/https://github.com/FelixdelasPozas/TrayWeather/releases/download/1.28.0/TrayWeather_v1.28.0_Portable.7z",
             "hash": "7b1a5dae72d7b8f12c95a0dec67fa2dca9b660fa393ed3cdb02ce46d32d457af"
         }
     },
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/FelixdelasPozas/TrayWeather/releases/download/$version/TrayWeather_v$version_Portable.7z"
+                "url": "https://$github_proxy/https://github.com/FelixdelasPozas/TrayWeather/releases/download/$version/TrayWeather_v$version_Portable.7z"
             }
         }
     }
