@@ -6,7 +6,7 @@
     "license": "MIT|Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/ShenMian/sokoban-rs/releases/download/v0.1.12/sokoban-windows.zip",
+            "url": "https://$github_proxy/https://github.com/ShenMian/sokoban-rs/releases/download/v0.1.12/sokoban-windows.zip",
             "bin": "sokoban-windows/sokoban-rs.exe",
             "hash": "2b9ead1cd5484b5ebfaeab59e2c752d63f732fb31340ecb4d29fd62bd563d10e"
         }
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/ShenMian/sokoban-rs/releases/download/v$version/sokoban-windows.zip"
+                "url": "https://$github_proxy/https://github.com/ShenMian/sokoban-rs/releases/download/v$version/sokoban-windows.zip"
             }
         }
     }

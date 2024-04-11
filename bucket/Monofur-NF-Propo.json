@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'Monofur' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Monofur.zip",
+    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Monofur.zip",
     "hash": "0eda92d8037100575a540657d59c65478edd94dc124c93eda40016f14e079c9c",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Monofur.zip"
+        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Monofur.zip"
     }
 }

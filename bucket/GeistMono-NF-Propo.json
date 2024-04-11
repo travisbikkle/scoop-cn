@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'GeistMono' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/GeistMono.zip",
+    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/GeistMono.zip",
     "hash": "c557e52876976dc2f028a2790cff62875e085fd6c201900be4a87be6a660a807",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/GeistMono.zip"
+        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/GeistMono.zip"
     }
 }

@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/bluenviron/mediamtx/releases/download/v1.6.0/mediamtx_v1.6.0_windows_amd64.zip",
+            "url": "https://$github_proxy/https://github.com/bluenviron/mediamtx/releases/download/v1.6.0/mediamtx_v1.6.0_windows_amd64.zip",
             "hash": "ade896cda7063fb48b9220f584e802196f0654710bd55abafd3964bcce43f1ff"
         }
     },
@@ -15,7 +15,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/bluenviron/mediamtx/releases/download/v$version/mediamtx_v$version_windows_amd64.zip"
+                "url": "https://$github_proxy/https://github.com/bluenviron/mediamtx/releases/download/v$version/mediamtx_v$version_windows_amd64.zip"
             }
         }
     }

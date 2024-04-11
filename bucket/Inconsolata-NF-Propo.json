@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'Inconsolata' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Inconsolata.zip",
+    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Inconsolata.zip",
     "hash": "e3094830855c32c7565af967dcc68082ce97ae6867b318bdd18c38423d64f2dd",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Inconsolata.zip"
+        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Inconsolata.zip"
     }
 }

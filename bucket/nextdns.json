@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/nextdns/nextdns/releases/download/v1.42.0/nextdns_1.42.0_windows_amd64.zip",
+            "url": "https://$github_proxy/https://github.com/nextdns/nextdns/releases/download/v1.42.0/nextdns_1.42.0_windows_amd64.zip",
             "hash": "33122b1a13b9136380f7154901a83de1b8d9be4a9e49231588bffb9d7e626d75"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/nextdns/nextdns/releases/download/v1.42.0/nextdns_1.42.0_windows_386.zip",
+            "url": "https://$github_proxy/https://github.com/nextdns/nextdns/releases/download/v1.42.0/nextdns_1.42.0_windows_386.zip",
             "hash": "82a25324a17ed75704e875261dd70970e8113ecdd38eb88f056923a96d41630a"
         }
     },
@@ -20,10 +20,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/nextdns/nextdns/releases/download/v$version/nextdns_$version_windows_amd64.zip"
+                "url": "https://$github_proxy/https://github.com/nextdns/nextdns/releases/download/v$version/nextdns_$version_windows_amd64.zip"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/nextdns/nextdns/releases/download/v$version/nextdns_$version_windows_386.zip"
+                "url": "https://$github_proxy/https://github.com/nextdns/nextdns/releases/download/v$version/nextdns_$version_windows_386.zip"
             }
         },
         "hash": {

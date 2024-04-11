@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/mozilla/sccache/releases/download/v0.7.7/sccache-v0.7.7-x86_64-pc-windows-msvc.tar.gz",
+            "url": "https://$github_proxy/https://github.com/mozilla/sccache/releases/download/v0.7.7/sccache-v0.7.7-x86_64-pc-windows-msvc.tar.gz",
             "hash": "2f399cdde8ff54ca2388c3e22f97ae64b2c53a9e9ca95f35ce9fe88e9770b5f4",
             "extract_dir": "sccache-v0.7.7-x86_64-pc-windows-msvc"
         }
@@ -15,7 +15,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-x86_64-pc-windows-msvc.tar.gz",
+                "url": "https://$github_proxy/https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-x86_64-pc-windows-msvc.tar.gz",
                 "extract_dir": "sccache-v$version-x86_64-pc-windows-msvc"
             }
         },

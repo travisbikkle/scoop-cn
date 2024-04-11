@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/drud/ddev/releases/download/v1.22.7/ddev_windows-amd64.v1.22.7.zip",
+            "url": "https://$github_proxy/https://github.com/drud/ddev/releases/download/v1.22.7/ddev_windows-amd64.v1.22.7.zip",
             "hash": "5e9512e54c0a485e5cc02c8fb7d6a1aa4f868da1e76a53dda14fda751c733b8e"
         }
     },
@@ -19,7 +19,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/drud/ddev/releases/download/v$version/ddev_windows-amd64.v$version.zip"
+                "url": "https://$github_proxy/https://github.com/drud/ddev/releases/download/v$version/ddev_windows-amd64.v$version.zip"
             }
         },
         "hash": {

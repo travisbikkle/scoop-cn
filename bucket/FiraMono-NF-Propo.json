@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'FiraMono' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/FiraMono.zip",
+    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/FiraMono.zip",
     "hash": "1544c5012ac3e16c20dd00ad5321aba6b8555f767cdfcc679fd50bfe6d2aa5ab",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/FiraMono.zip"
+        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/FiraMono.zip"
     }
 }

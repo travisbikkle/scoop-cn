@@ -10,7 +10,7 @@
         ]
     },
     "notes": "Default URL is http://localhost:25600",
-    "url": "https://mirror.ghproxy.com/https://github.com/gotson/komga/releases/download/1.10.4/komga-1.10.4.jar#/komga.jar",
+    "url": "https://$github_proxy/https://github.com/gotson/komga/releases/download/1.10.4/komga-1.10.4.jar#/komga.jar",
     "hash": "58a8b26dc407fb1c415146ee5eb376bbba0805b401a77e18d668097b4bbb8622",
     "bin": [
         [
@@ -24,7 +24,7 @@
         "github": "https://github.com/gotson/komga"
     },
     "autoupdate": {
-        "url": "https://mirror.ghproxy.com/https://github.com/gotson/komga/releases/download/$version/komga-$version.jar#/komga.jar",
+        "url": "https://$github_proxy/https://github.com/gotson/komga/releases/download/$version/komga-$version.jar#/komga.jar",
         "hash": {
             "url": "$baseurl/checksums_sha256.txt"
         }

@@ -5,7 +5,7 @@
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/Tyrrrz/YoutubeDownloader/releases/download/1.10.11/YoutubeDownloader.zip",
+            "url": "https://$github_proxy/https://github.com/Tyrrrz/YoutubeDownloader/releases/download/1.10.11/YoutubeDownloader.zip",
             "hash": "b0ec085583d39360206f5bc03f9c07acb01b23984e32b8d7cce3f914dd50ac8c"
         }
     },
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/Tyrrrz/YoutubeDownloader/releases/download/$version/YoutubeDownloader.zip"
+                "url": "https://$github_proxy/https://github.com/Tyrrrz/YoutubeDownloader/releases/download/$version/YoutubeDownloader.zip"
             }
         }
     }

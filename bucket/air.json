@@ -5,15 +5,15 @@
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/cosmtrek/air/releases/download/v1.51.0/air_1.51.0_windows_amd64.tar.gz",
+            "url": "https://$github_proxy/https://github.com/cosmtrek/air/releases/download/v1.51.0/air_1.51.0_windows_amd64.tar.gz",
             "hash": "09eb05b8da3259088350ef831d983c361c912606f9325279f996461d66417108"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/cosmtrek/air/releases/download/v1.51.0/air_1.51.0_windows_386.tar.gz",
+            "url": "https://$github_proxy/https://github.com/cosmtrek/air/releases/download/v1.51.0/air_1.51.0_windows_386.tar.gz",
             "hash": "41f0d64094ebc6c5b115049ef393c26cdc355430574f97f3b9f3865fe49fef55"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/cosmtrek/air/releases/download/v1.51.0/air_1.51.0_windows_arm64.tar.gz",
+            "url": "https://$github_proxy/https://github.com/cosmtrek/air/releases/download/v1.51.0/air_1.51.0_windows_arm64.tar.gz",
             "hash": "5955c8d44bdfde5c9231a7c12e6c8c64237db6d3ffc3744d85203a9897befcc5"
         }
     },
@@ -22,13 +22,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/cosmtrek/air/releases/download/v$version/air_$version_windows_amd64.tar.gz"
+                "url": "https://$github_proxy/https://github.com/cosmtrek/air/releases/download/v$version/air_$version_windows_amd64.tar.gz"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/cosmtrek/air/releases/download/v$version/air_$version_windows_386.tar.gz"
+                "url": "https://$github_proxy/https://github.com/cosmtrek/air/releases/download/v$version/air_$version_windows_386.tar.gz"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/cosmtrek/air/releases/download/v$version/air_$version_windows_arm64.tar.gz"
+                "url": "https://$github_proxy/https://github.com/cosmtrek/air/releases/download/v$version/air_$version_windows_arm64.tar.gz"
             }
         },
         "hash": {

@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/johannesjo/super-productivity/releases/download/v8.0.1/superProductivity-Setup-8.0.1.exe#/dl.7z",
+            "url": "https://$github_proxy/https://github.com/johannesjo/super-productivity/releases/download/v8.0.1/superProductivity-Setup-8.0.1.exe#/dl.7z",
             "hash": "f2de18b6805f57365cc5e15e5c23d0353bbb0d0e952ec5cf511f5416f8bdda17",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/johannesjo/super-productivity/releases/download/v$version/superProductivity-Setup-$version.exe#/dl.7z"
+                "url": "https://$github_proxy/https://github.com/johannesjo/super-productivity/releases/download/v$version/superProductivity-Setup-$version.exe#/dl.7z"
             }
         }
     }

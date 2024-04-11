@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/th-ch/youtube-music/releases/download/v3.3.5/YouTube-Music-3.3.5.exe#/dl.7z",
+            "url": "https://$github_proxy/https://github.com/th-ch/youtube-music/releases/download/v3.3.5/YouTube-Music-3.3.5.exe#/dl.7z",
             "hash": "d36a053cdd1c8a533469a37c399d729784640981b1e3305a6e28236981e3e2bb"
         }
     },
@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/th-ch/youtube-music/releases/download/v$version/YouTube-Music-$version.exe#/dl.7z"
+                "url": "https://$github_proxy/https://github.com/th-ch/youtube-music/releases/download/v$version/YouTube-Music-$version.exe#/dl.7z"
             }
         }
     }
