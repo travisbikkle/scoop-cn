@@ -4,7 +4,7 @@ param(
 )
 if ($github_proxy -eq "") {
     # $github_proxy
-    github_proxy="gh-proxy.com"
+    $github_proxy="mirror.ghproxy.com"
 }
 
 # 开启调试
