@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'OpenDyslexic' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/OpenDyslexic.zip",
+    "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/OpenDyslexic.zip",
     "hash": "e15d31cf19c6b439273cbd17140beb5a45c7492af26e2141fbe48aa90d65c8df",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/OpenDyslexic.zip"
+        "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/OpenDyslexic.zip"
     }
 }

@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/xmrig/xmrig/releases/download/v6.21.2/xmrig-6.21.2-msvc-win64.zip",
+            "url": "https://gh-proxy.com/https://github.com/xmrig/xmrig/releases/download/v6.21.2/xmrig-6.21.2-msvc-win64.zip",
             "hash": "ac442c192a538aceb2802adb3c72d4e7fe781f84f8b21adf0f9d87f0314bae98"
         }
     },
@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/xmrig/xmrig/releases/download/v$version/xmrig-$version-msvc-win64.zip"
+                "url": "https://gh-proxy.com/https://github.com/xmrig/xmrig/releases/download/v$version/xmrig-$version-msvc-win64.zip"
             }
         },
         "hash": {

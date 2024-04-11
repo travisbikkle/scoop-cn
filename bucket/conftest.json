@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/open-policy-agent/conftest/releases/download/v0.51.0/conftest_0.51.0_Windows_x86_64.zip",
+            "url": "https://gh-proxy.com/https://github.com/open-policy-agent/conftest/releases/download/v0.51.0/conftest_0.51.0_Windows_x86_64.zip",
             "hash": "2106afde81d4b1366d39c148bf26ae9fa23e3167ef9c0afe76e3ec2f9fa7829e"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/open-policy-agent/conftest/releases/download/v$version/conftest_$version_Windows_x86_64.zip"
+                "url": "https://gh-proxy.com/https://github.com/open-policy-agent/conftest/releases/download/v$version/conftest_$version_Windows_x86_64.zip"
             }
         },
         "hash": {

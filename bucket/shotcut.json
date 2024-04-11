@@ -5,7 +5,7 @@
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/mltframework/shotcut/releases/download/v24.02.29/shotcut-win64-240229.zip",
+            "url": "https://gh-proxy.com/https://github.com/mltframework/shotcut/releases/download/v24.02.29/shotcut-win64-240229.zip",
             "hash": "dff456e72dee7ae71b089d586c4ebf81dd84aa15f69aed1eead8d58359cbbe06"
         }
     },
@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/mltframework/shotcut/releases/download/v$version/shotcut-win64-$cleanVersion.zip"
+                "url": "https://gh-proxy.com/https://github.com/mltframework/shotcut/releases/download/v$version/shotcut-win64-$cleanVersion.zip"
             }
         },
         "hash": {

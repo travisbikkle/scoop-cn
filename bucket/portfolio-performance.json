@@ -11,7 +11,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/buchen/portfolio/releases/download/0.68.3/PortfolioPerformance-0.68.3-win32.win32.x86_64.zip",
+            "url": "https://gh-proxy.com/https://github.com/buchen/portfolio/releases/download/0.68.3/PortfolioPerformance-0.68.3-win32.win32.x86_64.zip",
             "hash": "931de44e99f5dc356a91b840277674d47705bd69649ad09f3b6abf75558012b5"
         }
     },
@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/buchen/portfolio/releases/download/$version/PortfolioPerformance-$version-win32.win32.x86_64.zip"
+                "url": "https://gh-proxy.com/https://github.com/buchen/portfolio/releases/download/$version/PortfolioPerformance-$version-win32.win32.x86_64.zip"
             }
         }
     }

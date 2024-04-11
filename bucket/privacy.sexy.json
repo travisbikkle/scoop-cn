@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/undergroundwires/privacy.sexy/releases/download/0.13.1/privacy.sexy-Setup-0.13.1.exe#/dl.7z",
+            "url": "https://gh-proxy.com/https://github.com/undergroundwires/privacy.sexy/releases/download/0.13.1/privacy.sexy-Setup-0.13.1.exe#/dl.7z",
             "hash": "sha512:e70db96ba664b44189f09174f117e1f3a95b5ff6a561ea1f07fd888b07c0dc65eb6c597c927be1727f3b6f4d73a44c5f75e0c75ce392168955af01a7f9cb92cd"
         }
     },
@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/undergroundwires/privacy.sexy/releases/download/$version/privacy.sexy-Setup-$version.exe#/dl.7z",
+                "url": "https://gh-proxy.com/https://github.com/undergroundwires/privacy.sexy/releases/download/$version/privacy.sexy-Setup-$version.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
                     "regex": "sha512: $base64"

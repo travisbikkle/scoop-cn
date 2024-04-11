@@ -5,11 +5,11 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/cargo-bins/cargo-binstall/releases/download/v1.6.4/cargo-binstall-x86_64-pc-windows-msvc.zip",
+            "url": "https://gh-proxy.com/https://github.com/cargo-bins/cargo-binstall/releases/download/v1.6.4/cargo-binstall-x86_64-pc-windows-msvc.zip",
             "hash": "2a05851e1a854cc27c7c6a04f665d506bf2b7aa0aa62721a82af9aeeff9d20d2"
         },
         "arm64": {
-            "url": "https://$github_proxy/https://github.com/cargo-bins/cargo-binstall/releases/download/v1.6.4/cargo-binstall-aarch64-pc-windows-msvc.zip",
+            "url": "https://gh-proxy.com/https://github.com/cargo-bins/cargo-binstall/releases/download/v1.6.4/cargo-binstall-aarch64-pc-windows-msvc.zip",
             "hash": "1277c4ae1a772f803355e256192c2b8bc434421dbd137a9b895ca8031a31ddb3"
         }
     },
@@ -20,10 +20,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/cargo-bins/cargo-binstall/releases/download/v$version/cargo-binstall-x86_64-pc-windows-msvc.zip"
+                "url": "https://gh-proxy.com/https://github.com/cargo-bins/cargo-binstall/releases/download/v$version/cargo-binstall-x86_64-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://$github_proxy/https://github.com/cargo-bins/cargo-binstall/releases/download/v$version/cargo-binstall-aarch64-pc-windows-msvc.zip"
+                "url": "https://gh-proxy.com/https://github.com/cargo-bins/cargo-binstall/releases/download/v$version/cargo-binstall-aarch64-pc-windows-msvc.zip"
             }
         }
     }

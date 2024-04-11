@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'CascadiaCode' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/CascadiaCode.zip",
+    "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/CascadiaCode.zip",
     "hash": "debfc4ba14049857c3742963ac2665ea8ff6db8ab7c5f8c436c69079ae04b9c2",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/CascadiaCode.zip"
+        "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/CascadiaCode.zip"
     }
 }

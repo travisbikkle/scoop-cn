@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/kyverno/kyverno/releases/download/v1.11.4/kyverno-cli_v1.11.4_windows_x86_64.zip",
+            "url": "https://gh-proxy.com/https://github.com/kyverno/kyverno/releases/download/v1.11.4/kyverno-cli_v1.11.4_windows_x86_64.zip",
             "hash": "d0002d75bad5570b86975104eac972d348b84b95909046309d1094a6b1a2d2bd"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/kyverno/kyverno/releases/download/v$version/kyverno-cli_v$version_windows_x86_64.zip"
+                "url": "https://gh-proxy.com/https://github.com/kyverno/kyverno/releases/download/v$version/kyverno-cli_v$version_windows_x86_64.zip"
             }
         },
         "hash": {

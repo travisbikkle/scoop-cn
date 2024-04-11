@@ -5,7 +5,7 @@
     "license": "Apache-2.0|MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/rust-lang/rust-analyzer/releases/download/2024-04-08/rust-analyzer-x86_64-pc-windows-msvc.gz",
+            "url": "https://gh-proxy.com/https://github.com/rust-lang/rust-analyzer/releases/download/2024-04-08/rust-analyzer-x86_64-pc-windows-msvc.gz",
             "hash": "a1f1603a739908bd16e343149de9b9eff20a5258234eba1d26f8da4f61b72958"
         }
     },
@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/rust-lang/rust-analyzer/releases/download/$version/rust-analyzer-x86_64-pc-windows-msvc.gz"
+                "url": "https://gh-proxy.com/https://github.com/rust-lang/rust-analyzer/releases/download/$version/rust-analyzer-x86_64-pc-windows-msvc.gz"
             }
         }
     }

@@ -9,7 +9,7 @@
     "notes": "You need a Crunchyroll Premium subscription to access premium content",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/crunchy-labs/crunchy-cli/releases/download/v3.4.1/crunchy-cli-v3.4.1-windows-x86_64.exe#/crunchy-cli.exe",
+            "url": "https://gh-proxy.com/https://github.com/crunchy-labs/crunchy-cli/releases/download/v3.4.1/crunchy-cli-v3.4.1-windows-x86_64.exe#/crunchy-cli.exe",
             "hash": "ec22ebc31bbcf995e33e3ac97f9d0636bca791b4205fd738a8d764ff2dfc7e48"
         }
     },
@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/crunchy-labs/crunchy-cli/releases/download/v$version/crunchy-cli-v$version-windows-x86_64.exe#/crunchy-cli.exe"
+                "url": "https://gh-proxy.com/https://github.com/crunchy-labs/crunchy-cli/releases/download/v$version/crunchy-cli-v$version-windows-x86_64.exe#/crunchy-cli.exe"
             }
         }
     }

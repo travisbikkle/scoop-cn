@@ -5,11 +5,11 @@
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@3.192.13/standard-notes-3.192.13-win-x64.exe#/dl.7z",
+            "url": "https://gh-proxy.com/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@3.192.13/standard-notes-3.192.13-win-x64.exe#/dl.7z",
             "hash": "sha512:9a3b63339a2a5cb0868e212436343e0ab6947d4077b7b17f3099590fc56f36267c94bd1cdcd973ce30bd96f865921ad92f741b75f94f5479cd1a4770b1c03651"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@3.192.13/standard-notes-3.192.13-win-ia32.exe#/dl.7z",
+            "url": "https://gh-proxy.com/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@3.192.13/standard-notes-3.192.13-win-ia32.exe#/dl.7z",
             "hash": "sha512:c4cd7d6021c2bf69f3560390a537d3cfc10809424a7dbb8154318f8fc7151beef3a6c688df20c1b7348915e36f339e832de986b7f2ba10a1e6ddd727b06625a8"
         }
     },
@@ -28,10 +28,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@$version/standard-notes-$version-win-x64.exe#/dl.7z"
+                "url": "https://gh-proxy.com/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@$version/standard-notes-$version-win-x64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@$version/standard-notes-$version-win-ia32.exe#/dl.7z"
+                "url": "https://gh-proxy.com/https://github.com/standardnotes/app/releases/download/@standardnotes/desktop@$version/standard-notes-$version-win-ia32.exe#/dl.7z"
             }
         },
         "hash": {

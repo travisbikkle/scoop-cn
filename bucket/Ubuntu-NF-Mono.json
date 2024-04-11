@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'Ubuntu' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Ubuntu.zip",
+    "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Ubuntu.zip",
     "hash": "fad098acae959197fbc092f0a0e18024e5170e4f0f7910e546325dd510892221",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Ubuntu.zip"
+        "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Ubuntu.zip"
     }
 }

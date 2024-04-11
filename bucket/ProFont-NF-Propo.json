@@ -3,7 +3,7 @@
     "description": "Nerd Fonts patched 'ProFont' Font family. (Proportional version, for GUI usecases)",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/ProFont.zip",
+    "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/ProFont.zip",
     "hash": "4ee553ec8530a01f23a5a505fb969c83d45324ab94e3e50d54d4af8a2f89a71b",
     "installer": {
         "script": [
@@ -87,6 +87,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/ProFont.zip"
+        "url": "https://gh-proxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/ProFont.zip"
     }
 }

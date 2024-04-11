@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/latex-lsp/texlab/releases/download/v5.14.1/texlab-x86_64-windows.zip",
+            "url": "https://gh-proxy.com/https://github.com/latex-lsp/texlab/releases/download/v5.14.1/texlab-x86_64-windows.zip",
             "hash": "6f1b63cddf381b12c21f154afb0c217f0cf942f1d09ac275d3fe1f79cd2a4b47"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/latex-lsp/texlab/releases/download/v$version/texlab-x86_64-windows.zip"
+                "url": "https://gh-proxy.com/https://github.com/latex-lsp/texlab/releases/download/v$version/texlab-x86_64-windows.zip"
             }
         }
     }

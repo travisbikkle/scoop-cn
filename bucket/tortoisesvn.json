@@ -12,9 +12,9 @@
         "64bit": {
             "url": [
                 "https://sourceforge.net/projects/tortoisesvn/files/1.14.6/Application/TortoiseSVN-1.14.6.29673-x64-svn-1.14.3.msi",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install-tools.reg.templ",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install.reg.templ",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-uninstall.reg"
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install-tools.reg.templ",
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install.reg.templ",
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-uninstall.reg"
             ],
             "hash": [
                 "sha1:ea4fe96d79a4ee0fea0e4662c538ac20c34ef40e",
@@ -26,9 +26,9 @@
         "32bit": {
             "url": [
                 "https://sourceforge.net/projects/tortoisesvn/files/1.14.6/Application/TortoiseSVN-1.14.6.29673-win32-svn-1.14.3.msi",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install-tools.reg.templ",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install.reg.templ",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-uninstall.reg"
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install-tools.reg.templ",
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install.reg.templ",
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-uninstall.reg"
             ],
             "hash": [
                 "sha1:886baeab59f5ab687a1e5d5d64a7dc86f79d5416",
@@ -40,9 +40,9 @@
         "arm64": {
             "url": [
                 "https://sourceforge.net/projects/tortoisesvn/files/1.14.6/Application/TortoiseSVN-1.14.6.29673-ARM64-svn-1.14.3.msi",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install-tools.reg.templ",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install.reg.templ",
-                "https://$github_proxy/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-uninstall.reg"
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install-tools.reg.templ",
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-install.reg.templ",
+                "https://gh-proxy.com/https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/tortoisesvn/tortoisesvn-uninstall.reg"
             ],
             "hash": [
                 "sha1:5dcd779a946972a990e4187264e486a353405b3d",

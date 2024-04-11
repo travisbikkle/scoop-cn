@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/unknownskl/greenlight/releases/download/v2.2.1/Greenlight-2.2.1-win.zip",
+            "url": "https://gh-proxy.com/https://github.com/unknownskl/greenlight/releases/download/v2.2.1/Greenlight-2.2.1-win.zip",
             "hash": "7ac069d1dc911b82cd121c41ac487ebc4646341285c93fbb82d356e3e65df6ae"
         }
     },
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/unknownskl/greenlight/releases/download/v$version/Greenlight-$version-win.zip"
+                "url": "https://gh-proxy.com/https://github.com/unknownskl/greenlight/releases/download/v$version/Greenlight-$version-win.zip"
             }
         }
     }

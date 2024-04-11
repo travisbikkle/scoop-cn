@@ -4,8 +4,8 @@
     "homepage": "https://www.libsdl.org",
     "license": "Zlib",
     "url": [
-        "https://$github_proxy/https://github.com/libsdl-org/SDL/releases/download/release-2.30.2/SDL2-devel-2.30.2-VC.zip",
-        "https://$github_proxy/https://github.com/libsdl-org/SDL/releases/download/release-2.30.2/SDL2-2.30.2.zip"
+        "https://gh-proxy.com/https://github.com/libsdl-org/SDL/releases/download/release-2.30.2/SDL2-devel-2.30.2-VC.zip",
+        "https://gh-proxy.com/https://github.com/libsdl-org/SDL/releases/download/release-2.30.2/SDL2-2.30.2.zip"
     ],
     "hash": [
         "fc5d6c096a6b82f86613060dfef553a09b9e08afcb401fefac4b9ca221265cda",
@@ -84,8 +84,8 @@
     },
     "autoupdate": {
         "url": [
-            "https://$github_proxy/https://github.com/libsdl-org/SDL/releases/download/release-$version/SDL2-devel-$version-VC.zip",
-            "https://$github_proxy/https://github.com/libsdl-org/SDL/releases/download/release-$version/SDL2-$version.zip"
+            "https://gh-proxy.com/https://github.com/libsdl-org/SDL/releases/download/release-$version/SDL2-devel-$version-VC.zip",
+            "https://gh-proxy.com/https://github.com/libsdl-org/SDL/releases/download/release-$version/SDL2-$version.zip"
         ]
     }
 }

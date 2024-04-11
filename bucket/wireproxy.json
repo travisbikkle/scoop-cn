@@ -5,11 +5,11 @@
     "license": "ISC",
     "architecture": {
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/octeep/wireproxy/releases/download/v1.0.7/wireproxy_windows_386.tar.gz",
+            "url": "https://gh-proxy.com/https://github.com/octeep/wireproxy/releases/download/v1.0.7/wireproxy_windows_386.tar.gz",
             "hash": "02b26e392e2c9043de39d0c39595b587383170b211b2b86f3499227100192e41"
         },
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/octeep/wireproxy/releases/download/v1.0.7/wireproxy_windows_amd64.tar.gz",
+            "url": "https://gh-proxy.com/https://github.com/octeep/wireproxy/releases/download/v1.0.7/wireproxy_windows_amd64.tar.gz",
             "hash": "c46fd158ad7a0dbb616b1c0c5416bb77e43d5aef95869923d62097034d2a1cf7"
         }
     },
@@ -19,10 +19,10 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/octeep/wireproxy/releases/download/v$version/wireproxy_windows_386.tar.gz"
+                "url": "https://gh-proxy.com/https://github.com/octeep/wireproxy/releases/download/v$version/wireproxy_windows_386.tar.gz"
             },
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/octeep/wireproxy/releases/download/v$version/wireproxy_windows_amd64.tar.gz"
+                "url": "https://gh-proxy.com/https://github.com/octeep/wireproxy/releases/download/v$version/wireproxy_windows_amd64.tar.gz"
             }
         },
         "hash": {

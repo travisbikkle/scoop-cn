@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/KusionStack/kusion/releases/download/v0.11.0/kusion_0.11.0_windows_amd64.zip",
+            "url": "https://gh-proxy.com/https://github.com/KusionStack/kusion/releases/download/v0.11.0/kusion_0.11.0_windows_amd64.zip",
             "hash": "d77d41c618146dbe7af36d92780f9c757d7a94f63119b2d753674a794bcb38f7"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/KusionStack/kusion/releases/download/v$version/kusion_$version_windows_amd64.zip"
+                "url": "https://gh-proxy.com/https://github.com/KusionStack/kusion/releases/download/v$version/kusion_$version_windows_amd64.zip"
             }
         },
         "hash": {

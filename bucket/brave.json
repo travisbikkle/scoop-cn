@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/brave/brave-browser/releases/download/v1.64.116/brave-v1.64.116-win32-x64.zip",
+            "url": "https://gh-proxy.com/https://github.com/brave/brave-browser/releases/download/v1.64.116/brave-v1.64.116-win32-x64.zip",
             "hash": "9224d3175c0808b0831f5464c694a0ff815c6f49913e216a4c6003e5a85dcec2"
         },
         "32bit": {
-            "url": "https://$github_proxy/https://github.com/brave/brave-browser/releases/download/v1.64.116/brave-v1.64.116-win32-ia32.zip",
+            "url": "https://gh-proxy.com/https://github.com/brave/brave-browser/releases/download/v1.64.116/brave-v1.64.116-win32-ia32.zip",
             "hash": "1d4cb67040f19bd56ff13669c5ec30758464f09e813952684546e07f0c1cf0f1"
         }
     },
@@ -48,10 +48,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-x64.zip"
+                "url": "https://gh-proxy.com/https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-x64.zip"
             },
             "32bit": {
-                "url": "https://$github_proxy/https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-ia32.zip"
+                "url": "https://gh-proxy.com/https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-ia32.zip"
             }
         },
         "hash": {

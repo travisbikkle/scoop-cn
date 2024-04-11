@@ -11,7 +11,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/PrismLauncher/PrismLauncher/releases/download/8.2/PrismLauncher-Windows-MSVC-Portable-8.2.zip",
+            "url": "https://gh-proxy.com/https://github.com/PrismLauncher/PrismLauncher/releases/download/8.2/PrismLauncher-Windows-MSVC-Portable-8.2.zip",
             "hash": "ae0731b6dbed0f25ed10fea73c536be4a73a5d2a82a0026e0ecb99edc9160c28"
         }
     },
@@ -80,7 +80,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-MSVC-Portable-$version.zip"
+                "url": "https://gh-proxy.com/https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-MSVC-Portable-$version.zip"
             }
         }
     }

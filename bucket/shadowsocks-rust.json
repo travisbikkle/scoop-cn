@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.18.2/shadowsocks-v1.18.2.x86_64-pc-windows-msvc.zip",
+            "url": "https://gh-proxy.com/https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.18.2/shadowsocks-v1.18.2.x86_64-pc-windows-msvc.zip",
             "hash": "ed3f900258ff69fae3b340bebec6de1c35897ea509338efab45688d5820056ef"
         }
     },
@@ -21,7 +21,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/shadowsocks/shadowsocks-rust/releases/download/v$version/shadowsocks-v$version.x86_64-pc-windows-msvc.zip"
+                "url": "https://gh-proxy.com/https://github.com/shadowsocks/shadowsocks-rust/releases/download/v$version/shadowsocks-v$version.x86_64-pc-windows-msvc.zip"
             }
         },
         "hash": {

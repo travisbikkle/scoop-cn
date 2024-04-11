@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/persepolisdm/persepolis/releases/download/4.0.1/persepolis_4.0.1.0_windows_64bit.exe",
+            "url": "https://gh-proxy.com/https://github.com/persepolisdm/persepolis/releases/download/4.0.1/persepolis_4.0.1.0_windows_64bit.exe",
             "hash": "ce2214f6296ca1dca139a99ae038bc7b441c7a33e58e1be786b63c97ac9da7ba"
         }
     },
@@ -30,7 +30,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/persepolisdm/persepolis/releases/download/$matchHead/persepolis_$version_windows_64bit.exe"
+                "url": "https://gh-proxy.com/https://github.com/persepolisdm/persepolis/releases/download/$matchHead/persepolis_$version_windows_64bit.exe"
             }
         }
     }

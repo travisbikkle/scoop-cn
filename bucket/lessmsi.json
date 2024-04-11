@@ -3,7 +3,7 @@
     "description": "Windows Installer (.msi) files content viewer and extractor.",
     "homepage": "https://lessmsi.activescott.com",
     "license": "MIT",
-    "url": "https://$github_proxy/https://github.com/activescott/lessmsi/releases/download/v1.11.0/lessmsi-v1.11.0.zip",
+    "url": "https://gh-proxy.com/https://github.com/activescott/lessmsi/releases/download/v1.11.0/lessmsi-v1.11.0.zip",
     "hash": "c5efa174bdac1956d6ef0cebc39a8f1077ffde6105af4601f8502cb53950e636",
     "bin": "lessmsi.exe",
     "shortcuts": [
@@ -16,6 +16,6 @@
         "github": "https://github.com/activescott/lessmsi"
     },
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/activescott/lessmsi/releases/download/v$version/lessmsi-v$version.zip"
+        "url": "https://gh-proxy.com/https://github.com/activescott/lessmsi/releases/download/v$version/lessmsi-v$version.zip"
     }
 }

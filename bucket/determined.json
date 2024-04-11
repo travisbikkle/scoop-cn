@@ -5,13 +5,13 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/sirredbeard/determined-windows-cli/releases/download/0.30.0/determined-cli.zip",
+            "url": "https://gh-proxy.com/https://github.com/sirredbeard/determined-windows-cli/releases/download/0.30.0/determined-cli.zip",
             "hash": "d5dea510d489fa9de08626b9fd150e3cdae00e85665c5591cf559801f08d5b96"
         }
     },
     "bin": "det.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/sirredbeard/determined-windows-cli/releases/download/$version/determined-cli.zip"
+        "url": "https://gh-proxy.com/https://github.com/sirredbeard/determined-windows-cli/releases/download/$version/determined-cli.zip"
     }
 }

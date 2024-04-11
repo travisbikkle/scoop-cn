@@ -5,7 +5,7 @@
     "license": "GPL-2.0-only WITH Classpath-exception-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22+36/OpenJDK22U-jdk_x64_windows_hotspot_22_36.zip",
+            "url": "https://gh-proxy.com/https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22+36/OpenJDK22U-jdk_x64_windows_hotspot_22_36.zip",
             "hash": "0aed4b85b94ced6740f312b873f574f519a4eda4015739cbbbd7c6356a59f289"
         }
     },

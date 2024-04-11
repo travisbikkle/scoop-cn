@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://$github_proxy/https://github.com/printfn/fend/releases/download/v1.4.6/fend-1.4.6-windows-x64-exe.zip",
+            "url": "https://gh-proxy.com/https://github.com/printfn/fend/releases/download/v1.4.6/fend-1.4.6-windows-x64-exe.zip",
             "hash": "41c4b4807d90fe2eb737b4485b012ce2e7b166b36dfa77909b98655bb37598a7"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$github_proxy/https://github.com/printfn/fend/releases/download/v$version/fend-$version-windows-x64-exe.zip"
+                "url": "https://gh-proxy.com/https://github.com/printfn/fend/releases/download/v$version/fend-$version-windows-x64-exe.zip"
             }
         }
     }

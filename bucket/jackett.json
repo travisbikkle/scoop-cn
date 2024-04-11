@@ -3,7 +3,7 @@
     "description": "API Support for your favorite torrent trackers",
     "homepage": "https://github.com/Jackett/Jackett",
     "license": "GPL-2.0-or-later",
-    "url": "https://$github_proxy/https://github.com/Jackett/Jackett/releases/download/v0.21.2342/Jackett.Binaries.Windows.zip",
+    "url": "https://gh-proxy.com/https://github.com/Jackett/Jackett/releases/download/v0.21.2342/Jackett.Binaries.Windows.zip",
     "hash": "73313a3112d126217be30fe17ac995adc1af0e3d21da180bfd77989723827047",
     "extract_dir": "Jackett",
     "pre_uninstall": [
@@ -19,6 +19,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://$github_proxy/https://github.com/Jackett/Jackett/releases/download/v$version/Jackett.Binaries.Windows.zip"
+        "url": "https://gh-proxy.com/https://github.com/Jackett/Jackett/releases/download/v$version/Jackett.Binaries.Windows.zip"
     }
 }
