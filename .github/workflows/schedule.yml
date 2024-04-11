@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   push:
     branches:
       - "master"
@@ -66,7 +67,7 @@ jobs:
       - name: Update buckets
         shell: pwsh
         run: |
-          .\update.ps1
+          .\update.ps1 mirror.ghproxy.com
           echo "Updated on $(Get-Date -Format "yyyy-MM-dd HH:mm K")" >log
           git config user.name github-actions
           git config user.email github-actions@github.com
