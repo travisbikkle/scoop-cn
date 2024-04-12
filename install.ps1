@@ -46,13 +46,13 @@ scoop install $bucket_name/git
 # scoop install $bucket_name/aria2
 
 # $bucket_name 库还不是 Git 仓库，删掉后，重新添加 Git 仓库
-if (Test-Path -Path "$env:SCOOP\scoop\$bucket_name") {
+if (Test-Path -Path "$env:SCOOP\buckets\$bucket_name") {
     scoop bucket rm $bucket_name
 }
 Write-Host "Adding $bucket_name bucket..."
 scoop bucket add $bucket_name https://$github_proxy/https://github.com/travisbikkle/scoop-cn
 # 删除 Scoop 的 main 仓库
-if (Test-Path -Path "$env:SCOOP\scoop\main") {
+if (Test-Path -Path "$env:SCOOP\buckets\main") {
     scoop bucket rm main
 }
 
