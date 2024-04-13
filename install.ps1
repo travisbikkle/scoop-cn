@@ -67,3 +67,9 @@ scoop bucket rm main
 scoop install 7zip
 scoop install git
 scoop install aria2
+
+## 必要的 git 配置
+git config --global core.eol lf
+git config --global core.autocrlf input
+git config --global core.quotepath false
+
