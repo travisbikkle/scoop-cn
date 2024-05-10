@@ -1,5 +1,5 @@
 param(
-    $github_proxy="gh-proxy.com", 
+    $github_proxy="mirror.ghproxy.com", 
     $bucket_name="scoop-cn",
     $install_scoop_to='D:\APPS\LOCAL',
     $install_global_to='D:\APPS\ALL_USER\'
