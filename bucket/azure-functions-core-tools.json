@@ -6,11 +6,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/4.0.5700/Azure.Functions.Cli.win-x64.4.0.5700.zip#/dl.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/4.0.5700/Azure.Functions.Cli.win-x64.4.0.5700.zip#/dl.7z",
             "hash": "7130e8df7b8d5a7e3c66a86ab66dcdee404c229343dd6e36561ddc1e4fe45222"
         },
         "32bit": {
-            "url": "https://gh-proxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/4.0.5700/Azure.Functions.Cli.win-x86.4.0.5700.zip#/dl.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/4.0.5700/Azure.Functions.Cli.win-x86.4.0.5700.zip#/dl.7z",
             "hash": "1583b77e07a9ea81ce56dd68f7cfbb43a092d130d6a7392c79793daf83e83661"
         }
     },
@@ -19,10 +19,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-x64.$version.zip#/dl.7z"
+                "url": "https://mirror.ghproxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-x64.$version.zip#/dl.7z"
             },
             "32bit": {
-                "url": "https://gh-proxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-x86.$version.zip#/dl.7z"
+                "url": "https://mirror.ghproxy.com/https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-x86.$version.zip#/dl.7z"
             }
         },
         "hash": {

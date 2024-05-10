@@ -5,7 +5,7 @@
     "license": "BSD 2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/Wassimulator/CactusViewer/releases/download/v2.1.5/CactusViewer.exe",
+            "url": "https://mirror.ghproxy.com/https://github.com/Wassimulator/CactusViewer/releases/download/v2.1.5/CactusViewer.exe",
             "hash": "83750a99f39241353e3bed9fa3e3a64c8b613c39720017c39d9e8df2c6d7330d"
         }
     },
@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/Wassimulator/CactusViewer/releases/download/v$version/CactusViewer.exe"
+                "url": "https://mirror.ghproxy.com/https://github.com/Wassimulator/CactusViewer/releases/download/v$version/CactusViewer.exe"
             }
         }
     }

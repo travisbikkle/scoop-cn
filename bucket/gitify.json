@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/gitify-app/gitify/releases/download/v5.5.0/Gitify-Setup-5.5.0.exe#/dl.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/gitify-app/gitify/releases/download/v5.5.0/Gitify-Setup-5.5.0.exe#/dl.7z",
             "hash": "sha512:e6013fa2fdf8e5b24cf088c70375c20e7544d5ff11c4d1bd1124a8cd20a153d1bcfc430ca642bd4d92a2ff81bc5c90148fdb99a9f95bdf8e63d362b46e53ca0c",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/gitify-app/gitify/releases/download/v$version/Gitify-Setup-$version.exe#/dl.7z"
+                "url": "https://mirror.ghproxy.com/https://github.com/gitify-app/gitify/releases/download/v$version/Gitify-Setup-$version.exe#/dl.7z"
             }
         },
         "hash": {

@@ -5,15 +5,15 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/jewlexx/sfsu/releases/download/v1.12.0/sfsu-x86_64.exe#/sfsu.exe",
+            "url": "https://mirror.ghproxy.com/https://github.com/jewlexx/sfsu/releases/download/v1.12.0/sfsu-x86_64.exe#/sfsu.exe",
             "hash": "8bcd8bdd28cc77d394cf585b833585a88278958f986601b2cc1d4729fcbca994"
         },
         "32bit": {
-            "url": "https://gh-proxy.com/https://github.com/jewlexx/sfsu/releases/download/v1.12.0/sfsu-i686.exe#/sfsu.exe",
+            "url": "https://mirror.ghproxy.com/https://github.com/jewlexx/sfsu/releases/download/v1.12.0/sfsu-i686.exe#/sfsu.exe",
             "hash": "b13daf88c815701da2a693073e4865a9e2fe33fed57e1478877cf6ebfbeb8e5f"
         },
         "arm64": {
-            "url": "https://gh-proxy.com/https://github.com/jewlexx/sfsu/releases/download/v1.12.0/sfsu-aarch64.exe#/sfsu.exe",
+            "url": "https://mirror.ghproxy.com/https://github.com/jewlexx/sfsu/releases/download/v1.12.0/sfsu-aarch64.exe#/sfsu.exe",
             "hash": "df5d27a530a528ec8e2555891886ad438c70ecf450a60b5088ef191beccdd31b"
         }
     },
@@ -23,13 +23,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-x86_64.exe#/sfsu.exe"
+                "url": "https://mirror.ghproxy.com/https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-x86_64.exe#/sfsu.exe"
             },
             "32bit": {
-                "url": "https://gh-proxy.com/https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-i686.exe#/sfsu.exe"
+                "url": "https://mirror.ghproxy.com/https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-i686.exe#/sfsu.exe"
             },
             "arm64": {
-                "url": "https://gh-proxy.com/https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-aarch64.exe#/sfsu.exe"
+                "url": "https://mirror.ghproxy.com/https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-aarch64.exe#/sfsu.exe"
             }
         },
         "hash": {

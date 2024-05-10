@@ -6,7 +6,7 @@
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/Hibbiki/chromium-win64/releases/download/v124.0.6367.156-r1274542/chrome.sync.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/Hibbiki/chromium-win64/releases/download/v124.0.6367.156-r1274542/chrome.sync.7z",
             "hash": "sha1:cf06bbc189889eec983b8a09b5b050c8ce6c6ff8"
         }
     },
@@ -40,7 +40,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/Hibbiki/chromium-win64/releases/download/v$version/chrome.sync.7z",
+                "url": "https://mirror.ghproxy.com/https://github.com/Hibbiki/chromium-win64/releases/download/v$version/chrome.sync.7z",
                 "hash": {
                     "url": "https://github.com/Hibbiki/chromium-win64/releases/tag/v$version",
                     "regex": "$sha1 \\.\\./out/x64/chrome.sync.7z"

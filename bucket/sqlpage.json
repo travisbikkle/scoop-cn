@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/lovasoa/SQLpage/releases/download/v0.20.5/sqlpage-windows.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/lovasoa/SQLpage/releases/download/v0.20.5/sqlpage-windows.zip",
             "hash": "63970c60f730ccf5aedc40ac27b6802a65ea9f17273bfb89dff3f10af9d24d7e"
         }
     },
@@ -17,7 +17,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/lovasoa/SQLpage/releases/download/v$version/sqlpage-windows.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/lovasoa/SQLpage/releases/download/v$version/sqlpage-windows.zip"
             }
         }
     }

@@ -5,7 +5,7 @@
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/toeverything/AFFiNE/releases/download/v0.14.2/affine-0.14.2-stable-windows-x64.exe#/dl.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/toeverything/AFFiNE/releases/download/v0.14.2/affine-0.14.2-stable-windows-x64.exe#/dl.7z",
             "hash": "sha512:491e4f774edbe3925f22eebc8f126b7f3e97473208d7ea0febf380759a0413889036ab9a78ffc368e9ffee2fd8befdcb3f59c8dfcf00adc9f6436b9893ee32b5"
         }
     },
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/toeverything/AFFiNE/releases/download/v$version/affine-$version-stable-windows-x64.exe#/dl.7z",
+                "url": "https://mirror.ghproxy.com/https://github.com/toeverything/AFFiNE/releases/download/v$version/affine-$version-stable-windows-x64.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
                     "regex": "sha512:\\s+$base64"

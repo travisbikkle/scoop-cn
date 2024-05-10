@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/yetone/openai-translator/releases/download/v0.4.12/OpenAI.Translator_0.4.12_x64-setup.exe#/dl.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/yetone/openai-translator/releases/download/v0.4.12/OpenAI.Translator_0.4.12_x64-setup.exe#/dl.7z",
             "hash": "2c737c7e2c9f26ebcaf32356ac9d8e49e7c7193ef559b6b0f42c2e080f6f9bf0"
         }
     },
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/yetone/openai-translator/releases/download/v$version/OpenAI.Translator_$version_x64-setup.exe#/dl.7z"
+                "url": "https://mirror.ghproxy.com/https://github.com/yetone/openai-translator/releases/download/v$version/OpenAI.Translator_$version_x64-setup.exe#/dl.7z"
             }
         }
     }

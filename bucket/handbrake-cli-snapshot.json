@@ -5,7 +5,7 @@
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-20240509181016-90173af8c-master-win-x86_64.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-20240509181016-90173af8c-master-win-x86_64.zip",
             "hash": "e9bc5f5057b19feb49e4fd2655bad1a840bf78c82ec0200fda9dcee06122cf9f"
         }
     },
@@ -17,7 +17,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-$version-master-win-x86_64.zip",
+                "url": "https://mirror.ghproxy.com/https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-$version-master-win-x86_64.zip",
                 "hash": {
                     "url": "https://github.com/HandBrake/handbrake-snapshots/releases/tag/win",
                     "regex": "<td>$sha256</td>\\s+<td>HandBrakeCLI-([\\d]+-[\\w]+)-master-win-x86_64.zip</td>"

@@ -7,13 +7,13 @@
     "suggest": {
         "Git": "git"
     },
-    "url": "https://gh-proxy.com/https://github.com/arzzen/git-quick-stats/raw/2.5.5/git-quick-stats",
+    "url": "https://mirror.ghproxy.com/https://github.com/arzzen/git-quick-stats/raw/2.5.5/git-quick-stats",
     "hash": "f825a9f873133de5bbb823aeecbce728e78c9bca1ac295ce9b51d29f901a044d",
     "bin": "git-quick-stats",
     "checkver": {
         "github": "https://github.com/arzzen/git-quick-stats"
     },
     "autoupdate": {
-        "url": "https://gh-proxy.com/https://github.com/arzzen/git-quick-stats/raw/$version/git-quick-stats"
+        "url": "https://mirror.ghproxy.com/https://github.com/arzzen/git-quick-stats/raw/$version/git-quick-stats"
     }
 }

@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/FairwindsOps/pluto/releases/download/v5.19.1/pluto_5.19.1_windows_amd64.tar.gz",
+            "url": "https://mirror.ghproxy.com/https://github.com/FairwindsOps/pluto/releases/download/v5.19.1/pluto_5.19.1_windows_amd64.tar.gz",
             "hash": "d783749b56e88e1ab158c284882b3513c7375089172fdd94c5840a89ca76dea6"
         }
     },
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/FairwindsOps/pluto/releases/download/v$version/pluto_$version_windows_amd64.tar.gz"
+                "url": "https://mirror.ghproxy.com/https://github.com/FairwindsOps/pluto/releases/download/v$version/pluto_$version_windows_amd64.tar.gz"
             }
         },
         "hash": {

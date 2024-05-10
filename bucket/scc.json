@@ -5,15 +5,15 @@
     "license": "MIT|Unlicense",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/boyter/scc/releases/download/v3.3.3/scc_Windows_x86_64.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/boyter/scc/releases/download/v3.3.3/scc_Windows_x86_64.zip",
             "hash": "b6e4d0908753cf58c261f956bef87069cb5b07071709c8021a2c369027ef3d39"
         },
         "32bit": {
-            "url": "https://gh-proxy.com/https://github.com/boyter/scc/releases/download/v3.3.3/scc_Windows_i386.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/boyter/scc/releases/download/v3.3.3/scc_Windows_i386.zip",
             "hash": "991411bc825c69e441aebc67eff1078326d1a428b676f7131683508f88819224"
         },
         "arm64": {
-            "url": "https://gh-proxy.com/https://github.com/boyter/scc/releases/download/v3.3.3/scc_Windows_arm64.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/boyter/scc/releases/download/v3.3.3/scc_Windows_arm64.zip",
             "hash": "e676bb1c241f7b77f6b50bb540085fbd9cf9a5cafb83d6fa9d30e2f54cee3f01"
         }
     },
@@ -22,13 +22,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/boyter/scc/releases/download/v$version/scc_Windows_x86_64.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/boyter/scc/releases/download/v$version/scc_Windows_x86_64.zip"
             },
             "32bit": {
-                "url": "https://gh-proxy.com/https://github.com/boyter/scc/releases/download/v$version/scc_Windows_i386.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/boyter/scc/releases/download/v$version/scc_Windows_i386.zip"
             },
             "arm64": {
-                "url": "https://gh-proxy.com/https://github.com/boyter/scc/releases/download/v$version/scc_Windows_arm64.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/boyter/scc/releases/download/v$version/scc_Windows_arm64.zip"
             }
         },
         "hash": {

@@ -9,11 +9,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v2.5.1/streamlink-twitch-gui-v2.5.1-win64.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v2.5.1/streamlink-twitch-gui-v2.5.1-win64.zip",
             "hash": "c103687a889fe055e27ba7d3b230ede59a15b7ff22571a75ab272ea2350d21fa"
         },
         "32bit": {
-            "url": "https://gh-proxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v2.5.1/streamlink-twitch-gui-v2.5.1-win32.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v2.5.1/streamlink-twitch-gui-v2.5.1-win32.zip",
             "hash": "577192d91b7d38ecf63d2d7c61af4698e7e3622d4223c54fa406ce65718d5989"
         }
     },
@@ -31,10 +31,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v$version/streamlink-twitch-gui-v$version-win64.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v$version/streamlink-twitch-gui-v$version-win64.zip"
             },
             "32bit": {
-                "url": "https://gh-proxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v$version/streamlink-twitch-gui-v$version-win32.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/streamlink/streamlink-twitch-gui/releases/download/v$version/streamlink-twitch-gui-v$version-win32.zip"
             }
         },
         "hash": {

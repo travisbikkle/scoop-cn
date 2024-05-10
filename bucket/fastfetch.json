@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/2.11.5/fastfetch-windows-amd64.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/2.11.5/fastfetch-windows-amd64.7z",
             "hash": "6139ec1ede8fa3b197eb831a558859b1e6d2eccd02d2407ab280268041a683fb"
         },
         "32bit": {
-            "url": "https://gh-proxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/2.11.5/fastfetch-windows-i686.7z",
+            "url": "https://mirror.ghproxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/2.11.5/fastfetch-windows-i686.7z",
             "hash": "4f883c0237ed8e3f2cf7836a066ee3c2340d7920382593974d80e7a997f44fa0"
         }
     },
@@ -21,10 +21,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-amd64.7z"
+                "url": "https://mirror.ghproxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-amd64.7z"
             },
             "32bit": {
-                "url": "https://gh-proxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-i686.7z"
+                "url": "https://mirror.ghproxy.com/https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-i686.7z"
             }
         }
     }

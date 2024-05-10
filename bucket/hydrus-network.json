@@ -5,7 +5,7 @@
     "license": "WTFPL",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.com/https://github.com/hydrusnetwork/hydrus/releases/download/v574/Hydrus.Network.574.-.Windows.-.Extract.only.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/hydrusnetwork/hydrus/releases/download/v574/Hydrus.Network.574.-.Windows.-.Extract.only.zip",
             "hash": "002d68037986aaf85d61dc7c8620cf1c90b1e2813c93062db451877703a2f74f"
         }
     },
@@ -38,7 +38,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh-proxy.com/https://github.com/hydrusnetwork/hydrus/releases/download/v$version/Hydrus.Network.$version.-.Windows.-.Extract.only.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/hydrusnetwork/hydrus/releases/download/v$version/Hydrus.Network.$version.-.Windows.-.Extract.only.zip"
             }
         }
     }
