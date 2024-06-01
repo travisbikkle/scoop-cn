@@ -40,6 +40,8 @@ Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/t
 
 # Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/bucket/aria2.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\aria2.json"
 
+(Get-Content "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\git.json") -replace 'https:.*git/releases/download',"https://mirrors.huaweicloud.com/git-for-windows" | Set-Content -Path "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\git.json"
+
 # 安装时注意顺序是 7-Zip, Git, Aria2
 scoop install $bucket_name/7zip
 scoop install $bucket_name/git
