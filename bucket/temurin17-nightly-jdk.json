@@ -1,16 +1,16 @@
 {
     "description": "Eclipse Temurin is a runtime provided by Eclipse Adoptium for general use across the Java ecosystem",
     "homepage": "https://adoptium.net",
-    "version": "17.0.12-3.0.ea",
+    "version": "17.0.12-5.0.ea",
     "license": "GPL-2.0-only WITH Classpath-exception-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12+3-ea-beta/OpenJDK17U-jdk_x64_windows_hotspot_17.0.12_3-ea.zip",
-            "hash": "f760de96f3f0cfdc5d252b3ef27ce4e91a51842d0548c7c2e152659f683d3a32"
+            "url": "https://mirror.ghproxy.com/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12+5-ea-beta/OpenJDK17U-jdk_x64_windows_hotspot_17.0.12_5-ea.zip",
+            "hash": "661c044a41076f9ae734c3899785f62dff37eef1fc3f58acb53e609a4689f2d7"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12+3-ea-beta/OpenJDK17U-jdk_x86-32_windows_hotspot_17.0.12_3-ea.zip",
-            "hash": "216ca07dd420895e057771cf4c6e7ea63cc3e0ad3d628307bbbf59c130967b9f"
+            "url": "https://mirror.ghproxy.com/https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12+5-ea-beta/OpenJDK17U-jdk_x86-32_windows_hotspot_17.0.12_5-ea.zip",
+            "hash": "49840f87865f06afb6749fcc7b06ea686777bd03eb2bc111c15413c1dbde1d71"
         }
     },
     "extract_to": "tmp",
