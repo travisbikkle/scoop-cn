@@ -1,5 +1,5 @@
 {
-    "version": "1.1.10",
+    "version": "1.1.17",
     "description": "Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.",
     "homepage": "https://bun.sh/",
     "license": "MIT",
@@ -9,12 +9,12 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://mirror.ghproxy.com/https://github.com/oven-sh/bun/releases/download/bun-v1.1.10/bun-windows-x64.zip",
-                "https://mirror.ghproxy.com/https://github.com/oven-sh/bun/releases/download/bun-v1.1.10/bun-windows-x64-baseline.zip"
+                "https://mirror.ghproxy.com/https://github.com/oven-sh/bun/releases/download/bun-v1.1.17/bun-windows-x64.zip",
+                "https://mirror.ghproxy.com/https://github.com/oven-sh/bun/releases/download/bun-v1.1.17/bun-windows-x64-baseline.zip"
             ],
             "hash": [
-                "e384e39c16820aef91b1f4acaf171a2abcc17ea52ac45bc6edcccc25f3939cb2",
-                "9278266a805cdd62e3b364198b269135c15e813189d7d69fad2174a9a50dd366"
+                "5b3ce21babca3e2bb994d5de0263264434be37c2113ef291cc20e1e12a63e62b",
+                "572555694f0f53b3d9953a6de12966112d5bb537f39662c967b5bf12ccdfdb48"
             ]
         }
     },

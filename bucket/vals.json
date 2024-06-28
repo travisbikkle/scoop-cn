@@ -1,16 +1,16 @@
 {
-    "version": "0.37.1",
+    "version": "0.37.3",
     "description": "Helm-like configuration values loader with support for various sources",
     "homepage": "https://github.com/variantdev/vals",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/variantdev/vals/releases/download/v0.37.1/vals_0.37.1_windows_amd64.tar.gz",
-            "hash": "599282373ede803de4a341e64fc3f39088f4367e5a1fc66dcba6c2167330cbdd"
+            "url": "https://mirror.ghproxy.com/https://github.com/variantdev/vals/releases/download/v0.37.3/vals_0.37.3_windows_amd64.tar.gz",
+            "hash": "05c4fd7b1ebb61f72de00b457fe5dd8a376505de6b03b8781c3ac7aa84cfc68d"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/variantdev/vals/releases/download/v0.37.1/vals_0.37.1_windows_386.tar.gz",
-            "hash": "27265c66bae00abd2b7efe942fc9bd4f662892fff6bf7596565d5d4aa0f61b0a"
+            "url": "https://mirror.ghproxy.com/https://github.com/variantdev/vals/releases/download/v0.37.3/vals_0.37.3_windows_386.tar.gz",
+            "hash": "b1aa86e7f47b9664606e76aca1814bc052993a3ee11520ee93350f75346d4035"
         }
     },
     "bin": "vals.exe",

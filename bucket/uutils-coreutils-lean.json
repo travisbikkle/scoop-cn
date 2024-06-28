@@ -1,18 +1,18 @@
 {
-    "version": "0.0.26",
+    "version": "0.0.27",
     "description": "Rust implementation of GNU coreutils (binaries compiled with MSVC)",
     "homepage": "https://uutils.github.io/coreutils/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/uutils/coreutils/releases/download/0.0.26/coreutils-0.0.26-x86_64-pc-windows-msvc.zip",
-            "hash": "eaa3e4ab14193385c104127cd2dd6ebf37d98b3d2005e4ffce809d7ea38edee9",
-            "extract_dir": "coreutils-0.0.26-x86_64-pc-windows-msvc"
+            "url": "https://mirror.ghproxy.com/https://github.com/uutils/coreutils/releases/download/0.0.27/coreutils-0.0.27-x86_64-pc-windows-msvc.zip",
+            "hash": "0c2e07fa1417e75687a05b9d577f67eeedb5ecd0dc34bf40886e28e1e75ba15d",
+            "extract_dir": "coreutils-0.0.27-x86_64-pc-windows-msvc"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/uutils/coreutils/releases/download/0.0.26/coreutils-0.0.26-i686-pc-windows-msvc.zip",
-            "hash": "2311fe11debb06c706a36ac5c8f1589f4ca821a5145b97258b1f25206679a133",
-            "extract_dir": "coreutils-0.0.26-i686-pc-windows-msvc"
+            "url": "https://mirror.ghproxy.com/https://github.com/uutils/coreutils/releases/download/0.0.27/coreutils-0.0.27-i686-pc-windows-msvc.zip",
+            "hash": "ee79d64937bee34265d36de7ee06a51fe8bc98af635726a291310fd45f73b297",
+            "extract_dir": "coreutils-0.0.27-i686-pc-windows-msvc"
         }
     },
     "bin": [

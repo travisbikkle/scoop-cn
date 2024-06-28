@@ -1,5 +1,5 @@
 {
-    "version": "6.7.4-1",
+    "version": "6.8.1-1",
     "description": "A command-line utility that pipes video streams from various services into a video player.",
     "homepage": "https://streamlink.github.io/",
     "license": "BSD-2-Clause",
@@ -10,14 +10,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/streamlink/windows-builds/releases/download/6.7.4-1/streamlink-6.7.4-1-py312-x86_64.zip",
-            "hash": "248aa31ec4afedb05f83a5e70838888ba018d44d905cc1a1c1cbb8a31ac9c613",
-            "extract_dir": "streamlink-6.7.4-1-py312-x86_64"
+            "url": "https://mirror.ghproxy.com/https://github.com/streamlink/windows-builds/releases/download/6.8.1-1/streamlink-6.8.1-1-py312-x86_64.zip",
+            "hash": "bb20b32c1b3f68ff2e12e3f33dfd780d1f5bef0a0618b8a63b3310ed48a78042",
+            "extract_dir": "streamlink-6.8.1-1-py312-x86_64"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/streamlink/windows-builds/releases/download/6.7.4-1/streamlink-6.7.4-1-py312-x86.zip",
-            "hash": "f4e369f79842b91b72f3faf082da49484d2770b34375d21fea1a21e42d33874b",
-            "extract_dir": "streamlink-6.7.4-1-py312-x86"
+            "url": "https://mirror.ghproxy.com/https://github.com/streamlink/windows-builds/releases/download/6.8.1-1/streamlink-6.8.1-1-py312-x86.zip",
+            "hash": "6689bd329ceeecf2bf00eb308e5889fc62b02d95979d6a7e99751f72c8c3936d",
+            "extract_dir": "streamlink-6.8.1-1-py312-x86"
         }
     },
     "pre_install": [

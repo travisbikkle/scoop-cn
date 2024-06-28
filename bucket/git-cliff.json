@@ -1,19 +1,19 @@
 {
-    "version": "2.2.2",
+    "version": "2.4.0",
     "description": "A highly customizable Changelog Generator that follows Conventional Commit specifications",
     "homepage": "https://git-cliff.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/orhun/git-cliff/releases/download/v2.2.2/git-cliff-2.2.2-i686-pc-windows-msvc.zip",
-            "hash": "3a7c576ec31bcb91d62d3e8026989fd72ca2d71035ef461339b4bd33e85ab9fc"
+            "url": "https://mirror.ghproxy.com/https://github.com/orhun/git-cliff/releases/download/v2.4.0/git-cliff-2.4.0-i686-pc-windows-msvc.zip",
+            "hash": "cb024581a195eaf1da94d04933d29feac43022cadab789a42c4c0045f19884cb"
         },
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/orhun/git-cliff/releases/download/v2.2.2/git-cliff-2.2.2-x86_64-pc-windows-msvc.zip",
-            "hash": "9e2956b4ec65dbf48ca9b9fa1815012ca9486c721a143b6eb35412f395f2fd7f"
+            "url": "https://mirror.ghproxy.com/https://github.com/orhun/git-cliff/releases/download/v2.4.0/git-cliff-2.4.0-x86_64-pc-windows-msvc.zip",
+            "hash": "787d216a589573917c0279cc53c328d1f64ed88b2e9c4a467647527a207698e8"
         }
     },
-    "extract_dir": "git-cliff-2.2.2",
+    "extract_dir": "git-cliff-2.4.0",
     "bin": "git-cliff.exe",
     "checkver": {
         "github": "https://github.com/orhun/git-cliff"

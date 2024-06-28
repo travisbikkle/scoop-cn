@@ -1,19 +1,19 @@
 {
-    "version": "2.0.14-dev.181-2024-05-31",
+    "version": "2.0.14-dev.222-2024-06-27",
     "description": "A terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the full capabilities of modern terminals.",
     "homepage": "https://micro-editor.github.io/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/zyedidia/micro/releases/download/nightly/micro-2.0.14-dev.181-win64.zip",
-            "hash": "d207f5387c7f9abd5e7820552f2215537dfd6a9f03430f9d73f546d04282d4b0"
+            "url": "https://mirror.ghproxy.com/https://github.com/zyedidia/micro/releases/download/nightly/micro-2.0.14-dev.222-win64.zip",
+            "hash": "761e073bb52326e94e577d53f61e46c8ac6ce0171497e62e286c5d5a64101712"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/zyedidia/micro/releases/download/nightly/micro-2.0.14-dev.181-win64.zip",
-            "hash": "d207f5387c7f9abd5e7820552f2215537dfd6a9f03430f9d73f546d04282d4b0"
+            "url": "https://mirror.ghproxy.com/https://github.com/zyedidia/micro/releases/download/nightly/micro-2.0.14-dev.222-win64.zip",
+            "hash": "761e073bb52326e94e577d53f61e46c8ac6ce0171497e62e286c5d5a64101712"
         }
     },
-    "extract_dir": "micro-2.0.14-dev.181",
+    "extract_dir": "micro-2.0.14-dev.222",
     "bin": "micro.exe",
     "checkver": {
         "url": "https://api.github.com/repositories/53632140/releases/tags/nightly",

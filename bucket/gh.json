@@ -1,20 +1,20 @@
 {
-    "version": "2.50.0",
+    "version": "2.52.0",
     "description": "Official GitHub CLI",
     "homepage": "https://cli.github.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/cli/cli/releases/download/v2.50.0/gh_2.50.0_windows_amd64.zip",
-            "hash": "065439eefad0f0c6935540addff86f501876846c4d0db8273e17e0651e6ca6f2"
+            "url": "https://mirror.ghproxy.com/https://github.com/cli/cli/releases/download/v2.52.0/gh_2.52.0_windows_amd64.zip",
+            "hash": "f806ccb7b7aa479cafc8c50c7ca46e5a12ef53154203fb8da1ab35fbc41a38eb"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/cli/cli/releases/download/v2.50.0/gh_2.50.0_windows_386.zip",
-            "hash": "003bfe907b6540628a1702996f85755736f2e5db2b35491bc243c03eaec16394"
+            "url": "https://mirror.ghproxy.com/https://github.com/cli/cli/releases/download/v2.52.0/gh_2.52.0_windows_386.zip",
+            "hash": "926aa6c8be54b5f9ac7f10434ae787bda6934675434431f96521866529348de3"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/cli/cli/releases/download/v2.50.0/gh_2.50.0_windows_arm64.zip",
-            "hash": "8aad120b416386b4269ef62c8fdebcad31a70847297817a149daf927edc85548"
+            "url": "https://mirror.ghproxy.com/https://github.com/cli/cli/releases/download/v2.52.0/gh_2.52.0_windows_arm64.zip",
+            "hash": "10d9ebbde6fc8892f14168a3175f54740a609a8869b897e369aee6e1cb59cff3"
         }
     },
     "bin": "bin\\gh.exe",

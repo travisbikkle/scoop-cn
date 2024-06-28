@@ -1,16 +1,16 @@
 {
-    "version": "0.23.0",
+    "version": "0.24.1",
     "description": "PC video game save data backup tool",
     "homepage": "https://github.com/mtkennerly/ludusavi",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/mtkennerly/ludusavi/releases/download/v0.23.0/ludusavi-v0.23.0-win64.zip",
-            "hash": "60cc1368cfaa9bf281f19d62a84037dab9a16e208e220d40b92a3c8106a27dc2"
+            "url": "https://mirror.ghproxy.com/https://github.com/mtkennerly/ludusavi/releases/download/v0.24.1/ludusavi-v0.24.1-win64.zip",
+            "hash": "0effa3adbb930e52d05b3bcc7d95235cb2466b952127a45bf23a6edfac328acf"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/mtkennerly/ludusavi/releases/download/v0.23.0/ludusavi-v0.23.0-win32.zip",
-            "hash": "30233a013e8d5fa9cbb2fed5a01eca7bdbe099549d4fee3022be14695c1af878"
+            "url": "https://mirror.ghproxy.com/https://github.com/mtkennerly/ludusavi/releases/download/v0.24.1/ludusavi-v0.24.1-win32.zip",
+            "hash": "c4bd7c68b849e79bd220f1c2773252dc64537cfe74f1fd7e8c21fd79d034f8cd"
         }
     },
     "bin": "ludusavi.exe",
