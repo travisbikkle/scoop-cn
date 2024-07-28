@@ -61,10 +61,16 @@ irm https://cdn.jsdelivr.net/gh/travisbikkle/scoop-cn/install.ps1 | iex
 1. 添加本仓库，运行命令
 
     ```powershell
-    scoop bucket add easy-win https://gitee.com/easy-win/scoop-mirror.git
+    scoop bucket add easy-win https://gitee.com/easy-win/scoop-mirror
     ```
 
 2. 把已经安装的 app 改为使用 easy-win 来更新。每个 app 安装后在 app 的 current 路径下有个 install.json，里面的 bucket 项的值改为 easy-win，这样就把已安装的 app 换到 easy-win 了。可以运行 scoop list 来检查替换成功。如果要批量修改，可以借助 grepWin 来写个正则表达式搜索替换这个值。
+
+3. 如果执行失败，可以直接到 buckets 目录执行
+   ```
+   cd D:\APPS\LOCAL\buckets
+   git clone git@gitee.com:easy-win/scoop-mirror easy-win
+   ```
 
 ## 安装应用
 
