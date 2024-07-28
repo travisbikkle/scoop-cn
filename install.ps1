@@ -80,6 +80,9 @@ Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\aria2c.exe $env:SCOOP\apps\ar
 Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-config.ps1 $env:SCOOP\apps\scoop\current\libexec\
 Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-si.ps1 $env:SCOOP\apps\scoop\current\libexec\scoop-si.ps1
 
+scoop config aria2-split 128
+scoop config aria2-max-connection-per-server 1024
+scoop config aria2-min-split-size 1M
 
 # 删除 Scoop 的 main 仓库，这样就不用在每次安装的时候输入 easy-win/
 if (Test-Path -Path "$env:SCOOP\buckets\main") {
