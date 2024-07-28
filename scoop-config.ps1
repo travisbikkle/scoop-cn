@@ -133,15 +133,15 @@
 #       Number of seconds to wait between retries.
 #       See: 'https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-retry-wait'
 #
-# aria2-split: 64
+aria2-split: 128
 #       Number of connections used for downlaod.
 #       See: 'https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-s'
 #
-# aria2-max-connection-per-server: 1024
+aria2-max-connection-per-server: 1024
 #       The maximum number of connections to one server for each download.
 #       See: 'https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-x'
 #
-# aria2-min-split-size: 1M
+aria2-min-split-size: 1M
 #       Downloaded files will be splitted by this configured size and downloaded using multiple connections.
 #       See: 'https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-k'
 #

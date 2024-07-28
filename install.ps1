@@ -1,6 +1,6 @@
 param(
     $github_proxy="mirror.ghproxy.com", 
-    $bucket_name="scoop-cn",
+    $bucket_name="easy-win",
     $install_scoop_to='D:\APPS\LOCAL',
     $install_global_to='D:\APPS\ALL_USER\'
 )
@@ -52,26 +52,35 @@ if (Test-Path -Path "$env:SCOOP\buckets\$bucket_name") {
     scoop bucket rm $bucket_name
 }
 Write-Host "Adding $bucket_name bucket..."
-scoop bucket add $bucket_name https://$github_proxy/https://github.com/travisbikkle/scoop-cn
-# 删除 Scoop 的 main 仓库
-if (Test-Path -Path "$env:SCOOP\buckets\main") {
-    scoop bucket rm main
-}
+scoop bucket add $bucket_name https://gitee.com/easy-win/scoop-mirror
 
-# Set-Location "$env:TEMP_BUCKET_DIR\$bucket_name"
-# git config pull.rebase true
+Set-Location "$env:TEMP_BUCKET_DIR\$bucket_name"
+git config pull.rebase true
 
 Write-Host "scoop and $bucket_name was installed successfully!"
 
 ## 必须安装 7z git sudo aria2
 scoop uninstall 7zip git aria2
-scoop bucket rm main
-scoop install 7zip
-scoop install git
-scoop install aria2
+scoop install $bucket_name/7zip
+scoop install $bucket_name/git
+scoop install $bucket_name/aria2
 
 ## 必要的 git 配置
 git config --global core.eol lf
 git config --global core.autocrlf input
 git config --global core.quotepath false
 
+## 自动加速
+if (-not (Test-Path -Path "$env:SCOOP\apps\scoop\current\libexec\aria2c.exe.bak")) {
+    Copy-Item -Force $env:SCOOP\apps\scoop\current\libexec\aria2c.exe $env:SCOOP\apps\aria2\current\aria2c.exe.bak
+}
+
+Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\aria2c.exe $env:SCOOP\apps\aria2\current\aria2c.exe
+Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-config.ps1 $env:SCOOP\apps\scoop\current\libexec\
+Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-si.ps1 $env:SCOOP\apps\scoop\current\libexec\scoop-si.ps1
+
+
+# 删除 Scoop 的 main 仓库，这样就不用在每次安装的时候输入 easy-win/
+if (Test-Path -Path "$env:SCOOP\buckets\main") {
+    scoop bucket rm main
+}
