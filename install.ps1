@@ -2,7 +2,10 @@ param(
     $github_proxy="mirror.ghproxy.com", 
     $bucket_name="easy-win",
     $install_scoop_to='D:\APPS\LOCAL',
-    $install_global_to='D:\APPS\ALL_USER\'
+    $install_global_to='D:\APPS\ALL_USER\',
+
+    $github_repo_root="https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/scoop-cn/master",
+    $gitee_repo_root="https://gitee.com/easy-win/scoop-mirror/raw/master"
 )
 
 ## 设置scoop安装变量：scoop安装的位置，以及scoop安装软件的位置
@@ -28,15 +31,15 @@ New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\bucket"
 New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip"
 New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git"
 
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/bucket/7zip.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\7zip.json"
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/scripts/7-zip/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\install-context.reg"
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/scripts/7-zip/uninstall-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\uninstall-context.reg"
+Invoke-RestMethod -Uri $gitee_repo_root/bucket/7zip.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\7zip.json"
+Invoke-RestMethod -Uri $gitee_repo_root/scripts/7-zip/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\install-context.reg"
+Invoke-RestMethod -Uri $gitee_repo_root/scripts/7-zip/uninstall-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\uninstall-context.reg"
 
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/bucket/git.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\git.json"
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/scripts/git/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-context.reg"
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/scripts/git/uninstall-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-context.reg"
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/scripts/git/install-file-associations.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-file-associations.reg"
-Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/scripts/git/uninstall-file-associations.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-file-associations.reg"
+Invoke-RestMethod -Uri $gitee_repo_root/bucket/git.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\git.json"
+Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-context.reg"
+Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/uninstall-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-context.reg"
+Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/install-file-associations.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-file-associations.reg"
+Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/uninstall-file-associations.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-file-associations.reg"
 
 # Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/bucket/aria2.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\aria2.json"
 
@@ -56,8 +59,6 @@ scoop bucket add $bucket_name https://gitee.com/easy-win/scoop-mirror
 
 Set-Location "$env:TEMP_BUCKET_DIR\$bucket_name"
 git config pull.rebase true
-
-Write-Host "scoop and $bucket_name was installed successfully!"
 
 ## 必须安装 7z git sudo aria2
 scoop uninstall 7zip git aria2
@@ -84,3 +85,5 @@ Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-si.ps1 $env:SCOOP\apps\
 if (Test-Path -Path "$env:SCOOP\buckets\main") {
     scoop bucket rm main
 }
+
+Write-Host "scoop and $bucket_name was installed successfully!"
