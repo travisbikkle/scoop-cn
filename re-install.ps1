@@ -6,3 +6,5 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 scoop reset *
+
+## TODO 将已安装的应用有右键菜单的加入右键菜单

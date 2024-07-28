@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 
-此外仓库中的 scoop-config.ps1 和 aria2c.exe，大家只可意会。
+此外仓库中的 aria2c.exe，大家只可意会。
 
 ## Scoop 在中国使用的问题
 
@@ -99,10 +99,20 @@ scoop bucket rm extras
 scoop si APPNAME
 ```
 
-## 替换 aria2c 和 aria 配置
+## 系统重装
 
-将 aria2c.exe 复制到 D:\APPS\LOCAL\apps\aria2\current
-将 scoop-config.ps1 复制到 D:\APPS\LOCAL\apps\scoop\current\libexec
+```powershell
+[Environment]::SetEnvironmentVariable('SCOOP', 'D:\APPS\LOCAL', 'User')
+[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', 'D:\APPS\ALL_USER', 'Machine')
+[Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path', 'User') + "; " + [Environment]::GetEnvironmentVariable('SCOOP', 'User') + "\shims", 'User')
+# 注意下面的命令需要管理员权限。
+[Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path', 'Machine') + "; " + [Environment]::GetEnvironmentVariable('SCOOP_GLOBAL', 'Machine') + "\shims", 'Machine')
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+scoop reset *
+```
+
+或管理员执行执行 re-install.ps1 即可。
 
 ## 查看帮助
 
