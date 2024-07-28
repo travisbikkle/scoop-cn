@@ -82,7 +82,7 @@ git config --global core.quotepath false
 
 ## 自动加速
 if (-not (Test-Path -Path "$env:SCOOP\apps\scoop\current\libexec\aria2c.exe.bak")) {
-    Copy-Item -Force $env:SCOOP\apps\scoop\current\libexec\aria2c.exe $env:SCOOP\apps\aria2\current\aria2c.exe.bak
+    Copy-Item -Force $env:SCOOP\apps\aria2\current\aria2c.exe $env:SCOOP\apps\aria2\current\aria2c.exe.bak
 }
 
 Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\aria2c.exe $env:SCOOP\apps\aria2\current\aria2c.exe
