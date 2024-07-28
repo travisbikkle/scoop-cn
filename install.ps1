@@ -27,9 +27,18 @@ $env:TEMP_BUCKET_DIR="$env:SCOOP\buckets"
 scoop config scoop_repo https://$github_proxy/https://github.com/ScoopInstaller/Scoop
 
 # 目前没有安装 Git，所以先下载几个必需的软件的 JSON，组成一个临时的应用仓库
-New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\bucket"
-New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip"
-New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git"
+if (-not (Test-Path -Path "$env:TEMP_BUCKET_DIR\$bucket_name\bucket")) {
+    New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\bucket"
+}
+
+if (-not (Test-Path -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip")) {
+    New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip"
+}
+
+if (-not (Test-Path -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git")) {
+    New-Item -ItemType "directory" -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git"
+}
+
 
 Invoke-RestMethod -Uri $gitee_repo_root/bucket/7zip.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\7zip.json"
 Invoke-RestMethod -Uri $gitee_repo_root/scripts/7-zip/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\install-context.reg"
