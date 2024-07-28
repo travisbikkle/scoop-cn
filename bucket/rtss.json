@@ -4,8 +4,8 @@
     "homepage": "https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html",
     "license": "Freeware",
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2022",
-        "MSI Afterburner": "scoop-cn/msiafterburner"
+        "vcredist": "easy-win/vcredist2022",
+        "MSI Afterburner": "easy-win/msiafterburner"
     },
     "url": "https://ftp.nluug.nl/pub/games/PC/guru3d/rtss/%5BGuru3D.com%5D-RTSS.zip",
     "hash": "e11fe1d98c2ee29a6e052efa804faa363774a09f8636073d0c81a7060de1c09f",

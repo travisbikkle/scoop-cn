@@ -4,7 +4,7 @@
     "homepage": "https://www.metabase.com",
     "license": "AGPL-3.0-or-later",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://downloads.metabase.com/v0.50.17/metabase.jar",
     "hash": "f8d8153dfe4e586de92a4be1ea0ce1ccdbaf45822fbf3d40a61aab5d98043bba",

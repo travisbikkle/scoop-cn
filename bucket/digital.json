@@ -5,8 +5,8 @@
     "license": "GPL-3.0-only",
     "suggest": {
         "JDK": [
-            "scoop-cn/opendk",
-            "scoop-cn/oraclejdk"
+            "easy-win/opendk",
+            "easy-win/oraclejdk"
         ]
     },
     "url": "https://mirror.ghproxy.com/https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip",

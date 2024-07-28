@@ -7,9 +7,9 @@
         "openssl": [
             "openssl",
             "openssl-mingw",
-            "scoop-cn/openssl10",
-            "scoop-cn/openssl-light",
-            "scoop-cn/openssl10-light"
+            "easy-win/openssl10",
+            "easy-win/openssl-light",
+            "easy-win/openssl10-light"
         ],
         "wget": "wget"
     },

@@ -4,7 +4,7 @@
     "homepage": "https://manifold.net/",
     "license": "Freeware",
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2022"
+        "vcredist": "easy-win/vcredist2022"
     },
     "url": "https://manifold.net/updates/manifold-viewer-9.0.181.zip",
     "hash": "eb83fa071cc600f783a2be87f279c19c24d2ca553e6e223c85992c265e55d295",

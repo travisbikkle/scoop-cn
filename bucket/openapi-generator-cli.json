@@ -4,7 +4,7 @@
     "homepage": "https://openapi-generator.tech/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/7.7.0/openapi-generator-cli-7.7.0.jar#/openapi-generator-cli.jar",
     "hash": "sha1:41f26774ba0dbed788613a9c3062ddc6b9fcfdad",

@@ -4,7 +4,7 @@
     "homepage": "https://quarkus.io/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/quarkusio/quarkus/releases/download/3.12.3/quarkus-cli-3.12.3.zip",
     "extract_dir": "quarkus-cli-3.12.3",

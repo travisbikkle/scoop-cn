@@ -8,9 +8,9 @@
     },
     "suggest": {
         "java": [
-            "scoop-cn/oraclejdk",
-            "scoop-cn/adopt11-hotspot",
-            "scoop-cn/adopt14-hotspot"
+            "easy-win/oraclejdk",
+            "easy-win/adopt11-hotspot",
+            "easy-win/adopt14-hotspot"
         ]
     },
     "url": "https://www.sql-workbench.eu/Workbench-Build131-with-optional-libs.zip",

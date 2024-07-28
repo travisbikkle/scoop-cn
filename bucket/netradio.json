@@ -4,7 +4,7 @@
     "homepage": "https://www.ophthalmostar.de/freeware/#netradio",
     "license": "Freeware",
     "suggest": {
-        ".NET Desktop Runtime": "scoop-cn/windowsdesktop-runtime-lts"
+        ".NET Desktop Runtime": "easy-win/windowsdesktop-runtime-lts"
     },
     "url": "https://www.ophthalmostar.de/NetRadio.zip",
     "hash": "d66cdc31b89f8f0fd4a6d96f30a72af76bddba2fa02cd45ec08282fe08256a9e",

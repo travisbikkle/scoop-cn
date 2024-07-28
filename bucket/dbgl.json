@@ -4,7 +4,7 @@
     "homepage": "https://dbgl.org/",
     "license": "GPL-2.0-or-later",
     "suggest": {
-        "Java Runtime Environment": "scoop-cn/openjdk"
+        "Java Runtime Environment": "easy-win/openjdk"
     },
     "url": "https://dbgl.org/download/dbgl098.zip",
     "hash": "ef0ffcaade3db4ac6ace8ce2aa2f39579def949b0bf31cbdd0cfbe68bd680fae",

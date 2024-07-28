@@ -24,7 +24,7 @@
         ]
     ],
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2022"
+        "vcredist": "easy-win/vcredist2022"
     },
     "checkver": {
         "url": "https://bitbucket.org/liule/snipaste/downloads",

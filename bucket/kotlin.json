@@ -4,7 +4,7 @@
     "homepage": "https://kotlinlang.org/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/JetBrains/kotlin/releases/download/v2.0.0/kotlin-compiler-2.0.0.zip",
     "hash": "ef578730976154fd2c5968d75af8c2703b3de84a78dffe913f670326e149da3b",

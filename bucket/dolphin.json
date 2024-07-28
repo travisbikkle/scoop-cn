@@ -7,7 +7,7 @@
         "url": "https://github.com/dolphin-emu/dolphin/blob/master/COPYING"
     },
     "suggest": {
-        "Microsoft Visual C++ Runtime 2019": "scoop-cn/vcredist2019"
+        "Microsoft Visual C++ Runtime 2019": "easy-win/vcredist2019"
     },
     "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-x64.7z",
     "hash": "9283423bc40048ee4fd3531c3fc4ca0799e99d9a2d9295f703683c62a3bc280b",

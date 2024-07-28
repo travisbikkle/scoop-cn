@@ -6,12 +6,12 @@
     "notes": " - Run 'flutter doctor' to see if there are any platform dependencies you need to complete the setup.",
     "suggest": {
         "Android SDK Tools": "android-clt",
-        "Android Studio": "scoop-cn/android-studio",
+        "Android Studio": "easy-win/android-studio",
         "Java": [
-            "scoop-cn/oraclejdk-lts",
-            "scoop-cn/openjdk11"
+            "easy-win/oraclejdk-lts",
+            "easy-win/openjdk11"
         ],
-        "Visual Studio Code with Flutter extension": "scoop-cn/vscode"
+        "Visual Studio Code with Flutter extension": "easy-win/vscode"
     },
     "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.22.3-stable.zip",
     "hash": "fd7e3e4f4484a8608866bdb12d82051d34f525f80710e87ecae84f5104fc264d",

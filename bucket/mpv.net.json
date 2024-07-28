@@ -17,8 +17,8 @@
         ]
     ],
     "suggest": {
-        ".NET 6.0 Runtime": "scoop-cn/windowsdesktop-runtime-6.0",
-        "Media streaming support": "scoop-cn/yt-dlp"
+        ".NET 6.0 Runtime": "easy-win/windowsdesktop-runtime-6.0",
+        "Media streaming support": "easy-win/yt-dlp"
     },
     "persist": "portable_config",
     "checkver": "github",

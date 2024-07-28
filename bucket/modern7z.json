@@ -3,7 +3,7 @@
     "description": "7-Zip plugin for the leading-edge compression methods; zstd, Brotli, LZ4, LZ5, Lizard, and Fast LZMA2.",
     "homepage": "https://www.tc4shell.com/en/7zip/modern7z/",
     "license": "Unknown",
-    "depends": "scoop-cn/7zip",
+    "depends": "easy-win/7zip",
     "url": "https://www.tc4shell.com/binary/Modern7z.zip",
     "hash": "c39cab2a49ec28792f25f60e5873f3f156d985cc4f773717c3242fceb8d30629",
     "architecture": {

@@ -5,9 +5,9 @@
     "homepage": "https://invisible-island.net/lynx/lynx.html",
     "license": "GPL-2.0-only",
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2013"
+        "vcredist": "easy-win/vcredist2013"
     },
-    "depends": "scoop-cn/cacert",
+    "depends": "easy-win/cacert",
     "url": [
         "https://invisible-island.net/archives/lynx/current/lynx-newssl2.9.2-setup.exe",
         "https://slproweb.com/download/Win32OpenSSL_Light-3_3_0.exe"

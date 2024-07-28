@@ -4,7 +4,7 @@
     "homepage": "https://www.zaproxy.org",
     "license": "Apache-2.0",
     "suggest": {
-        "JRE": "scoop-cn/temurin11-jre"
+        "JRE": "easy-win/temurin11-jre"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Crossplatform.zip",
     "hash": "05d3932a1affb0ab7987664677134709982ca3837a0b0f0e16f9aeb391933341",

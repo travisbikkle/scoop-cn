@@ -5,8 +5,8 @@
     "license": "LGPL-2.1-or-later",
     "suggest": {
         "Java": [
-            "scoop-cn/oraclejdk",
-            "scoop-cn/temurin8-jre"
+            "easy-win/oraclejdk",
+            "easy-win/temurin8-jre"
         ]
     },
     "url": "https://languagetool.org/download/LanguageTool-6.4.zip",

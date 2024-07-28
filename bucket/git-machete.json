@@ -3,7 +3,7 @@
     "description": "Probably the sharpest git repository organizer & rebase/merge workflow automation tool you've ever seen",
     "homepage": "https://github.com/VirtusLab/git-machete",
     "license": "MIT",
-    "depends": "scoop-cn/python",
+    "depends": "easy-win/python",
     "url": "https://files.pythonhosted.org/packages/py3/g/git-machete/git_machete-3.26.3-py3-none-any.whl",
     "hash": "1b6d16a4e22d901d99d810f11afb9353520bd4cac30a22cecf7475d749379a1c",
     "installer": {

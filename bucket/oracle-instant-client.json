@@ -25,7 +25,7 @@
         }
     },
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2022"
+        "vcredist": "easy-win/vcredist2022"
     },
     "extract_dir": "instantclient_21_14",
     "env_add_path": ".",

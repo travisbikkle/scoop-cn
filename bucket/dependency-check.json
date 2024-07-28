@@ -4,7 +4,7 @@
     "homepage": "https://owasp.org/www-project-dependency-check/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/jeremylong/DependencyCheck/releases/download/v10.0.3/dependency-check-10.0.3-release.zip",
     "hash": "5263fbafb15010823364274b83e9a2219b654d00a557d92941c37736d4076ba4",

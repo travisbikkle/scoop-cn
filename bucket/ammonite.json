@@ -4,7 +4,7 @@
     "homepage": "https://ammonite.io",
     "license": "MIT",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/lihaoyi/Ammonite/releases/download/3.0.0-M2/2.12-3.0.0-M2#/amm.bat",
     "hash": "4d29a4edb50cdff0fbaf8e0478622ac341e00d73ed6e7ceb7fae8a37a48bdd08",

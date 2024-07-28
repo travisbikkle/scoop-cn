@@ -6,7 +6,7 @@
     "notes": "You will find your config file here: '$dir\\config'. To customise it, read the docs here: https://streamlink.github.io/cli/config.html#syntax",
     "suggest": {
         "ffmpeg": "ffmpeg",
-        "VLC Player": "scoop-cn/vlc"
+        "VLC Player": "easy-win/vlc"
     },
     "architecture": {
         "64bit": {

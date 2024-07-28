@@ -7,7 +7,7 @@
         "url": "https://www.git-tower.com/legal/eula/windows"
     },
     "suggest": {
-        ".NET Desktop Runtime": "scoop-cn/windowsdesktop-runtime"
+        ".NET Desktop Runtime": "easy-win/windowsdesktop-runtime"
     },
     "url": "https://www.git-tower.com/apps/tower3-win/483-adc92b4f/Tower-7.1.483.exe#/dl.7z",
     "hash": "sha1:59a3d810b5ebc41b269e4ba1399250920ae2de67",
