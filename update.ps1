@@ -157,6 +157,10 @@ Get-ChildItem -Recurse -Path .\bucket | ForEach-Object -Process {
     (Get-Content $_.FullName) -creplace '\"main/|\"extras/|\"versions/|\"nirsoft/|\"sysinternals/|\"php/|\"nerd-fonts/|\"nonportable/|\"java/|\"games/', '"easy-win/' | Set-Content -Path $_.FullName
 }
 
+# start git
+(Get-Content .\bucket\git.json) -replace 'https:.*git/releases/download',"https://mirrors.huaweicloud.com/git-for-windows" | Set-Content -Path .\bucket\git.json
+# end git
+
 # Start: Free Download Manager
 (Get-Content .\bucket\freedownloadmanager.json).Replace('dn3.freedownloadmanager.org', 'files2.freedownloadmanager.org') | Set-Content -Path .\bucket\freedownloadmanager.json
 
