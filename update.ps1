@@ -81,6 +81,9 @@ Get-ChildItem -Recurse -Path .\bucket | ForEach-Object -Process {
     # Go
     (Get-Content $_.FullName) -replace 'dl\.google\.com/go', 'mirrors.aliyun.com/golang' | Set-Content -Path $_.FullName
 
+    # rust
+    (Get-Content $_.FullName) -replace 'static\.rust-lang\.org', 'mirrors.tuna.tsinghua.edu.cn/rustup' | Set-Content -Path $_.FullName
+
     # VLC
     (Get-Content $_.FullName) -replace 'download\.videolan\.org/pub', 'mirrors.aliyun.com/videolan' | Set-Content -Path $_.FullName
 
