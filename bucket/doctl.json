@@ -1,20 +1,20 @@
 {
-    "version": "1.108.0",
+    "version": "1.110.0",
     "description": "A command line tool for DigitalOcean services",
     "homepage": "https://github.com/digitalocean/doctl",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/digitalocean/doctl/releases/download/v1.108.0/doctl-1.108.0-windows-amd64.zip",
-            "hash": "6c49b573e2695580c36947edc2e4080151584c0be7bea0e2d96468d359d0b111"
+            "url": "https://mirror.ghproxy.com/https://github.com/digitalocean/doctl/releases/download/v1.110.0/doctl-1.110.0-windows-amd64.zip",
+            "hash": "37a3372388255525589141c4856898d0e11699cae970850b0483ca8c0ea2e377"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/digitalocean/doctl/releases/download/v1.108.0/doctl-1.108.0-windows-386.zip",
-            "hash": "77621592f9da9ee4e496d266f1f9f410fe95cd6b236ae6efff452b90e6b3cd48"
+            "url": "https://mirror.ghproxy.com/https://github.com/digitalocean/doctl/releases/download/v1.110.0/doctl-1.110.0-windows-386.zip",
+            "hash": "256744ee14a2fd453b901b0eccc03ef2ba6890bd3bc6b5d6470c596f659b694b"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/digitalocean/doctl/releases/download/v1.108.0/doctl-1.108.0-windows-arm64.zip",
-            "hash": "6955b99ed7746897559b9abcd86428c1d7649eb438f2cdc9e56f42ce1065db95"
+            "url": "https://mirror.ghproxy.com/https://github.com/digitalocean/doctl/releases/download/v1.110.0/doctl-1.110.0-windows-arm64.zip",
+            "hash": "a9d6092d31e6118d01a27e5239db30032da0265499f28215cd2aea888309aa8e"
         }
     },
     "bin": "doctl.exe",

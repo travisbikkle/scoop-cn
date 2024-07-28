@@ -1,16 +1,16 @@
 {
-    "version": "0.21.0-beta",
+    "version": "0.21.2-beta",
     "description": "The private YouTube client",
     "homepage": "https://freetubeapp.io",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.0-beta/freetube-0.21.0-win-x64-portable.7z",
-            "hash": "a175f25ea90990398dd63b64b71d9b52341de32c364cfcbc6396893eff0e72a4"
+            "url": "https://mirror.ghproxy.com/https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.2-beta/freetube-0.21.2-win-x64-portable.7z",
+            "hash": "029f0d0559f18d78c8487f08f1ee6cafb2dac9e4d06bc22f1f7fbd51a890c905"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.0-beta/freetube-0.21.0-win-arm64-portable.7z",
-            "hash": "94d8e3915a308bdcf94b09904b7fa69a6f56871089cd8ff28fc28280e5a8e94b"
+            "url": "https://mirror.ghproxy.com/https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.2-beta/freetube-0.21.2-win-arm64-portable.7z",
+            "hash": "e5990fd803b2fefbd0a1c607090da11d7b9cbaf846d7b8b707f4dcaa500a45cf"
         }
     },
     "shortcuts": [

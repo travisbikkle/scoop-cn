@@ -1,16 +1,16 @@
 {
-    "version": "0.51.1",
+    "version": "0.52.0",
     "description": "A Terraform linter focused on possible errors, best practices, etc.",
     "homepage": "https://github.com/terraform-linters/tflint",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/terraform-linters/tflint/releases/download/v0.51.1/tflint_windows_amd64.zip",
-            "hash": "4c46bbef6181145b451249eb5161ffae49ccaa4b59054e9943911b4d9b7c38c7"
+            "url": "https://mirror.ghproxy.com/https://github.com/terraform-linters/tflint/releases/download/v0.52.0/tflint_windows_amd64.zip",
+            "hash": "fed6ff15ee10db34a23044ac0d4da8fdc1f2f3663b32ec85d388374dd95670aa"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/terraform-linters/tflint/releases/download/v0.51.1/tflint_windows_386.zip",
-            "hash": "7631af7f6a441903cb280e320cc3260e8a4585d73db724bbd15cd09bc77769da"
+            "url": "https://mirror.ghproxy.com/https://github.com/terraform-linters/tflint/releases/download/v0.52.0/tflint_windows_386.zip",
+            "hash": "2ce6fd6f6bdc6f487db0b7be1de69ad03c24b56977e6bf390aef0783a0732cd0"
         }
     },
     "bin": "tflint.exe",

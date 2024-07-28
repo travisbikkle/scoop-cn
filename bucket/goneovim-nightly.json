@@ -1,5 +1,5 @@
 {
-    "version": "20240625",
+    "version": "20240726",
     "description": "Neovim GUI which uses a Golang Qt backend",
     "homepage": "https://github.com/akiyosi/goneovim",
     "license": "MIT",
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://mirror.ghproxy.com/https://github.com/akiyosi/goneovim/releases/download/nightly/goneovim-windows.zip",
-            "hash": "f10638f9a80d3e0716eb3abec0c828ab26d9a6f0d993c84c259bf30aff9b4aec"
+            "hash": "4c457153c3ea0b508073a5dbb1157067fc6d631a9035b5da6b49980527811987"
         }
     },
     "extract_dir": "goneovim-windows",

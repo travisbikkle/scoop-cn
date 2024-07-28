@@ -1,12 +1,12 @@
 {
-    "version": "0.14.9",
+    "version": "0.15.7",
     "description": "A privacy-focussed, local-first, open-source, and ready-to-use alternative for Notion & Miro.",
     "homepage": "https://affine.pro/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/toeverything/AFFiNE/releases/download/v0.14.9/affine-0.14.9-stable-windows-x64.exe#/dl.7z",
-            "hash": "sha512:7fa6590f61fb8d4a484488280752f12dc038c8daa8805e60f63d3d4c51f99d5dfb0d5df87560669c5617e122874f4c45bee88ab627048b129087a46b1b8c6d0e"
+            "url": "https://mirror.ghproxy.com/https://github.com/toeverything/AFFiNE/releases/download/v0.15.7/affine-0.15.7-stable-windows-x64.exe#/dl.7z",
+            "hash": "sha512:da3d060db0cdf7679c69309d868537d197c670f80f5dacfdbf7ee40e61e116a98ccf67cf194e116e9bc5823774e82b5b57809f6df6efcb3d8aa28cd6640b64dc"
         }
     },
     "pre_install": [

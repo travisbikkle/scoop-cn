@@ -1,20 +1,20 @@
 {
-    "version": "24.6.1",
+    "version": "24.7.5",
     "description": "Professional diagramming",
     "homepage": "https://www.diagrams.net",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/jgraph/drawio-desktop/releases/download/v24.6.1/draw.io-24.6.1-windows-installer.exe#/dl.7z",
-            "hash": "602bf44b87ce81fd299337ef4b2e9d4c6d9aa6e3eb65bd7d72ab2ae5e12335c0",
+            "url": "https://mirror.ghproxy.com/https://github.com/jgraph/drawio-desktop/releases/download/v24.7.5/draw.io-24.7.5-windows-installer.exe#/dl.7z",
+            "hash": "49fe13e576710ca4adb647cddc17af374c7fbaf29fcc9b7eed897817fd8c2e60",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/jgraph/drawio-desktop/releases/download/v24.6.1/draw.io-ia32-24.6.1-windows-32bit-installer.exe#/dl.7z",
-            "hash": "26c93d141ca88c918587ae21f83374e65cd4977a7f6d56cf0f8fdb7a2d6b3f1e",
+            "url": "https://mirror.ghproxy.com/https://github.com/jgraph/drawio-desktop/releases/download/v24.7.5/draw.io-ia32-24.7.5-windows-32bit-installer.exe#/dl.7z",
+            "hash": "2706f8db3ccde864d759b98d3996328c04a4ceb91d9fa717dfdd3302b41124c8",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"

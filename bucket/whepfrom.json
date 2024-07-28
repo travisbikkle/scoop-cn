@@ -1,16 +1,16 @@
 {
-    "version": "0.4.1",
+    "version": "0.5.1",
     "description": "From shep to rtp",
     "homepage": "https://github.com/binbat/live777/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/binbat/live777/releases/download/v0.4.1/whepfrom-v0.4.1-x86_64-pc-windows-msvc.exe#/whepfrom.exe",
-            "hash": "ea1157e5e3427e46412a575cfe08ff5f2eccd1eaf73ec0a08d83bcb1e8b057ba"
+            "url": "https://mirror.ghproxy.com/https://github.com/binbat/live777/releases/download/v0.5.1/whepfrom-v0.5.1-x86_64-pc-windows-msvc.exe#/whepfrom.exe",
+            "hash": "38523ef8860d0706e522a1febc42e99d30f6ee5438de00ab9390b9449070c72c"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/binbat/live777/releases/download/v0.4.1/whepfrom-v0.4.1-i686-pc-windows-msvc.exe#/whepfrom.exe",
-            "hash": "25814d137d9764b85d4ab52652e97cf0f9d057660f817577082557c12982d2f5"
+            "url": "https://mirror.ghproxy.com/https://github.com/binbat/live777/releases/download/v0.5.1/whepfrom-v0.5.1-i686-pc-windows-msvc.exe#/whepfrom.exe",
+            "hash": "d4a6dcb7f406b0f0b71312868eb12f2540034906ca2e8261f052fa2ed4afc6f5"
         }
     },
     "bin": "live777.exe",

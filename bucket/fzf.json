@@ -1,16 +1,16 @@
 {
-    "version": "0.53.0",
+    "version": "0.54.2",
     "description": "A general-purpose command-line fuzzy finder",
     "homepage": "https://github.com/junegunn/fzf",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/0.53.0/fzf-0.53.0-windows_amd64.zip",
-            "hash": "e977de12c1ab80f72e49e2fc8eceb5f5623338200a87b2aafab2e87ebd85efbe"
+            "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/v0.54.2/fzf-0.54.2-windows_amd64.zip",
+            "hash": "5c18ef1b09e75a1dff218457245dfb4eff78f16362d6f8bded33c74640286673"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/0.53.0/fzf-0.53.0-windows_arm64.zip",
-            "hash": "01f9a486f0f79358ae66e30950daabf8e83c47c0c0f8d3b54a130b48839bff22"
+            "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/v0.54.2/fzf-0.54.2-windows_arm64.zip",
+            "hash": "9cb85bd2f8f6ad52a53d04e28c0f9a0a29ebd55162a0f1d7301133020ccd1378"
         }
     },
     "bin": "fzf.exe",
@@ -18,10 +18,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/$version/fzf-$version-windows_amd64.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/v$version/fzf-$version-windows_amd64.zip"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/$version/fzf-$version-windows_arm64.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/junegunn/fzf/releases/download/v$version/fzf-$version-windows_arm64.zip"
             }
         }
     }

@@ -1,20 +1,20 @@
 {
-    "version": "0.4.10",
-    "description": "An extremely fast Python linter, written in Rust",
+    "version": "0.5.5",
+    "description": "An extremely fast Python linter and code formatter, written in Rust.",
     "homepage": "https://github.com/astral-sh/ruff",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/v0.4.10/ruff-0.4.10-x86_64-pc-windows-msvc.zip",
-            "hash": "8e3305d1b6411a8ae5795790e473f855bf12d074e9e9716e2ef104e9ad499c25"
+            "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/0.5.5/ruff-x86_64-pc-windows-msvc.zip",
+            "hash": "161eb7ae4f38d8b54e46b153f0a5b2ee6de55d198ca495ee1c0a1c0b2e0a8f26"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/v0.4.10/ruff-0.4.10-i686-pc-windows-msvc.zip",
-            "hash": "186e622879758c4f26026927415ed7ed57871b95ae241d39e4128007319eb3c7"
+            "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/0.5.5/ruff-i686-pc-windows-msvc.zip",
+            "hash": "75a604d31e2ecc4890727b8ac55e63be7cb3151800be56e62c4aa70f67b6d3e2"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/v0.4.10/ruff-0.4.10-aarch64-pc-windows-msvc.zip",
-            "hash": "6b526e4da0d45589dc1247615e418d5e82490e25f8234b45551b2737f14ca5a1"
+            "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/0.5.5/ruff-aarch64-pc-windows-msvc.zip",
+            "hash": "f179ae5848892e940da3b27893bb5d0a9b1176a8228a55e099cd9bc7f16c0090"
         }
     },
     "bin": "ruff.exe",
@@ -22,13 +22,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/v$version/ruff-$version-x86_64-pc-windows-msvc.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/$version/ruff-x86_64-pc-windows-msvc.zip"
             },
             "32bit": {
-                "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/v$version/ruff-$version-i686-pc-windows-msvc.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/$version/ruff-i686-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/v$version/ruff-$version-aarch64-pc-windows-msvc.zip"
+                "url": "https://mirror.ghproxy.com/https://github.com/astral-sh/ruff/releases/download/$version/ruff-aarch64-pc-windows-msvc.zip"
             }
         },
         "hash": {

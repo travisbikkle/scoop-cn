@@ -1,5 +1,5 @@
 {
-    "version": "2024-06-26T01-06-18Z",
+    "version": "2024-07-26T20-48-21Z",
     "description": "A high performance, distributed object storage server, designed for large-scale data infrastructure. (server)",
     "homepage": "https://min.io",
     "license": "Apache-2.0",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.min.io/server/minio/release/windows-amd64/archive/minio.RELEASE.2024-06-26T01-06-18Z#/minio.exe",
-            "hash": "c51ca8b7d17edbca9e447738db3123eb0bc9c59b1868e1d5bb18ffca2a8720f6"
+            "url": "https://dl.min.io/server/minio/release/windows-amd64/archive/minio.RELEASE.2024-07-26T20-48-21Z#/minio.exe",
+            "hash": "27d20d5d60ab9d8b1f494f77480683423a677ce5af92bc678465a6b988488f9a"
         }
     },
     "bin": "minio.exe",

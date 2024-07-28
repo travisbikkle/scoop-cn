@@ -1,16 +1,16 @@
 {
-    "version": "0.128.0",
+    "version": "0.129.1",
     "description": "A command line CSV data-wrangling toolkit",
     "homepage": "https://github.com/jqnatividad/qsv",
     "license": "Unlicense|MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/jqnatividad/qsv/releases/download/0.128.0/qsv-0.128.0-x86_64-pc-windows-msvc.zip",
-            "hash": "f78b1d141ee346a011d3a5f3ba67c2068b29ef1a23026779f717171274be3d13"
+            "url": "https://mirror.ghproxy.com/https://github.com/jqnatividad/qsv/releases/download/0.129.1/qsv-0.129.1-x86_64-pc-windows-msvc.zip",
+            "hash": "c8e5dbba88de681e5aea4920ea18bd825bcdf683e06921a75c7dca2d82c9c2c9"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/jqnatividad/qsv/releases/download/0.128.0/qsv-0.128.0-i686-pc-windows-msvc.zip",
-            "hash": "5860e915a96faa02e8de989b575f2936c405887eda27a06b854997d902f54f93"
+            "url": "https://mirror.ghproxy.com/https://github.com/jqnatividad/qsv/releases/download/0.129.1/qsv-0.129.1-i686-pc-windows-msvc.zip",
+            "hash": "3aa65efbdef47dcaf713090bd0c6fa55d37198b97d72742ad88051ebf8afbeb7"
         }
     },
     "bin": [

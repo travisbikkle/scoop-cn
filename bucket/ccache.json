@@ -1,18 +1,18 @@
 {
-    "version": "4.10",
+    "version": "4.10.2",
     "description": "Compiler cache to speed up recompilation by caching previous compilations and detecting when the same compilation is being done again.",
     "homepage": "https://ccache.dev",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/ccache/ccache/releases/download/v4.10/ccache-4.10-windows-x86_64.zip",
-            "hash": "b62cef76edb9ec74a9e27d15a3b045d83e80f5bdb7debc6cbea6d617971cc6ed",
-            "extract_dir": "ccache-4.10-windows-x86_64"
+            "url": "https://mirror.ghproxy.com/https://github.com/ccache/ccache/releases/download/v4.10.2/ccache-4.10.2-windows-x86_64.zip",
+            "hash": "6252f081876a9a9f700fae13a5aec5d0d486b28261d7f1f72ac11c7ad9df4da9",
+            "extract_dir": "ccache-4.10.2-windows-x86_64"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/ccache/ccache/releases/download/v4.10/ccache-4.10-windows-i686.zip",
-            "hash": "580457add282b6a36a987e4cd8c17d02d094af356e46954388a132ab714c259a",
-            "extract_dir": "ccache-4.10-windows-i686"
+            "url": "https://mirror.ghproxy.com/https://github.com/ccache/ccache/releases/download/v4.10.2/ccache-4.10.2-windows-i686.zip",
+            "hash": "30bd081f45f92affe74b776f19b8872a09b6b5df3ec6c43c552863d73c804871",
+            "extract_dir": "ccache-4.10.2-windows-i686"
         }
     },
     "bin": "ccache.exe",
