@@ -40,15 +40,15 @@ if (-not (Test-Path -Path "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git")) {
 }
 
 
-Invoke-RestMethod -Uri $gitee_repo_root/bucket/7zip.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\7zip.json"
-Invoke-RestMethod -Uri $gitee_repo_root/scripts/7-zip/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\install-context.reg"
-Invoke-RestMethod -Uri $gitee_repo_root/scripts/7-zip/uninstall-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\uninstall-context.reg"
+Invoke-RestMethod -Uri "$gitee_repo_root/bucket/7zip.json" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\7zip.json"
+Invoke-RestMethod -Uri "$gitee_repo_root/scripts/7-zip/install-context.reg" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\install-context.reg"
+Invoke-RestMethod -Uri "$gitee_repo_root/scripts/7-zip/uninstall-context.reg" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\7-zip\uninstall-context.reg"
 
-Invoke-RestMethod -Uri $gitee_repo_root/bucket/git.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\git.json"
-Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/install-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-context.reg"
-Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/uninstall-context.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-context.reg"
-Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/install-file-associations.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-file-associations.reg"
-Invoke-RestMethod -Uri $gitee_repo_root/scripts/git/uninstall-file-associations.reg -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-file-associations.reg"
+Invoke-RestMethod -Uri "$gitee_repo_root/bucket/git.json" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\git.json"
+Invoke-RestMethod -Uri "$gitee_repo_root/scripts/git/install-context.reg" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-context.reg"
+Invoke-RestMethod -Uri "$gitee_repo_root/scripts/git/uninstall-context.reg" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-context.reg"
+Invoke-RestMethod -Uri "$gitee_repo_root/scripts/git/install-file-associations.reg" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\install-file-associations.reg"
+Invoke-RestMethod -Uri "$gitee_repo_root/scripts/git/uninstall-file-associations.reg" -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\scripts\git\uninstall-file-associations.reg"
 
 # Invoke-RestMethod -Uri https://$github_proxy/https://raw.githubusercontent.com/travisbikkle/$bucket_name/master/bucket/aria2.json -OutFile "$env:TEMP_BUCKET_DIR\$bucket_name\bucket\aria2.json"
 
