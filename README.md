@@ -99,6 +99,12 @@ scoop bucket rm extras
 scoop si APPNAME
 ```
 
+## 急救措施
+scoop 依赖 git，如果不小心删了 git，可以这么安装。
+```powershell
+scoop install https://gitee.com/easy-win/scoop-mirror/raw/master/bucket/git.json
+```
+
 ## 系统重装
 
 ```powershell
