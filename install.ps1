@@ -86,7 +86,6 @@ if (-not (Test-Path -Path "$env:SCOOP\apps\scoop\current\libexec\aria2c.exe.bak"
 }
 
 Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\aria2c.exe $env:SCOOP\apps\aria2\current\aria2c.exe
-Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-config.ps1 $env:SCOOP\apps\scoop\current\libexec\
 Copy-Item -Force $env:TEMP_BUCKET_DIR\$bucket_name\scoop-si.ps1 $env:SCOOP\apps\scoop\current\libexec\scoop-si.ps1
 
 scoop config aria2-split 128
