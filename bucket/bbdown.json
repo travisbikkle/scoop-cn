@@ -3,7 +3,7 @@
     "description": "一款命令行式哔哩哔哩下载器. Bilibili Downloader.",
     "homepage": "https://github.com/nilaoda/BBDown",
     "license": "MIT",
-    "depends": "scoop-cn/ffmpeg",
+    "depends": "easy-win/ffmpeg",
     "architecture": {
         "64bit": {
             "url": "https://mirror.ghproxy.com/https://github.com/nilaoda/BBDown/releases/download/1.6.2/BBDown_1.6.2_20240512_win-x64.zip",

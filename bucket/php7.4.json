@@ -42,6 +42,6 @@
         }
     },
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2019"
+        "vcredist": "easy-win/vcredist2019"
     }
 }

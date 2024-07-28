@@ -4,7 +4,7 @@
     "homepage": "https://mindustrygame.github.io/",
     "license": "GPL-3.0-only",
     "suggest": {
-        "Java Runtime Environment": "scoop-cn/temurin-jre"
+        "Java Runtime Environment": "easy-win/temurin-jre"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/Anuken/Mindustry/releases/download/v146/Mindustry.jar",
     "hash": "3ab0e46c3cbdc863529ba05e804847ef00e3dbdb4567b5c27c5e6dce071b93f9",

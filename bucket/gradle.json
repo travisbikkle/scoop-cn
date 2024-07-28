@@ -4,7 +4,7 @@
     "homepage": "https://gradle.org",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://services.gradle.org/distributions/gradle-8.9-all.zip",
     "hash": "258e722ec21e955201e31447b0aed14201765a3bfbae296a46cf60b70e66db70",

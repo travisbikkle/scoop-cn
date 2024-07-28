@@ -3,7 +3,7 @@
     "description": "A better git add -p",
     "homepage": "https://github.com/terrajobst/git-istage",
     "license": "MIT",
-    "depends": "scoop-cn/dotnet-sdk",
+    "depends": "easy-win/dotnet-sdk",
     "url": "https://www.nuget.org/api/v2/package/git-istage/0.3.108",
     "hash": "8ec9676d8fb415e5af940b946041801ca13785424504c3f526db8a1c9ac54095",
     "installer": {

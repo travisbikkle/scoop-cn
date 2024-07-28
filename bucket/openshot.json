@@ -4,8 +4,8 @@
     "homepage": "https://www.openshot.org/",
     "license": "GPL-3.0-or-later",
     "suggest": {
-        "Blender": "scoop-cn/blender",
-        "Inkscape": "scoop-cn/inkscape"
+        "Blender": "easy-win/blender",
+        "Inkscape": "easy-win/inkscape"
     },
     "architecture": {
         "64bit": {

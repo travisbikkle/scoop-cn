@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Kyome22/RunCat_for_windows",
     "license": "Apache-2.0",
     "suggest": {
-        ".NET Desktop Runtime": "scoop-cn/windowsdesktop-runtime-lts"
+        ".NET Desktop Runtime": "easy-win/windowsdesktop-runtime-lts"
     },
     "architecture": {
         "64bit": {

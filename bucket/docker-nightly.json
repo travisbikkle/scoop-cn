@@ -37,7 +37,7 @@
         "Kubernetes Client": "kubectl",
         "Kubernetes Standalone": "minikube",
         "Linux container support on Windows": "lcow",
-        "Linux container support on Windows": "scoop-cn/lcow",
+        "Linux container support on Windows": "easy-win/lcow",
         "sudo": [
             "sudo",
             "gsudo"

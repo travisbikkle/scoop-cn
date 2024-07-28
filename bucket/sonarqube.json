@@ -4,7 +4,7 @@
     "homepage": "https://www.sonarqube.org",
     "license": "LGPL-3.0-only",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.6.92038.zip",
     "hash": "4b50b568de84e94f43638059a6f746d4c9347b07458f3318840664408e8178d5",

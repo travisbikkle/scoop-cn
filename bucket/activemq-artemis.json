@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "notes": "Create a broker instance by running 'artemis create (broker path)'",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://archive.apache.org/dist/activemq/activemq-artemis/2.35.0/apache-artemis-2.35.0-bin.zip",
     "hash": "sha512:9ebc11d57d155862b82816051cb52d4253544ef9ec8469a8ec8a8ee4355f06cf32057298b53fa86d02ef76f2049014b9e060803cd9bd094315823a4c47776b06",

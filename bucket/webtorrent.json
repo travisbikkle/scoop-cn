@@ -4,7 +4,7 @@
     "homepage": "https://webtorrent.io/desktop/",
     "license": "MIT",
     "suggest": {
-        "VLC": "scoop-cn/vlc"
+        "VLC": "easy-win/vlc"
     },
     "architecture": {
         "64bit": {

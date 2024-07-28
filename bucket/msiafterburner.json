@@ -12,10 +12,10 @@
         "Profiles will be migrated automatically."
     ],
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2008",
-        "RivaTuner Statistics Server": "scoop-cn/rtss",
-        "MSI Kombustor": "scoop-cn/msikombustor",
-        "FurMark": "scoop-cn/furmark"
+        "vcredist": "easy-win/vcredist2008",
+        "RivaTuner Statistics Server": "easy-win/rtss",
+        "MSI Kombustor": "easy-win/msikombustor",
+        "FurMark": "easy-win/furmark"
     },
     "url": "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=acl=/*~hmac=#/dl.zip",
     "hash": "407cf0f38b4b6b3dc030e70329d35be5eabfef45829240cc6df0442768189cec",

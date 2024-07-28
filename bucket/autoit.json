@@ -8,11 +8,11 @@
     },
     "suggest": {
         "vcredist": [
-            "scoop-cn/vcredist2005",
-            "scoop-cn/vcredist2008",
-            "scoop-cn/vcredist2022"
+            "easy-win/vcredist2005",
+            "easy-win/vcredist2008",
+            "easy-win/vcredist2022"
         ],
-        "AutoIt Script Editor": "scoop-cn/autoit-script-editor"
+        "AutoIt Script Editor": "easy-win/autoit-script-editor"
     },
     "url": "https://www.autoitscript.com/files/autoit3/autoit-v3.zip",
     "hash": "8b7098c44275d0203c23f2ce56c0e913c0d6b6d2264bc537e8a9f0a9f07badc9",

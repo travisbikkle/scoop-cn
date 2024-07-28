@@ -5,8 +5,8 @@
     "license": "PolyForm Strict",
     "notes": "Check out the quickstart guide on https://lgug2z.github.io/komorebi",
     "suggest": {
-        "whkd": "scoop-cn/whkd",
-        "autohotkey": "scoop-cn/autohotkey"
+        "whkd": "easy-win/whkd",
+        "autohotkey": "easy-win/autohotkey"
     },
     "architecture": {
         "64bit": {

@@ -6,7 +6,7 @@
     "suggest": {
         "Everything": [
             "everything",
-            "scoop-cn/everything-alpha"
+            "easy-win/everything-alpha"
         ],
         "PowerToys": "powertoys"
     },

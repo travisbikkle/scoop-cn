@@ -4,7 +4,7 @@
     "homepage": "https://kafka.apache.org/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://downloads.apache.org/kafka/3.7.1/kafka_2.12-3.7.1.tgz",
     "hash": "sha1:b3187947f7b44853b592a0dcba6c8cec6c9ce658",

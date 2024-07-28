@@ -3,7 +3,7 @@
     "description": "The package manager for Kubernetes",
     "homepage": "https://timoni.sh",
     "license": "Apache-2.0",
-    "depends": "scoop-cn/cue",
+    "depends": "easy-win/cue",
     "architecture": {
         "64bit": {
             "url": "https://mirror.ghproxy.com/https://github.com/stefanprodan/timoni/releases/download/v0.22.0/timoni_0.22.0_windows_amd64.zip",

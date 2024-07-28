@@ -5,7 +5,7 @@
     "license": "AGPL-3.0-or-later",
     "suggest": {
         "JDK": [
-            "scoop-cn/openjdk"
+            "easy-win/openjdk"
         ]
     },
     "url": "https://mirror.ghproxy.com/https://github.com/jakobkmar/pacmc/releases/download/0.5.2/pacmc-0.5.2.zip",

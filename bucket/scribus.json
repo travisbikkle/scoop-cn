@@ -4,9 +4,9 @@
     "homepage": "https://www.scribus.net",
     "license": "GPL-2.0-or-later",
     "notes": "If asked for ghostscript, point to \"..\\..\\ghostscript\\current\\bin\\gswin64c.exe\".",
-    "depends": "scoop-cn/ghostscript",
+    "depends": "easy-win/ghostscript",
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2012"
+        "vcredist": "easy-win/vcredist2012"
     },
     "architecture": {
         "64bit": {

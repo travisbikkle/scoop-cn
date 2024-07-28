@@ -5,8 +5,8 @@
     "license": "BSD-2-Clause",
     "suggest": {
         "JDK": [
-            "scoop-cn/openjdk",
-            "scoop-cn/temurinjdk"
+            "easy-win/openjdk",
+            "easy-win/temurinjdk"
         ]
     },
     "url": "https://mirror.ghproxy.com/https://github.com/BrunoReX/jmkvpropedit/releases/download/v1.5.2/jmkvpropedit-v1.5.2.zip",

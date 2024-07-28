@@ -4,7 +4,7 @@
     "homepage": "https://www.scala-lang.org/",
     "license": "BSD-3-Clause",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://downloads.typesafe.com/scala/2.13.14/scala-2.13.14.zip",
     "hash": "85c2d6d0fb581905fc95d294f9e1b607b70926a9d0a5bfa89a0769691f0cc203",

@@ -5,8 +5,8 @@
     "license": "MIT",
     "suggest": {
         ".NET Desktop Runtime": [
-            "scoop-cn/windowsdesktop-runtime",
-            "scoop-cn/windowsdesktop-runtime-lts"
+            "easy-win/windowsdesktop-runtime",
+            "easy-win/windowsdesktop-runtime-lts"
         ]
     },
     "architecture": {

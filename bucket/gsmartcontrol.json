@@ -8,7 +8,7 @@
         "If Smartmontools is installed, GSmartControl will automatically use the standalone version."
     ],
     "suggest": {
-        "Smartmontools": "scoop-cn/smartmontools"
+        "Smartmontools": "easy-win/smartmontools"
     },
     "architecture": {
         "64bit": {

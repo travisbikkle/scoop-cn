@@ -4,7 +4,7 @@
     "homepage": "https://spark.apache.org/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": "scoop-cn/openjdk"
+        "JDK": "easy-win/openjdk"
     },
     "url": "https://dlcdn.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3-scala2.13.tgz",
     "hash": "sha512:225d2675a1fbde3f923bad4221e0d56dadeb43c8b13504c15efb16e433b681ad4a3b55d69d1d9ef9a7366862dfe6fe928b6114409cb0e662ccdf37c3676ae71e",

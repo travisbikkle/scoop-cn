@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Microsoft/winfile",
     "license": "MIT",
     "suggest": {
-        "vcredist": "scoop-cn/vcredist2022"
+        "vcredist": "easy-win/vcredist2022"
     },
     "url": "https://mirror.ghproxy.com/https://github.com/Microsoft/winfile/releases/download/v10.3.0.0/Winfile_v10.3.0.0.zip",
     "hash": "f33bde933002aff27963eef3cbd1c07c8ebf4e8521ed02079ccbc6a63b953bef",
