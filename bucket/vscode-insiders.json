@@ -1,5 +1,5 @@
 {
-    "version": "1.92.0-insider+1720069533836",
+    "version": "1.93.0-1722575181382",
     "description": "Visual Studio Code is a lightweight but powerful source code editor (Insiders, Portable Edition).",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -15,7 +15,7 @@
     "architecture": {
         "64bit": {
             "url": "https://update.code.visualstudio.com/latest/win32-x64-archive/insider#/dl.7z",
-            "hash": "a05dc01d9b22a6eec59402a42793c9b99fba0acd811f5e15e981c0764df0a0a0"
+            "hash": "8752842be44cc325d02b27e52bb9dafa416e7ff494aed08540db019ca8eab5fd"
         },
         "32bit": {
             "url": "https://update.code.visualstudio.com/latest/win32-archive/insider#/dl.7z",
@@ -23,7 +23,7 @@
         },
         "arm64": {
             "url": "https://update.code.visualstudio.com/latest/win32-arm64-archive/insider#/dl.7z",
-            "hash": "4db4e8049630f94836a5e211d7e0d17e019233c8895b9029ee26d48e81231fa7"
+            "hash": "0c8da10db29824a2182967835eab29b40d6da652c759ef529626f1d2b6220ee3"
         }
     },
     "post_install": [
@@ -69,8 +69,8 @@
     "checkver": {
         "url": "https://update.code.visualstudio.com/api/update/win32-x64-archive/insider/latest",
         "jsonpath": "$..['productVersion','timestamp']",
-        "regex": "^(?<productVersion>.+)\\\\n(?<timestamp>.*)$",
-        "replace": "${productVersion}+${timestamp}"
+        "regex": "^\\[\"(?<productVersion>.+)-insider\",(?<timestamp>.*)\\]$",
+        "replace": "${productVersion}-${timestamp}"
     },
     "autoupdate": {
         "architecture": {

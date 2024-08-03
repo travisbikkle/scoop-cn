@@ -14,11 +14,11 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-pc-windows-msvc/rustup-init.exe",
+            "url": "https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup/archive/1.27.1/x86_64-pc-windows-msvc/rustup-init.exe",
             "hash": "193d6c727e18734edbf7303180657e96e9d5a08432002b4e6c5bbe77c60cb3e8"
         },
         "32bit": {
-            "url": "https://static.rust-lang.org/rustup/archive/1.27.1/i686-pc-windows-msvc/rustup-init.exe",
+            "url": "https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup/archive/1.27.1/i686-pc-windows-msvc/rustup-init.exe",
             "hash": "011185bd2bfce79f5389c19247b6e45242d17c697fe135ec6cdd23948445803a"
         }
     },
@@ -45,10 +45,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://static.rust-lang.org/rustup/archive/$version/x86_64-pc-windows-msvc/rustup-init.exe"
+                "url": "https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup/archive/$version/x86_64-pc-windows-msvc/rustup-init.exe"
             },
             "32bit": {
-                "url": "https://static.rust-lang.org/rustup/archive/$version/i686-pc-windows-msvc/rustup-init.exe"
+                "url": "https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup/archive/$version/i686-pc-windows-msvc/rustup-init.exe"
             }
         },
         "hash": {
