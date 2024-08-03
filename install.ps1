@@ -97,4 +97,11 @@ if (Test-Path -Path "$env:SCOOP\buckets\main") {
     scoop bucket rm main
 }
 
+scoop bucket rm easy-win
+scoop bucket add main https://gitee.com/easy-win/scoop-mirror
+Set-Location $install_scoop_to\apps\scoop\current
+git add -A
+git commit -m "udpate"
+git config --global pull.rebase false
+
 Write-Host "scoop and $bucket_name was installed successfully!"
