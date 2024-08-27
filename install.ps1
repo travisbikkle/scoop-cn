@@ -97,6 +97,7 @@ if (Test-Path -Path "$env:SCOOP\buckets\main") {
     scoop bucket rm main
 }
 
+Set-Location ~
 scoop bucket rm easy-win
 scoop bucket add main https://gitee.com/easy-win/scoop-mirror
 Set-Location $install_scoop_to\apps\scoop\current
