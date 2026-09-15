@@ -1,0 +1,37 @@
+{
+    "version": "7.3.3",
+    "description": "Switch your default playback devices and/or recording devices using simple hotkeys",
+    "homepage": "https://soundswitch.aaflalo.me/",
+    "license": "GPL-2.0-or-later",
+    "url": "https://www.ghproxy.cn/https://github.com/Belphemur/SoundSwitch/releases/download/v7.3.3/SoundSwitch_v7.3.3.0_Release_Installer.exe",
+    "hash": "dbb7ab2d243537e9ee73ad38d31f0883b147548935a90d836e47e7470b7ba66c",
+    "architecture": {
+        "64bit": {
+            "pre_install": [
+                "Get-ChildItem $dir -Filter '*,2*' -Recurse | Remove-Item -Force",
+                "Get-ChildItem $dir -Filter '*,1*' -Recurse | Rename-Item -NewName { $_.Name -replace ',1', '' } -Force"
+            ]
+        },
+        "arm64": {
+            "pre_install": [
+                "Get-ChildItem $dir -Filter '*,1*' -Recurse | Remove-Item -Force",
+                "Get-ChildItem $dir -Filter '*,2*' -Recurse | Rename-Item -NewName { $_.Name -replace ',2', '' } -Force"
+            ]
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "SoundSwitch.exe",
+            "SoundSwitch"
+        ]
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/Belphemur/SoundSwitch/releases/latest",
+        "jsonpath": "$.assets[*].browser_download_url",
+        "regex": "v([\\d.]+)/SoundSwitch_v([\\d.]+)_Release_Installer\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://www.ghproxy.cn/https://github.com/Belphemur/SoundSwitch/releases/download/v$version/SoundSwitch_v$match2_Release_Installer.exe"
+    }
+}

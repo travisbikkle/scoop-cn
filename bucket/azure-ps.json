@@ -1,0 +1,35 @@
+{
+    "version": "16.3.0.41101",
+    "description": "PowerShell cmdlets for developers and administrators to develop, deploy and manage Microsoft Azure applications.",
+    "homepage": "https://aka.ms/azpsdocs",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/Azure/azure-powershell/releases/download/v16.3.0-September2026/Az-Cmdlets-16.3.0.41101-x64.msi",
+            "hash": "75caa9f26078600357528badf626186441dbe65f7b318faa7d10345663fb4c68"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/Azure/azure-powershell/releases/download/v16.3.0-September2026/Az-Cmdlets-16.3.0.41101-x86.msi",
+            "hash": "90f0a8d26e4b25f4c71f0cbd75ebdc017a7ecaf7c3a67d62f10f2b3e1e855dd1"
+        }
+    },
+    "extract_dir": "WindowsPowerShell\\Modules",
+    "psmodule": {
+        "name": "AzureRM"
+    },
+    "checkver": {
+        "github": "https://api.github.com/repos/Azure/azure-powershell/releases",
+        "jsonpath": "$..browser_download_url",
+        "regex": "download/v(?<release>[^/]+)/Az-Cmdlets-([0-9.]+)-x64[.]msi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/Azure/azure-powershell/releases/download/v$matchRelease/Az-Cmdlets-$version-x64.msi"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/Azure/azure-powershell/releases/download/v$matchRelease/Az-Cmdlets-$version-x86.msi"
+            }
+        }
+    }
+}

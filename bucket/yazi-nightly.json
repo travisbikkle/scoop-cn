@@ -1,0 +1,38 @@
+{
+    "version": "b8973fb",
+    "description": "⚡️ Blazing fast terminal file manager written in Rust, based on async I/O.",
+    "homepage": "https://github.com/sxyazi/yazi",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/sxyazi/yazi/releases/download/nightly/yazi-x86_64-pc-windows-msvc.zip",
+            "hash": "d4735465415501e0f0e668ac1ba7cd929ea80b5e2eaca4b5222c85ce3a2ee405",
+            "extract_dir": "yazi-x86_64-pc-windows-msvc"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/sxyazi/yazi/releases/download/nightly/yazi-aarch64-pc-windows-msvc.zip",
+            "hash": "a90e7f71eda63dc4a3a5bde00f45a5e92be492dc11c2e38e659b59648b72120c",
+            "extract_dir": "yazi-aarch64-pc-windows-msvc"
+        }
+    },
+    "extract_dir": "yazi-x86_64-pc-windows-msvc",
+    "bin": [
+        "ya.exe",
+        "yazi.exe"
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/sxyazi/yazi/releases",
+        "jsonpath": "$[0].target_commitish",
+        "regex": "(\\w{7})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/sxyazi/yazi/releases/download/nightly/yazi-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/sxyazi/yazi/releases/download/nightly/yazi-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

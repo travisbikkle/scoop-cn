@@ -1,0 +1,45 @@
+{
+    "version": "5.0.2",
+    "description": "Hosts management & switching",
+    "homepage": "https://switchhosts.app",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/oldj/SwitchHosts/releases/download/v5.0.2/SwitchHosts-5.0.2-windows-x64-setup.exe#/dl.7z",
+            "hash": "8eac40bb459ebdf949ddc593a4d857003253bc8ccb49ef228e20875c118aac04"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/oldj/SwitchHosts/releases/download/v5.0.2/SwitchHosts-5.0.2-windows-x86-setup.exe#/dl.7z",
+            "hash": "332892c6cc8544574378d8735bec8e693172f2293784cdfdd846b53a4a2bca9a"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/oldj/SwitchHosts/releases/download/v5.0.2/SwitchHosts-5.0.2-windows-arm64-setup.exe#/dl.7z",
+            "hash": "46b0d1ae05884ca6d3a12c8b5bc062f3dbe276affd44d09aea7f11b9e8fda55e"
+        }
+    },
+    "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "SwitchHosts.exe",
+            "SwitchHosts"
+        ]
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/oldj/SwitchHosts/releases/latest",
+        "jsonpath": "$.assets[*].browser_download_url",
+        "regex": "SwitchHosts-([\\d.]+)-windows-x64-setup\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/oldj/SwitchHosts/releases/download/v$matchHead/SwitchHosts-$version-windows-x64-setup.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/oldj/SwitchHosts/releases/download/v$matchHead/SwitchHosts-$version-windows-x86-setup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/oldj/SwitchHosts/releases/download/v$matchHead/SwitchHosts-$version-windows-arm64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}

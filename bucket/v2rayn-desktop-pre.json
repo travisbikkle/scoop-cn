@@ -1,0 +1,40 @@
+{
+    "version": "7.25.1",
+    "description": "v2rayN (Avalonia-UI-based pre-release version) is a GUI client for V2Ray, with support for Xray, sing-box, and other compatible cores.",
+    "homepage": "https://github.com/2dust/v2rayN",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/2dust/v2rayN/releases/download/7.25.1/v2rayN-windows-64-desktop.zip",
+            "hash": "e1c5b45a3eac4f8a42754a30cbbbbc612a70962f20995137ba4d39e6ed6fb5ec",
+            "extract_dir": "v2rayN-windows-64"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/2dust/v2rayN/releases/download/7.25.1/v2rayN-windows-arm64-desktop.zip",
+            "hash": "536367c542139a2bbd140daf21e70e9da38a7c7779cff8ddff21e2e4d3b33a0b",
+            "extract_dir": "v2rayN-windows-arm64"
+        }
+    },
+    "shortcuts": [
+        [
+            "v2rayN.exe",
+            "v2rayN Desktop (Pre-release)"
+        ]
+    ],
+    "persist": "guiConfigs",
+    "checkver": {
+        "github": "https://api.github.com/repos/2dust/v2rayN/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "(?:v|V)?([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-64-desktop.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-arm64-desktop.zip"
+            }
+        }
+    }
+}

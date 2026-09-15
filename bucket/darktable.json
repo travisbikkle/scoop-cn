@@ -1,0 +1,42 @@
+{
+    "version": "5.6.1",
+    "description": "Photography workflow application and raw developer. A virtual lighttable and darkroom for photographers.",
+    "homepage": "https://www.darktable.org",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-win64.exe",
+            "hash": "bb15a8e4d24c21097cfdef0a560920f7fa0c05dec93482448dd538f2be02d6c4"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-woa64.exe",
+            "hash": "b215de036ac2b5a7a1a5eaa98c4bd4e4d8b40a8d403e195d923c7541611f2e26"
+        }
+    },
+    "innosetup": true,
+    "bin": "bin\\darktable.exe",
+    "shortcuts": [
+        [
+            "bin\\darktable.exe",
+            "darktable"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/darktable-org/darktable",
+        "jsonpath": "$.assets[?(@.name =~ /win64/i)].browser_download_url",
+        "regex": "(?i)download/(?<tag>[^/]+)/darktable-([\\d.]+)-win64"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/darktable-org/darktable/releases/download/release-$matchHead/darktable-$version-win64.exe"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/darktable-org/darktable/releases/download/release-$matchHead/darktable-$version-woa64.exe"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/darktable-org/darktable/releases/tag/release-$matchHead"
+        }
+    }
+}

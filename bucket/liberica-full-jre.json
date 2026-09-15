@@ -1,0 +1,43 @@
+{
+    "description": "BellSoft Liberica is a 100% open-source Java implementation",
+    "homepage": "https://bell-sw.com/java",
+    "version": "26.0.2.1-1",
+    "license": "GPL-2.0-only WITH Classpath-exception-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/bell-sw/Liberica/releases/download/26.0.2.1%2B1/bellsoft-jre26.0.2.1%2B1-windows-amd64-full.zip",
+            "hash": "sha1:03187e3495067d97c0584fa317158df248a4dcc1"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/bell-sw/Liberica/releases/download/26.0.2.1%2B1/bellsoft-jre26.0.2.1%2B1-windows-aarch64-full.zip",
+            "hash": "sha1:47c1ea7acab00089216498d2386c6beacf7de1e8"
+        }
+    },
+    "extract_dir": "jre-26.0.2.1-full",
+    "env_add_path": "bin",
+    "env_set": {
+        "JAVA_HOME": "$dir"
+    },
+    "checkver": {
+        "url": "https://api.bell-sw.com/v1/liberica/releases?bundle-type=jre-full&version-modifier=latest&release-type=all&os=windows&arch=x86&installation-type=archive&package-type=zip&output=json&fields=version",
+        "jsonpath": "$[*].version",
+        "regex": "(?<major>[\\d.]+)(?:\\+)(?<build>[\\d]+)",
+        "replace": "${major}-${build}",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/bell-sw/Liberica/releases/download/$matchMajor%2B$matchBuild/bellsoft-jre$matchMajor%2B$matchBuild-windows-amd64-full.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/bell-sw/Liberica/releases/download/$matchMajor%2B$matchBuild/bellsoft-jre$matchMajor%2B$matchBuild-windows-aarch64-full.zip"
+            }
+        },
+        "hash": {
+            "url": "https://api.bell-sw.com/v1/liberica/releases/$basename",
+            "jsonpath": "$.sha1"
+        },
+        "extract_dir": "jre-$matchMajor-full"
+    }
+}

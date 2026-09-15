@@ -1,0 +1,45 @@
+{
+    "version": "1.13.0",
+    "description": "The Julia programming language",
+    "homepage": "https://julialang.org/",
+    "license": "MIT",
+    "notes": "The `juliaup` tool supports installing and using different versions of Julia simultaneously.",
+    "architecture": {
+        "64bit": {
+            "url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.0-win64.zip",
+            "hash": "17d915b68e32a948c28009e9822ec41b97fe37b1ee22101a7806836fb3bb475a",
+            "extract_dir": "julia-1.13.0"
+        },
+        "32bit": {
+            "url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.13/julia-1.13.0-win32.zip",
+            "hash": "38b0c91df5090e64030241fae4aae4f705b5ec6a40fec8152d44cfb22c6d6e6b",
+            "extract_dir": "julia-1.13.0"
+        }
+    },
+    "bin": "bin\\julia.exe",
+    "checkver": {
+        "url": "https://www.ghproxy.cn/https://github.com/JuliaLang/www.julialang.org/raw/main/config.md",
+        "regex": "(?m:^stable_release *= *\"([0-9.]+)\"$)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://julialang-s3.julialang.org/bin/winnt/x64/$majorVersion.$minorVersion/julia-$version-win64.zip",
+                "extract_dir": "julia-$version"
+            },
+            "32bit": {
+                "url": "https://julialang-s3.julialang.org/bin/winnt/x86/$majorVersion.$minorVersion/julia-$version-win32.zip",
+                "extract_dir": "julia-$version"
+            }
+        },
+        "hash": {
+            "url": "https://julialang-s3.julialang.org/bin/checksums/julia-$version.sha256"
+        }
+    },
+    "shortcuts": [
+        [
+            "bin\\julia.exe",
+            "Julia"
+        ]
+    ]
+}

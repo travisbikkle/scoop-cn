@@ -1,0 +1,67 @@
+{
+    "version": "0.14.3",
+    "description": "A painless self-hosted Git service",
+    "homepage": "https://gogs.io",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.gogs.io/0.14.3/gogs_v0.14.3_windows_amd64_mws.zip",
+            "hash": "3a39c981121979be82af33c03d283d7db9aa1edaf5cb608da801e26aebfb5b54"
+        },
+        "32bit": {
+            "url": "https://dl.gogs.io/0.14.3/gogs_v0.14.3_windows_386_mws.zip",
+            "hash": "9747a353ac37da4efe7d6df7d0334982b5d358bc10d732bacda690200f4cc0ab"
+        },
+        "arm64": {
+            "url": "https://dl.gogs.io/0.14.3/gogs_v0.14.3_windows_arm64_mws.zip",
+            "hash": "9935e834512a4746d8c13a921172258650d77a9031cbfe5d4d57e1529fc4058b"
+        }
+    },
+    "extract_dir": "gogs",
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\custom\\conf\")) {",
+            "   New-Item \"$persist_dir\\custom\\conf\" -ItemType Directory -Force | Out-Null",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\custom\\conf\\app.ini\")) {",
+            "   @(",
+            "       '[database]'",
+            "       'DB_TYPE = sqlite3'",
+            "       \"PATH = $persist_dir/data/gogs.db\"",
+            "       '[repository]'",
+            "       \"ROOT = $persist_dir/repositories\"",
+            "       '[log]'",
+            "       \"ROOT_PATH = $persist_dir/log\"",
+            "   ) -replace '\\\\', '/' | Set-Content \"$persist_dir\\custom\\conf\\app.ini\" -Encoding ASCII",
+            "}"
+        ]
+    },
+    "bin": "gogs.exe",
+    "persist": [
+        "custom",
+        "data",
+        "log",
+        "repositories"
+    ],
+    "checkver": {
+        "url": "https://dl.gogs.io",
+        "regex": "href=\"(?:\\./)?(\\d+(?:\\.\\d+)+)/",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.gogs.io/$version/gogs_v$version_windows_amd64_mws.zip"
+            },
+            "32bit": {
+                "url": "https://dl.gogs.io/$version/gogs_v$version_windows_386_mws.zip"
+            },
+            "arm64": {
+                "url": "https://dl.gogs.io/$version/gogs_v$version_windows_arm64_mws.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksum_sha256.txt"
+        }
+    }
+}

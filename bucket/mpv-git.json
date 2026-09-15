@@ -1,0 +1,48 @@
+{
+    "version": "202609141231",
+    "description": "A free, open source, and cross-platform media player",
+    "homepage": "https://mpv.io",
+    "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
+    "notes": [
+        "To set and unset file type associations and AutoPlay handlers, run '$dir\\mpv-register.bat' and '$dir\\mpv-unregister.bat', respectively.",
+        "You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types."
+    ],
+    "suggest": {
+        "yt-dlp": "yt-dlp"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/zhongfly/mpv-winbuild/releases/download/2026-09-14-0b7ed670f7/mpv-x86_64-20260914-git-0b7ed670f7.7z",
+            "hash": "776e37bd952d75260ff13aff94ec8365d28140e10e15ef79cee2ebe582fca589"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/zhongfly/mpv-winbuild/releases/download/2026-09-14-0b7ed670f7/mpv-aarch64-20260914-git-0b7ed670f7.7z",
+            "hash": "1c100773c4473c72f6329949fdb4321326e399ef74c16caaa8ee4b9311f2ded1"
+        }
+    },
+    "pre_install": "'updater.bat', 'installer' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse }",
+    "env_add_path": ".",
+    "shortcuts": [
+        [
+            "mpv.exe",
+            "mpv"
+        ]
+    ],
+    "persist": "portable_config",
+    "checkver": {
+        "github": "https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest",
+        "jsonpath": "$..['tag_name', 'name']",
+        "regex": "(?<tag>(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})-(?<commit>[a-f0-9]{10})).*?(?<hour>\\d{2}):(?<minute>\\d{2})",
+        "replace": "${year}${month}${day}${hour}${minute}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/zhongfly/mpv-winbuild/releases/download/$matchTag/mpv-x86_64-$matchYear$matchMonth$matchDay-git-$matchCommit.7z"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/zhongfly/mpv-winbuild/releases/download/$matchTag/mpv-aarch64-$matchYear$matchMonth$matchDay-git-$matchCommit.7z"
+            }
+        }
+    }
+}

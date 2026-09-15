@@ -1,0 +1,17 @@
+{
+    "version": "2.19.1",
+    "description": "A pager designed to work without any configuration",
+    "homepage": "https://github.com/walles/moar/",
+    "license": "BSD-2-Clause-Views",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/walles/moor/releases/download/v2.19.1/moor-v2.19.1-windows-amd64.exe#/moor.exe",
+            "hash": "bf782e7f33e78b1c2f24a4b8e3f3167d6868c5700b06251da52cf033f46fd883"
+        }
+    },
+    "bin": "moor.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://www.ghproxy.cn/https://github.com/walles/moor/releases/download/v$version/moor-v$version-windows-amd64.exe#/moor.exe"
+    }
+}

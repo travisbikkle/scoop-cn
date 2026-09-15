@@ -1,0 +1,51 @@
+{
+    "version": "3.3.0",
+    "description": "Everything integration for the Windows taskbar.",
+    "homepage": "https://github.com/srwi/EverythingToolbar",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/srwi/EverythingToolbar/blob/HEAD/LICENSE"
+    },
+    "suggest": {
+        "everything": "easy-win/everything",
+        ".NET Desktop Runtime 8.0": "easy-win/windowsdesktop-runtime-8.0"
+    },
+    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/srwi/EverythingToolbar/releases/download/3.3.0/EverythingToolbar-3.3.0-x64.exe",
+            "hash": "0d2c6895150f5977d218f22f4ba07f4285a1d2f441bf2f7a5244811ba3efed82"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/srwi/EverythingToolbar/releases/download/3.3.0/EverythingToolbar-3.3.0-arm64.exe",
+            "hash": "7daf3591ef0be3bd3422e0e280dfffa98515f8f9ba5100503a0e806d2f3398d1"
+        }
+    },
+    "pre_install": [
+        "Get-ChildItem -Path $dir -Include '*,1*' -Recurse | Rename-Item -NewName { $_.Name -replace ',1\\.', '.' }",
+        "Get-ChildItem -Path $dir -Include '*,2*' -Recurse | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue"
+    ],
+    "shortcuts": [
+        [
+            "EverythingToolbar.Launcher.exe",
+            "EverythingToolbar"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-x64.exe",
+                "hash": {
+                    "url": "$baseurl/EverythingToolbar-$version-x64.sha256"
+                }
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-arm64.exe",
+                "hash": {
+                    "url": "$baseurl/EverythingToolbar-$version-arm64.sha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "version": "0.21.5",
+    "description": "Universal command-line interface for SQL databases",
+    "homepage": "https://github.com/xo/usql",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/xo/usql/releases/download/v0.21.5/usql-0.21.5-windows-amd64.zip",
+            "hash": "7b2db302eb1d7debebdb4e4abe090bf60b09e1e2022ad547a5a91775c6097040"
+        }
+    },
+    "bin": "usql.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/xo/usql/releases/download/v$version/usql-$version-windows-amd64.zip"
+            }
+        }
+    }
+}

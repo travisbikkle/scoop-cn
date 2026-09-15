@@ -1,0 +1,86 @@
+{
+    "version": "2.43.1",
+    "description": "A tabbed SSH solution for Windows, combining PuTTY, WinSCP and VcXsrv",
+    "homepage": "https://winsshterm.blogspot.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://winsshterm.blogspot.com/p/license.html"
+    },
+    "depends": "easy-win/putty",
+    "suggest": {
+        "Copy files": "easy-win/winscp",
+        "X-server": "easy-win/vcxsrv"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.43.1/WinSSHTerm-2.43.1-x64.zip",
+            "hash": "e8a7baef2402ba4ada467dabf0e5d3b03f9de92e8a2b8a0222387f50fbde53b6"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.43.1/WinSSHTerm-2.43.1-arm64.zip",
+            "hash": "48985ff4a4a83bcf5e9b1f91c54f7a8fb68df433a1487b4947aeaca0e135c85c"
+        }
+    },
+    "extract_dir": "WinSSHTerm",
+    "post_install": [
+        "$puttyDir = currentdir putty $global",
+        "'putty', 'pageant', 'plink', 'puttygen' | ForEach-Object {",
+        "    if (Test-Path \"$puttyDir\\$_.exe\") {",
+        "        New-Item -Path \"$dir\\tools\\$_.exe\" -Value \"$puttyDir\\$_.exe\" -ItemType HardLink -Force | Out-Null",
+        "    } else {",
+        "         error \"$_.exe not found\"",
+        "    }",
+        "}",
+        "if (!(Test-Path \"$dir\\tools\\WinSCP\\WinSCP.exe\")) {",
+        "    $winscpDir = currentdir winscp $global",
+        "    if (Test-Path \"$winscpDir\\WinSCP.exe\") {",
+        "        New-Item -Path \"$dir\\tools\\WinSCP\" -Value \"$winscpDir\" -ItemType Junction -Force | Out-Null",
+        "    } else {",
+        "        info 'Install WinSCP for File Transfer support'",
+        "    }",
+        "}",
+        "if (!(Test-Path \"$dir\\tools\\VcXsrv\\vcxsrv.exe\")) {",
+        "    $vcxsrvDir = currentdir vcxsrv $global",
+        "    if (Test-Path \"$vcxsrvDir\\vcxsrv.exe\") {",
+        "        New-Item -Path \"$dir\\tools\\VcXsrv\" -Value \"$vcxsrvDir\" -ItemType Junction -Force | Out-Null",
+        "    } else {",
+        "        info 'Install VcXsrv for X-Server support'",
+        "    }",
+        "}",
+        "if (!(Test-Path \"$dir\\config\\preferences.xml\")) { ",
+        "    $preferencesXml = '<?xml version=\"1.0\" encoding=\"utf-8\"?><Settings><CheckForXServer>False</CheckForXServer><CheckForWinSCP>False</CheckForWinSCP><CheckForPageant>False</CheckForPageant></Settings>'",
+        "    Set-Content -Path \"$dir\\config\\preferences.xml\" -Value $preferencesXml -Encoding Ascii",
+        "}"
+    ],
+    "env_set": {
+        "WINSSHTERM_EXE_DISALLOW_AUTO_UPDATE": "TRUE"
+    },
+    "bin": "WinSSHTerm.exe",
+    "shortcuts": [
+        [
+            "WinSSHTerm.exe",
+            "WinSSHTerm"
+        ]
+    ],
+    "persist": [
+        "config",
+        "tools"
+    ],
+    "checkver": {
+        "github": "https://github.com/WinSSHTerm/WinSSHTerm"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/WinSSHTerm/WinSSHTerm/releases/download/$version/WinSSHTerm-$version-x64.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/WinSSHTerm/WinSSHTerm/releases/download/$version/WinSSHTerm-$version-arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://winsshterm.blogspot.com/",
+            "regex": "(?s)$basename.*?$sha256"
+        }
+    }
+}

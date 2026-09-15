@@ -1,0 +1,35 @@
+{
+    "version": "1.38.8",
+    "description": "Reasonix CLI, official CLI for Reasonix, a DeepSeek-native AI coding agent built to reduce API costs through aggressive context caching.",
+    "homepage": "https://reasonix.io",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/esengine/DeepSeek-Reasonix/releases/download/v1.38.8/reasonix-windows-amd64.zip",
+            "hash": "fbe4bf7c907f8c425e162e6bbc5e20235acab24ff3eff6266e21e23d0d95de54"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/esengine/DeepSeek-Reasonix/releases/download/v1.38.8/reasonix-windows-arm64.zip",
+            "hash": "e1a0950fa6de0411610216b7e2f075e8abfa51c4faa1955fe7508678131b57b4"
+        }
+    },
+    "bin": "reasonix.exe",
+    "checkver": {
+        "github": "https://api.github.com/repos/esengine/DeepSeek-Reasonix/releases",
+        "jsonpath": "$[*].tag_name",
+        "regex": "\"v([\\d.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-amd64.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}

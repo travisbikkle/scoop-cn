@@ -1,0 +1,59 @@
+{
+    "version": "1.27.3",
+    "description": "A painless self-hosted Git service",
+    "homepage": "https://gitea.io/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.gitea.com/gitea/1.27.3/gitea-1.27.3-windows-4.0-amd64.exe.xz",
+            "hash": "2799d548576c42ab2a70d040b3b576c6099e4698204fc91e73b6a6a8fd1ad8df"
+        },
+        "32bit": {
+            "url": "https://dl.gitea.com/gitea/1.27.3/gitea-1.27.3-windows-4.0-386.exe.xz",
+            "hash": "0d61d2b208bf97d9e17b4320a1424bf29cadfc421401d82777ead205bdcb35e6"
+        }
+    },
+    "installer": {
+        "script": [
+            "Get-Item \"$dir\\gitea*.exe\" | Rename-Item -NewName 'gitea.exe'",
+            "if (!(Test-Path \"$persist_dir\\custom\\conf\")) {",
+            "   New-Item \"$persist_dir\\custom\\conf\" -ItemType Directory | Out-Null",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\custom\\conf\\app.ini\")) {",
+            "   @(",
+            "       '[database]'",
+            "       'DB_TYPE = sqlite3'",
+            "       \"PATH = $persist_dir/data/gitea.db\"",
+            "       '[repository]'",
+            "       \"ROOT = $persist_dir/repositories\"",
+            "       '[log]'",
+            "       \"ROOT_PATH = $persist_dir/log\"",
+            "   ) -replace '\\\\', '/' | Set-Content \"$persist_dir\\custom\\conf\\app.ini\" -Encoding ASCII",
+            "}"
+        ]
+    },
+    "bin": "gitea.exe",
+    "persist": [
+        "custom",
+        "repositories",
+        "log",
+        "data"
+    ],
+    "checkver": {
+        "url": "https://dl.gitea.com/gitea/version.json",
+        "jsonpath": "$.latest.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.gitea.com/gitea/$version/gitea-$version-windows-4.0-amd64.exe.xz"
+            },
+            "32bit": {
+                "url": "https://dl.gitea.com/gitea/$version/gitea-$version-windows-4.0-386.exe.xz"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

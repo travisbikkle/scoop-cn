@@ -1,0 +1,39 @@
+{
+    "version": "1.83.0",
+    "description": "A collection of JavaScript tools written in Rust.",
+    "homepage": "https://github.com/oxc-project/oxc",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/oxc-project/oxc/releases/download/apps_v1.83.0/oxlint-x86_64-pc-windows-msvc.zip",
+            "hash": "42deff7e157277f812365886eba1a7f37e19998341f7713de9a0451e9534e5f5"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/oxc-project/oxc/releases/download/apps_v1.83.0/oxlint-i686-pc-windows-msvc.zip",
+            "hash": "18af2e40211b5142829ee1c3d607648f6dd23d0e0fdcd59a8ee55896e260edc3"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/oxc-project/oxc/releases/download/apps_v1.83.0/oxlint-aarch64-pc-windows-msvc.zip",
+            "hash": "627dcb57b930a47f404023429f0028933a027a29d7911836e9cf44a4dcff50f3"
+        }
+    },
+    "pre_install": "Get-Item \"$dir\\oxlint-*.exe\" | Rename-Item -NewName \"$dir\\oxlint.exe\"",
+    "bin": "oxlint.exe",
+    "checkver": {
+        "github": "https://github.com/oxc-project/oxc",
+        "regex": "apps_v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/oxc-project/oxc/releases/download/apps_v$version/oxlint-x86_64-pc-windows-msvc.zip"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/oxc-project/oxc/releases/download/apps_v$version/oxlint-i686-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/oxc-project/oxc/releases/download/apps_v$version/oxlint-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

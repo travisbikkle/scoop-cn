@@ -1,0 +1,41 @@
+{
+    "version": "nightly-2026-09-14",
+    "description": "A terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the full capabilities of modern terminals.",
+    "homepage": "https://micro-editor.github.io/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/micro-editor/micro/releases/download/nightly/micro-nightly-win64.zip",
+            "hash": "1be6432255b932af5515dee6e813dee00fc98f2b008c76456ad1a84b073f12ac"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/micro-editor/micro/releases/download/nightly/micro-nightly-win32.zip",
+            "hash": "fa8cedd5436aa8f054c05290c1b34e95884e96f0a56c32dffc7fb558f292ee9d"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/micro-editor/micro/releases/download/nightly/micro-nightly-win-arm64.zip",
+            "hash": "480a3c97d6ab4d9ac1082a55aada3db59b08f7d6684749cae3a6fd17639e0d6d"
+        }
+    },
+    "extract_dir": "micro-nightly",
+    "bin": "micro.exe",
+    "checkver": {
+        "github": "https://api.github.com/repos/micro-editor/micro/releases/tags/nightly",
+        "jsonpath": "$..updated_at",
+        "regex": "([\\d\\-]+)T",
+        "replace": "nightly-${1}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/micro-editor/micro/releases/download/nightly/micro-nightly-win64.zip"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/micro-editor/micro/releases/download/nightly/micro-nightly-win32.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/micro-editor/micro/releases/download/nightly/micro-nightly-win-arm64.zip"
+            }
+        }
+    }
+}

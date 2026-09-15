@@ -1,0 +1,33 @@
+{
+    "version": "4.49.0",
+    "description": "Selenium Manager is a command-line tool developed in Rust to allow cross platform execution.",
+    "homepage": "https://www.selenium.dev/documentation/selenium_manager/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/SeleniumHQ/selenium_manager_artifacts/releases/download/selenium-manager-a8f8704/selenium-manager-windows.exe#/selenium-manager.exe",
+            "hash": "c9e639385e4a248de898e893edddc5eb281011ee4b647292b0773bf4c9aaad95"
+        }
+    },
+    "bin": "selenium-manager.exe",
+    "checkver": {
+        "github": "https://api.github.com/repos/SeleniumHQ/selenium/releases/latest",
+        "script": [
+            "# This script was written based on the conversation here https://github.com/SeleniumHQ/selenium/issues/11694. Once binaries are released, we won't need this script.",
+            "$selenium_release = $page | ConvertFrom-Json",
+            "$selenium_ver_string = $selenium_release.tag_name",
+            "$selenium_manager_ver_string = @((Invoke-WebRequest -Uri ('https://www.ghproxy.cn/https://github.com/SeleniumHQ/selenium/raw/' + $selenium_ver_string + '/common/selenium_manager.bzl') -UseBasicParsing).Content -split \"`n\" | Select-String 'selenium-manager-([a-z0-9]+)').Matches.Value[0]",
+            "$output = @{ result = \"$selenium_ver_string $selenium_manager_ver_string\" } | ConvertTo-Json -Compress",
+            "Write-Output $output"
+        ],
+        "jsonpath": "$.result",
+        "regex": "selenium-(?<version>.+)\\s(?<managerversion>.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/SeleniumHQ/selenium_manager_artifacts/releases/download/$matchManagerversion/selenium-manager-windows.exe#/selenium-manager.exe"
+            }
+        }
+    }
+}

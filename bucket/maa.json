@@ -1,0 +1,38 @@
+{
+    "version": "6.17.5",
+    "description": "A one-click tool for the daily tasks of Arknights, supporting all clients",
+    "homepage": "https://github.com/MaaAssistantArknights/MaaAssistantArknights",
+    "license": "AGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v6.17.5/MAA-v6.17.5-win-x64.zip",
+            "hash": "d410fc15d6b8cc460bb3149a93ce43596999adaff32d0c484470a10cbacfbcb8"
+        }
+    },
+    "bin": [
+        [
+            "MAA.exe",
+            "MAAAssistantArknights"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "MAA.exe",
+            "Maa Assistant Arknights"
+        ]
+    ],
+    "persist": [
+        "cache",
+        "config",
+        "debug",
+        "data"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MAA-v$version-win-x64.zip"
+            }
+        }
+    }
+}

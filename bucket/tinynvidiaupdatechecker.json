@@ -1,0 +1,22 @@
+{
+    "version": "1.26.2",
+    "description": "NVIDIA GPU driver updater",
+    "homepage": "https://github.com/HawaiiBeach/TinyNvidiaUpdateChecker",
+    "license": "GPL-3.0-or-later",
+    "suggest": {
+        ".NET Desktop Runtime 8.0": "easy-win/windowsdesktop-runtime-8.0"
+    },
+    "url": "https://www.ghproxy.cn/https://github.com/HawaiiBeach/TinyNvidiaUpdateChecker/releases/download/v1.26.2/TinyNvidiaUpdateChecker.exe",
+    "hash": "28802a854279dfd005720b8af57b51107040c7f2212c6202ef1670d0e686b7f9",
+    "bin": "TinyNvidiaUpdateChecker.exe",
+    "shortcuts": [
+        [
+            "TinyNvidiaUpdateChecker.exe",
+            "TinyNvidiaUpdateChecker"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://www.ghproxy.cn/https://github.com/HawaiiBeach/TinyNvidiaUpdateChecker/releases/download/v$version/TinyNvidiaUpdateChecker.exe"
+    }
+}

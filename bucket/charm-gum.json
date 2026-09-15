@@ -1,0 +1,36 @@
+{
+    "version": "2.0.1",
+    "homepage": "https://github.com/charmbracelet/gum",
+    "description": "A tool for glamorous shell scripts 🎀.",
+    "license": "MIT",
+    "architecture": {
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/charmbracelet/gum/releases/download/v2.0.1/gum_2.0.1_Windows_i386.zip",
+            "hash": "100a2c9e5c80ccc07d91d9f551c23e86d7d60b7502b7011010e89c06fcebafd1",
+            "extract_dir": "gum_2.0.1_Windows_i386"
+        },
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/charmbracelet/gum/releases/download/v2.0.1/gum_2.0.1_Windows_x86_64.zip",
+            "hash": "1d5e49d02339c185849992f4d1c49af337ac84933360341e3588100d34664f38",
+            "extract_dir": "gum_2.0.1_Windows_x86_64"
+        }
+    },
+    "bin": "gum.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/charmbracelet/gum/releases/download/v$version/gum_$version_Windows_i386.zip",
+                "extract_dir": "gum_$version_Windows_i386"
+            },
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/charmbracelet/gum/releases/download/v$version/gum_$version_Windows_x86_64.zip",
+                "extract_dir": "gum_$version_Windows_x86_64"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt",
+            "regex": "($sha256).*?$basename"
+        }
+    }
+}

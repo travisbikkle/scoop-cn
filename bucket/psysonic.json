@@ -1,0 +1,32 @@
+{
+    "version": "1.53.0",
+    "description": "A lean desktop music player for Subsonic-compatible servers.",
+    "homepage": "https://www.psysonic.de/",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://github.com/Psysonic/psysonic/blob/main/LICENSE"
+    },
+    "suggest": {
+        "Microsoft Edge WebView2": "easy-win/webview2"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/Psysonic/psysonic/releases/download/app-v1.53.0/Psysonic_1.53.0_x64-setup.exe",
+            "hash": "df39ecba286d364fc31ad762f46a20e21f3c19655287bbdc1db56b789d67c8de"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "psysonic.exe",
+            "Psysonic"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Psysonic/psysonic",
+        "regex": "app-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.ghproxy.cn/https://github.com/Psysonic/psysonic/releases/download/app-v$version/Psysonic_$version_x64-setup.exe"
+    }
+}

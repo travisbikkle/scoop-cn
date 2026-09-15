@@ -1,0 +1,53 @@
+{
+    "version": "5.0.57.0",
+    "description": "Graphical GREP tool to search across text files, Word and Excel documents, PDFs and archives",
+    "homepage": "https://dngrep.github.io/",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/dnGrep/dnGrep/releases/download/v5.0.57.0/dnGREP.5.0.57.x64.msi",
+            "hash": "b302f4f1d3faee251b3565aefb380d05246e5cf6721e1eaaad6dfa12376d2bd5",
+            "extract_dir": "PFiles64\\dnGrep"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/dnGrep/dnGrep/releases/download/v5.0.57.0/dnGREP.5.0.57.x86.msi",
+            "hash": "18b3e43da541f158ddafd05ad6c5d70d7aa5307594e0ba0bb9746af854670777",
+            "extract_dir": "PFiles\\dnGrep"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/dnGrep/dnGrep/releases/download/v5.0.57.0/dnGREP.5.0.57.ARM64.msi",
+            "hash": "a76739210123e15fd94203717a09e9bed62f04cd7d23b1597d4f9bf4582009f8",
+            "extract_dir": "PFiles64\\dnGrep"
+        }
+    },
+    "pre_install": [
+        "$cont = '<?xml version=\"1.0\" encoding=\"utf-8\"?><dictionary version=\"2\"></dictionary>'",
+        "if (!(Test-Path \"$persist_dir\\dnGREP.Settings.dat\")) { Set-Content \"$dir\\dnGREP.Settings.dat\" $cont -Encoding 'ascii' }",
+        "Copy-Item \"$persist_dir\\Themes\\*\" \"$dir\\Themes\" -ErrorAction 'SilentlyContinue' -Recurse"
+    ],
+    "bin": "dnGREP.exe",
+    "shortcuts": [
+        [
+            "dnGREP.exe",
+            "dnGREP"
+        ]
+    ],
+    "persist": "dnGREP.Settings.dat",
+    "pre_uninstall": "Copy-Item \"$dir\\Themes\\*\" \"$persist_dir\\Themes\" -ErrorAction 'SilentlyContinue' -Recurse",
+    "checkver": {
+        "github": "https://github.com/dnGrep/dnGrep"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/dnGrep/dnGrep/releases/download/v$version/dnGREP.$matchHead.x64.msi"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/dnGrep/dnGrep/releases/download/v$version/dnGREP.$matchHead.x86.msi"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/dnGrep/dnGrep/releases/download/v$version/dnGREP.$matchHead.ARM64.msi"
+            }
+        }
+    }
+}

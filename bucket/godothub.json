@@ -1,0 +1,28 @@
+{
+    "version": "1.4.3",
+    "description": "The Ultimate Project Manager for Godot Engine.",
+    "homepage": "https://ryko.is-a.dev/godothub",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/RykoTheDev/GodotHub/releases/download/v1.4.3/GodotHub.exe",
+            "hash": "aa83bd0a27d8997af6c9cceb3ce6bd71ac9e60ab164fc722fad8807ae7d53f76"
+        }
+    },
+    "shortcuts": [
+        [
+            "GodotHub.exe",
+            "GodotHub"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/RykoTheDev/GodotHub"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/RykoTheDev/GodotHub/releases/download/v$version/GodotHub.exe"
+            }
+        }
+    }
+}

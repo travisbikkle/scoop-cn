@@ -1,0 +1,38 @@
+{
+    "version": "1.3.36",
+    "description": "Software to interact with Atlassian Cloud from the terminal",
+    "homepage": "https://developer.atlassian.com/cloud/acli/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://developer.atlassian.com/platform/marketplace/atlassian-developer-terms/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://acli.atlassian.com/windows/1.3.36-stable/acli_1.3.36-stable_windows_amd64.zip",
+            "hash": "a7454d84af6b83a192e98c337c08a0c00ef0450e2485100cebb20b3672095ca3",
+            "extract_dir": "acli_1.3.36-stable_windows_amd64"
+        },
+        "arm64": {
+            "url": "https://acli.atlassian.com/windows/1.3.36-stable/acli_1.3.36-stable_windows_arm64.zip",
+            "hash": "6ae0ca13fa55167ae16c6f70eba276cd656faac4538898b5c38aea39831d8aeb",
+            "extract_dir": "acli_1.3.36-stable_windows_arm64"
+        }
+    },
+    "bin": "acli.exe",
+    "checkver": {
+        "url": "https://www.ghproxy.cn/https://raw.githubusercontent.com/atlassian/homebrew-acli/main/Formula/acli.rb",
+        "regex": "version \"([\\d.]+)-stable\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://acli.atlassian.com/windows/$version-stable/acli_$version-stable_windows_amd64.zip",
+                "extract_dir": "acli_$version-stable_windows_amd64"
+            },
+            "arm64": {
+                "url": "https://acli.atlassian.com/windows/$version-stable/acli_$version-stable_windows_arm64.zip",
+                "extract_dir": "acli_$version-stable_windows_arm64"
+            }
+        }
+    }
+}

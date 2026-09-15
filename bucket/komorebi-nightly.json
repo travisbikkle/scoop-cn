@@ -1,0 +1,49 @@
+{
+    "version": "2026-08-22",
+    "description": "A tiling window manager for Windows (nightly builds)",
+    "homepage": "https://github.com/LGUG2Z/komorebi",
+    "license": {
+        "identifier": "Komorebi",
+        "url": "https://github.com/LGUG2Z/komorebi/blob/master/LICENSE.md"
+    },
+    "notes": "Check out the quickstart guide on https://lgug2z.github.io/komorebi",
+    "suggest": {
+        "whkd": "easy-win/whkd",
+        "autohotkey": "easy-win/autohotkey"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/LGUG2Z/komorebi/releases/download/nightly/komorebi-nightly-x86_64-pc-windows-msvc.zip",
+            "hash": "219b63b3cf060c4d8859af3e81fa384507d6ee76540d21cfd4f4d1c5c219dd51"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/LGUG2Z/komorebi/releases/download/nightly/komorebi-nightly-aarch64-pc-windows-msvc.zip",
+            "hash": "7faac503e501b8829e9ab8b2540d5a5a2ce6bc9229df400c56dde3da76f59e6b"
+        }
+    },
+    "bin": [
+        "komorebi.exe",
+        "komorebic.exe",
+        "komorebic-no-console.exe",
+        "komorebi-gui.exe",
+        "komorebi-bar.exe"
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/LGUG2Z/komorebi/releases/tags/nightly",
+        "jsonpath": "$.body",
+        "regex": "nightly \\((\\d{4}-\\d{2}-\\d{2})\\)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/LGUG2Z/komorebi/releases/download/nightly/komorebi-nightly-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/LGUG2Z/komorebi/releases/download/nightly/komorebi-nightly-aarch64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

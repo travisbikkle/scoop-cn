@@ -1,0 +1,24 @@
+{
+    "version": "2.0.2",
+    "description": "Android OTA payload dumper written in Go",
+    "homepage": "https://github.com/ssut/payload-dumper-go",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/ssut/payload-dumper-go/releases/download/2.0.2/payload-dumper-go_2.0.2_windows_amd64.tar.gz",
+            "hash": "7ed78485afcb23a7f9ef7d1bbd8429ee11d87d69173b0c23e32cd8de2250e57b"
+        }
+    },
+    "bin": "payload-dumper-go.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/ssut/payload-dumper-go/releases/download/$version/payload-dumper-go_$version_windows_amd64.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "https://www.ghproxy.cn/https://github.com/ssut/payload-dumper-go/releases/download/$version/payload-dumper-go_sha256checksums.txt"
+        }
+    }
+}

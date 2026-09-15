@@ -1,0 +1,24 @@
+{
+    "version": "0.46.2",
+    "description": "SQL-only webapp builder, empowering data analysts to build websites and applications quickly",
+    "homepage": "https://sql-page.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/sqlpage/SQLPage/releases/download/v0.46.2/sqlpage-windows.zip",
+            "hash": "99ff0d63fb2bc72a60aadf0594b8f27bd9c059f3f7570ea2174e8b59141eda1c"
+        }
+    },
+    "bin": "sqlpage.exe",
+    "persist": "sqlpage",
+    "checkver": {
+        "github": "https://github.com/sqlpage/SQLPage"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/sqlpage/SQLPage/releases/download/v$version/sqlpage-windows.zip"
+            }
+        }
+    }
+}

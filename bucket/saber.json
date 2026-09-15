@@ -1,0 +1,32 @@
+{
+    "version": "1.36.1",
+    "description": "A cross-platform libre handwritten notes app.",
+    "homepage": "https://github.com/saber-notes/saber",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/saber-notes/saber/releases/download/v1.36.1/SaberInstaller_v1.36.1.exe",
+            "hash": "7f36ef4fd31c7c48ae493d3c01aa6cfb9f00e9cef661d56676037f266ea2cc21"
+        }
+    },
+    "innosetup": true,
+    "bin": "saber.exe",
+    "shortcuts": [
+        [
+            "saber.exe",
+            "Saber"
+        ]
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/saber-notes/saber/releases/latest",
+        "jsonpath": "$.assets[*].browser_download_url",
+        "regex": "releases/download/v([\\d.]+)/SaberInstaller_v([\\d.]+)(?<extra>_([\\d]+))?\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/saber-notes/saber/releases/download/v$version/SaberInstaller_v$version$matchExtra.exe"
+            }
+        }
+    }
+}

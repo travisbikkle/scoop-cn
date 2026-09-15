@@ -1,0 +1,26 @@
+{
+    "version": "2.2.0",
+    "description": "A quick way to manage your WSL instances with a GUI.",
+    "homepage": "https://github.com/bostrot/wsl2-distro-manager",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/bostrot/wsl2-distro-manager/releases/download/v2.2.0/wsl2-distro-manager-v2.2.0.zip",
+            "hash": "3b138412f1a4c70856715b23eeed85959fec5017478182dc894502af0d08c1e6"
+        }
+    },
+    "shortcuts": [
+        [
+            "wsl2distromanager.exe",
+            "WSL Manager"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/bostrot/wsl2-distro-manager/releases/download/v$version/wsl2-distro-manager-v$version.zip"
+            }
+        }
+    }
+}

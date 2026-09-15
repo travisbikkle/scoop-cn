@@ -1,0 +1,32 @@
+{
+    "version": "1.10.0",
+    "description": "Kafka exporter for Prometheus",
+    "homepage": "https://github.com/danielqsj/kafka_exporter",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/danielqsj/kafka_exporter/releases/download/v1.10.0/kafka_exporter-1.10.0.windows-amd64.tar.gz",
+            "hash": "33ba503cf6ca3e209e1dcef108b9a0865d8ece227c10a058f04c728cdf6c66b5",
+            "extract_dir": "kafka_exporter-1.10.0.windows-amd64"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/danielqsj/kafka_exporter/releases/download/v1.10.0/kafka_exporter-1.10.0.windows-386.tar.gz",
+            "hash": "9f0833a6c812ded7e997f3423e9b8e0c70fe8c06d37e80c1c4fc7fdddf9ee82d",
+            "extract_dir": "kafka_exporter-1.10.0.windows-386"
+        }
+    },
+    "bin": "kafka_exporter.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/danielqsj/kafka_exporter/releases/download/v$version/kafka_exporter-$version.windows-amd64.tar.gz",
+                "extract_dir": "kafka_exporter-$version.windows-amd64"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/danielqsj/kafka_exporter/releases/download/v$version/kafka_exporter-$version.windows-386.tar.gz",
+                "extract_dir": "kafka_exporter-$version.windows-386"
+            }
+        }
+    }
+}

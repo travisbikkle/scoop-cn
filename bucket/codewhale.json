@@ -1,0 +1,41 @@
+{
+    "version": "0.9.13",
+    "description": "Open-source coding agent for your terminal (Formerly known as DeepSeek-TUI).",
+    "homepage": "https://codewhale.net/en",
+    "license": "MIT",
+    "suggest": {
+        "vcredist": "easy-win/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/Hmbown/CodeWhale/releases/download/v0.9.13/codewhale-windows-x64-portable.zip",
+            "hash": "1ef4404b5075d115dd8264b2c1b4ad9341f056ce60ef7f441bc04085d279b4ca",
+            "extract_dir": "codewhale-windows-x64-portable"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/Hmbown/CodeWhale/releases/download/v0.9.13/codewhale-windows-arm64-portable.zip",
+            "hash": "d6f44dcbc65901bdd7ed2a9595dc02a50702f8bd9a8185d73d7226305d4b61d5",
+            "extract_dir": "codewhale-windows-arm64-portable"
+        }
+    },
+    "bin": [
+        "codew.exe",
+        "codewhale.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/Hmbown/CodeWhale"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/Hmbown/CodeWhale/releases/download/v$version/codewhale-windows-x64-portable.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/Hmbown/CodeWhale/releases/download/v$version/codewhale-windows-arm64-portable.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/codewhale-artifacts-sha256.txt"
+        }
+    }
+}

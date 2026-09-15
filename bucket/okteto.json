@@ -1,0 +1,26 @@
+{
+    "version": "3.23.1",
+    "description": "Development platform for Kubernetes applications",
+    "homepage": "https://okteto.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/okteto/okteto/releases/download/3.23.1/okteto.exe",
+            "hash": "2663ca79dfa218d41a2c95c5ea93575e778f0ff186c4119315198047008e831a"
+        }
+    },
+    "bin": "okteto.exe",
+    "checkver": {
+        "github": "https://github.com/okteto/okteto"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/okteto/okteto/releases/download/$version/okteto.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

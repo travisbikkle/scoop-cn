@@ -1,0 +1,77 @@
+{
+    "version": "5.40.2727",
+    "description": "Audio player",
+    "homepage": "https://www.aimp.ru",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.aimp.ru/?do=eula&os=windows"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.aimp.ru/?do=download.file&id=31#/dl.zip",
+            "hash": "7a11b2d502ed1163868f41e96511da989bc9cf7d55282f7997453bafcfe5ff2a"
+        },
+        "32bit": {
+            "url": "https://www.aimp.ru/?do=download.file&id=8#/dl.zip",
+            "hash": "f676d1d0742349031038e163ad179b062f75c4b1704f082363c22ac968f6687f"
+        }
+    },
+    "extract_dir": "AIMP",
+    "post_install": [
+        "'Icons', 'Skins', 'Plugins' | ForEach-Object {",
+        "    $source_dir = Join-Path $dir \"$_.original\"",
+        "    $destination_dir = Join-Path $dir $_",
+        "    if (Test-Path \"$source_dir\") {",
+        "        Copy-Item -Path \"$source_dir\\*\" -Destination $destination_dir -Force -Recurse",
+        "        Remove-Item -Path $source_dir -Recurse -Force -ErrorAction SilentlyContinue",
+        "    }",
+        "}"
+    ],
+    "bin": [
+        "AIMP.exe",
+        "AIMPac.exe",
+        "AIMPate.exe"
+    ],
+    "shortcuts": [
+        [
+            "AIMP.exe",
+            "AIMP"
+        ],
+        [
+            "AIMPac.exe",
+            "AIMP Audio Converter"
+        ],
+        [
+            "AIMPate.exe",
+            "AIMP Advanced Tag Editor"
+        ]
+    ],
+    "persist": [
+        "Icons",
+        "Skins",
+        "Plugins",
+        "Profile"
+    ],
+    "checkver": {
+        "url": "https://www.aimp.ru/?do=download&os=windows",
+        "regex": ">AIMP v([\\d.]+)<"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.aimp.ru/?do=download.file&id=31#/dl.zip",
+                "hash": {
+                    "url": "https://www.aimp.ru/?do=download&os=windows",
+                    "regex": "(?sm)64-bit \\(No Installer\\).*?SHA256: $sha256"
+                }
+            },
+            "32bit": {
+                "url": "https://www.aimp.ru/?do=download.file&id=8#/dl.zip",
+                "hash": {
+                    "url": "https://www.aimp.ru/?do=download&os=windows",
+                    "regex": "(?sm)32-bit \\(No Installer\\).*?SHA256: $sha256"
+                }
+            }
+        }
+    }
+}

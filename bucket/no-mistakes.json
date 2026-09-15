@@ -1,0 +1,37 @@
+{
+    "version": "1.72.0",
+    "description": "A local Git proxy that AI-validates your code before push, forwarding only clean commits upstream.",
+    "homepage": "https://kunchenguid.github.io/no-mistakes",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/kunchenguid/no-mistakes/releases/download/v1.72.0/no-mistakes-v1.72.0-windows-amd64.zip",
+            "hash": "451edff496423040f5540c3dcceabea4485dbb4eb58f06b440e4bad0cf12baa8"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/kunchenguid/no-mistakes/releases/download/v1.72.0/no-mistakes-v1.72.0-windows-arm64.zip",
+            "hash": "1ae4bb5cac284d800fb7ab528bb117efb9d6667456ddcd412267ec6e7e167762"
+        }
+    },
+    "env_set": {
+        "NO_MISTAKES_NO_UPDATE_CHECK": "1"
+    },
+    "bin": "no-mistakes.exe",
+    "checkver": {
+        "github": "https://github.com/kunchenguid/no-mistakes"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/kunchenguid/no-mistakes/releases/download/v$version/no-mistakes-v$version-windows-amd64.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/kunchenguid/no-mistakes/releases/download/v$version/no-mistakes-v$version-windows-arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt",
+            "regex": "$sha256\\s+$basename"
+        }
+    }
+}

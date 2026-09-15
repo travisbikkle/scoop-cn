@@ -1,0 +1,43 @@
+{
+    "##": "For command-line usage, see: https://sandboxie-plus.com/sandboxie/startcommandline/",
+    "version": "5.73.4",
+    "description": "A sandbox-based isolation tool for Windows that runs applications in a controlled environment, preventing permanent changes to the system.",
+    "homepage": "https://sandboxie-plus.com",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://github.com/sandboxie-plus/Sandboxie/blob/HEAD/LICENSE.Classic"
+    },
+    "notes": [
+        "You are installing Sandboxie Classic, which is intended to maintain compatibility with the original Sandboxie.",
+        "For access to newer features and enhancements, please install 'sandboxie-plus-np'."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.18.4/Sandboxie-Classic-x64-v5.73.4.exe#/setup.exe",
+            "hash": "d603fdbd2a50da12aeabb05a17c40e16b44c486c0ccfac5008e5442b0010180c"
+        }
+    },
+    "pre_install": "if (-not (is_admin)) { abort \"`n[ERROR]  $app requires admin rights to $cmd.\" }",
+    "installer": {
+        "script": "Start-Process -FilePath \"$dir\\setup.exe\" -ArgumentList @('/S') -WindowStyle 'Hidden' -Wait"
+    },
+    "pre_uninstall": "if (-not (is_admin)) { abort \"`n[ERROR]  $app requires admin rights to $cmd.\" }",
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"$dir\\setup.exe\" -ArgumentList @('/remove', '/S') -WindowStyle 'Hidden' -Wait"
+    },
+    "checkver": {
+        "github": "https://api.github.com/repos/sandboxie-plus/Sandboxie/releases/latest",
+        "jsonpath": "$.assets[?(@.name =~ /Classic/i)].browser_download_url",
+        "regex": "(?i)download/(?<tag>[^/]+)/Sandboxie-Classic-x64-v([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/sandboxie-plus/Sandboxie/releases/download/$matchTag/Sandboxie-Classic-x64-v$version.exe#/setup.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/sha256-checksums.txt"
+        }
+    }
+}

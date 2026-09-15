@@ -1,0 +1,33 @@
+{
+    "version": "1.35.2",
+    "description": "Encrypted/remote secret manager.",
+    "homepage": "https://fnox.jdx.dev",
+    "license": "MIT",
+    "suggest": {
+        "vcredist": "easy-win/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/jdx/fnox/releases/download/v1.35.2/fnox-x86_64-pc-windows-msvc.zip",
+            "hash": "ba662d6a6452f8ab060505ae35e3bd81c890fa1ba5ada778b4c451aaf006d6a8"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/jdx/fnox/releases/download/v1.35.2/fnox-aarch64-pc-windows-msvc.zip",
+            "hash": "14c907cc68d75b8a1e87c8116a17504fcae7f1d15382b5b889bd5adc2ee5dd42"
+        }
+    },
+    "bin": "fnox.exe",
+    "checkver": {
+        "github": "https://github.com/jdx/fnox"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/jdx/fnox/releases/download/v$version/fnox-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/jdx/fnox/releases/download/v$version/fnox-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

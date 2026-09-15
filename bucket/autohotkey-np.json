@@ -1,0 +1,31 @@
+{
+    "version": "2.0.28",
+    "description": "The ultimate automation scripting language for Windows.",
+    "homepage": "https://www.autohotkey.com/",
+    "license": "GPL-2.0-or-later",
+    "url": "https://www.ghproxy.cn/https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.28/AutoHotkey_2.0.28_setup.exe#/setup.exe",
+    "hash": "aca3f50a66ac4c6fcee5bd168c90929c70f3ea9e12fc62b6699a26ea1e087dc3",
+    "installer": {
+        "script": [
+            "if ($global) { abort \"`n[ERROR]  Global install currently not supported due to uninstall issue https://github.com/ScoopInstaller/Scoop/issues/6452\" }",
+            "$arguments = @('/installto', $dir, '/silent')",
+            "if ($global) { $arguments += '/elevate' } else { $arguments += '/user' }",
+            "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList $arguments"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$globaltest = $False",
+            "$arguments = @('/uninstall', '/to', $dir, '/silent')",
+            "if ($globaltest) { $arguments += '/elevate' } else { $arguments += '/user' }",
+            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList $arguments",
+            "Remove-Item -Path \"$dir\\setup.exe\" -Force -ErrorAction SilentlyContinue"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/AutoHotkey/AutoHotkey"
+    },
+    "autoupdate": {
+        "url": "https://www.ghproxy.cn/https://github.com/AutoHotkey/AutoHotkey/releases/download/v$version/AutoHotkey_$version_setup.exe#/setup.exe"
+    }
+}

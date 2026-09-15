@@ -1,0 +1,55 @@
+{
+    "version": "1.5.0.1423b",
+    "description": "Locate files and folders by name instantly.",
+    "homepage": "https://www.voidtools.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.voidtools.com/Everything-1.5.0.1423b.x64-Setup.exe",
+            "hash": "7757474ed0ed74280959171c9d27fdddd7a8b00b764bc6c823ec1f6aa325e2ea"
+        },
+        "32bit": {
+            "url": "http://www.voidtools.com/Everything-1.5.0.1423b.x86-Setup.exe",
+            "hash": "cd5b1814fef523d4dd9551233bdaf3094c4900c5cd57add16ad8fc61bf0059b9"
+        }
+    },
+    "pre_install": "if (-not (is_admin)) { abort \"`n[ERROR]  $app requires admin rights to $cmd.\" }",
+    "installer": {
+        "script": [
+            "$install_args = @(",
+            "    '/S', '-install-options'",
+            "    '\"-uninstall-desktop-shortcut -uninstall-start-menu-shortcuts\"', \"/D=$dir\"",
+            ")",
+            "Start-Process -FilePath \"$dir\\$fname\" -ArgumentList $install_args -WindowStyle Hidden -Wait",
+            "Remove-Item -Path \"$dir\\$fname\" -Force -ErrorAction SilentlyContinue"
+        ]
+    },
+    "bin": "Everything.exe",
+    "shortcuts": [
+        [
+            "Everything.exe",
+            "Everything"
+        ]
+    ],
+    "pre_uninstall": [
+        "if (-not (is_admin)) { abort \"`n[ERROR]  $app requires admin rights to $cmd.\" }",
+        "Stop-Process -Name 'Everything' -Force -ErrorAction SilentlyContinue"
+    ],
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"$dir\\Everything.exe\" -ArgumentList @('-unsetup', '-silent') -WindowStyle Hidden -Wait"
+    },
+    "checkver": {
+        "url": "https://www.voidtools.com/forum/viewtopic.php?sd=d&t=9787",
+        "regex": "Everything-([\\d.]+b)\\.x64"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.voidtools.com/Everything-$version.x64-Setup.exe"
+            },
+            "32bit": {
+                "url": "http://www.voidtools.com/Everything-$version.x86-Setup.exe"
+            }
+        }
+    }
+}

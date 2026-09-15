@@ -1,0 +1,44 @@
+{
+    "version": "0.39.0",
+    "description": "Granted is a command line interface (CLI) application which simplifies access to cloud roles and allows multiple cloud accounts to be opened in your web browser simultaneously.",
+    "homepage": "https://granted.dev",
+    "license": "MIT",
+    "depends": "easy-win/aws",
+    "architecture": {
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_windows_i386.zip",
+            "hash": "3a4544e9de9eaeebd64fdf21d958b88b0f1110db2ad68ffa2a0ca964cba99a40"
+        },
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_windows_x86_64.zip",
+            "hash": "29227ca9041a743524306c87775a24d0784f900375f98571abc470b2d477cfc3"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_windows_arm64.zip",
+            "hash": "1038b8c242278018ca869071a047d489b75525a4217953dfbf547de03bb68df2"
+        }
+    },
+    "bin": [
+        "assume.ps1",
+        "granted.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/fwdcloudsec/granted"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/fwdcloudsec/granted/releases/download/v$version/granted_$version_windows_i386.zip"
+            },
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/fwdcloudsec/granted/releases/download/v$version/granted_$version_windows_x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/fwdcloudsec/granted/releases/download/v$version/granted_$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

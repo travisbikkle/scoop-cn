@@ -1,0 +1,37 @@
+{
+    "version": "0.78.2",
+    "description": "Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls.",
+    "homepage": "https://netbird.io/",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/netbirdio/netbird/releases/download/v0.78.2/netbird_installer_0.78.2_windows_amd64.exe#/dl.7z",
+            "hash": "215dfaf6ef54714b4d6e543c6529c11514f7a7c090d1b4c314170b9e36ee97c4"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/netbirdio/netbird/releases/download/v0.78.2/netbird_installer_0.78.2_windows_arm64.exe#/dl.7z",
+            "hash": "510031fdda012265a97a3c9f0fbbb1510a1dc067a0bf614e4484de1fd853fe33"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": "netbird.exe",
+    "shortcuts": [
+        [
+            "netbird-ui.exe",
+            "netbird"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/netbirdio/netbird"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/netbirdio/netbird/releases/download/v$version/netbird_installer_$version_windows_amd64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/netbirdio/netbird/releases/download/v$version/netbird_installer_$version_windows_arm64.exe#/dl.7z"
+            }
+        }
+    }
+}

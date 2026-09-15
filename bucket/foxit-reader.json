@@ -1,0 +1,53 @@
+{
+    "##": "Using cdn06.foxitsoftware.com (hosted on Cloudflare) for better speed worldwide. Please keep foxit-reader and foxit-pdf-reader in sync.",
+    "version": "2026.2.0",
+    "description": "Fast and feature rich PDF reader that offers a delightful reading experience.",
+    "homepage": "https://www.foxit.com/pdf-reader/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.foxit.com/pdf-editor/eula.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn06.foxitsoftware.com/product/reader/desktop/win/2026.2.0/FoxitPDFReader20262_L10N_Setup_Prom_x64.exe",
+            "hash": "3dfd99e7823ea5cc4639b0ee3d242c1ea07d445ae899f29719bcfea93bd69f91"
+        },
+        "32bit": {
+            "url": "https://cdn06.foxitsoftware.com/product/reader/desktop/win/2026.2.0/FoxitPDFReader20262_L10N_Setup_Prom_x86.exe",
+            "hash": "0e8930bc45abcd7a8254a18d2780fb67be01dda233d678564541066d26ebbfb7"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-DarkArchive -Path \"$dir\\$fname\" -DestinationPath \"$dir\\extracted\" -Removal",
+            "Expand-MsiArchive -Path \"$dir\\extracted\\AttachedContainer\\FoxitSetup.msi\" -DestinationPath $dir -ExtractDir 'Foxit Software\\Foxit PDF Reader'",
+            "Remove-Item -LiteralPath \"$dir\\extracted\" -Force -Recurse"
+        ]
+    },
+    "bin": "FoxitPDFReader.exe",
+    "shortcuts": [
+        [
+            "FoxitPDFReader.exe",
+            "Foxit PDF Reader"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$Uri = [System.Net.HttpWebRequest]::Create(",
+            "    'https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&operating_type=64&package_type=exe&language=ML'",
+            ").GetResponse().ResponseUri.AbsoluteUri",
+            "$Uri, $Uri.Replace('x64', 'x86') -join ', '"
+        ],
+        "regex": "/win/(?<version>[\\d.]+)/(?<fname64>FoxitPDFReader.*\\.exe), .*/win/\\k<version>/(?<fname32>FoxitPDFReader.*\\.exe)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn06.foxitsoftware.com/product/reader/desktop/win/$version/$matchFname64"
+            },
+            "32bit": {
+                "url": "https://cdn06.foxitsoftware.com/product/reader/desktop/win/$version/$matchFname32"
+            }
+        }
+    }
+}

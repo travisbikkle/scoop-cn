@@ -1,0 +1,48 @@
+{
+    "version": "2.1.6",
+    "description": "A single-binary file server built for pentesters and CTF players. HTTP/S, WebDAV, SFTP, SMB, LDAP/S, NTLM hash capture, DNS/SMTP callbacks.",
+    "homepage": "https://goshs.de",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/goshs-labs/goshs/blob/HEAD/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/goshs-labs/goshs/releases/download/v2.1.6/goshs_v2.1.6_windows_x86_64.zip",
+            "hash": "dac0f294f17d0da08b5bc2a07946a900c7b018f2fabd2fb86e1ccf257df1cc16"
+        },
+        "32bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/goshs-labs/goshs/releases/download/v2.1.6/goshs_v2.1.6_windows_386.zip",
+            "hash": "a434274f0fb627a3777f63a01b6d1816cb6e57d9caf78a4b727b925f156734a1"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/goshs-labs/goshs/releases/download/v2.1.6/goshs_v2.1.6_windows_arm64.zip",
+            "hash": "a9929c1e9229aaecda2b923c0fbc268bec487fac9fa9b6cc0d20df946c3950e6"
+        }
+    },
+    "bin": [
+        [
+            "goshs.exe",
+            "goshs"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/goshs-labs/goshs"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/goshs-labs/goshs/releases/download/v$version/goshs_v$version_windows_x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/goshs-labs/goshs/releases/download/v$version/goshs_v$version_windows_386.zip"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/goshs-labs/goshs/releases/download/v$version/goshs_v$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

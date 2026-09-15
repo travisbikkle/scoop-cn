@@ -1,0 +1,38 @@
+{
+    "version": "1.11.0",
+    "description": "MCP server that connects AI agents, IDEs and applications directly to databases.",
+    "homepage": "https://mcp-toolbox.dev",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://storage.googleapis.com/mcp-toolbox-for-databases/v1.11.0/windows/amd64/toolbox.exe",
+            "hash": "3c8c46d8efad225636e341fcdb137557779ee1c1b0c362d1b4870901c2668ccf"
+        },
+        "arm64": {
+            "url": "https://storage.googleapis.com/mcp-toolbox-for-databases/v1.11.0/windows/arm64/toolbox.exe",
+            "hash": "feb2d0d55c003b30af7a9afa22f11721239c70cc21812a2de66c425de76a2153"
+        }
+    },
+    "bin": "toolbox.exe",
+    "checkver": {
+        "github": "https://github.com/googleapis/mcp-toolbox"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://storage.googleapis.com/mcp-toolbox-for-databases/v$version/windows/amd64/toolbox.exe",
+                "hash": {
+                    "url": "https://github.com/googleapis/mcp-toolbox/releases/tag/v$version",
+                    "regex": "(?s)windows/amd64.*?$sha256"
+                }
+            },
+            "arm64": {
+                "url": "https://storage.googleapis.com/mcp-toolbox-for-databases/v$version/windows/arm64/toolbox.exe",
+                "hash": {
+                    "url": "https://github.com/googleapis/mcp-toolbox/releases/tag/v$version",
+                    "regex": "(?s)windows/arm64.*?$sha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "version": "2026.2.1",
+    "description": "Free .NET Decompiler and Assembly Browser",
+    "homepage": "https://www.jetbrains.com/decompiler/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/decompiler/download/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/resharper/dotUltimate.2026.2.1/dotPeek64.2026.2.1.exe#/dotpeek.exe",
+            "hash": "781d4e43f96bafd13aa2c263967ba8f675cef53ab202daf652d716733afbb5af"
+        },
+        "32bit": {
+            "url": "https://download.jetbrains.com/resharper/dotUltimate.2026.2.1/dotPeek32.2026.2.1.exe#/dotpeek.exe",
+            "hash": "af5a2e3e79c2c9f885ce49b443c707acbec54b278d29ee04f418ee9e5d7a4196"
+        }
+    },
+    "shortcuts": [
+        [
+            "dotpeek.exe",
+            "dotPeek"
+        ]
+    ],
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=DPK&latest=true&platform=zip&type=release",
+        "jsonpath": "$..version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/resharper/dotUltimate.$version/dotPeek64.$version.exe#/dotpeek.exe"
+            },
+            "32bit": {
+                "url": "https://download.jetbrains.com/resharper/dotUltimate.$version/dotPeek32.$version.exe#/dotpeek.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

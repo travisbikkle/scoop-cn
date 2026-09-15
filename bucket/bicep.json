@@ -1,0 +1,28 @@
+{
+    "version": "0.47.16",
+    "description": "A declarative language for describing and deploying Azure resources",
+    "homepage": "https://github.com/Azure/bicep",
+    "license": "MIT",
+    "architecture": {
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/Azure/bicep/releases/download/v0.47.16/bicep-win-arm64.exe#/bicep.exe",
+            "hash": "657e6aacc4e44d73674874f802d98396bf5e2e23530d160f275fbf9d67b7fde7"
+        },
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/Azure/bicep/releases/download/v0.47.16/bicep-win-x64.exe#/bicep.exe",
+            "hash": "3f343ab1ce41feac156464adee3dc499cb6c197366fc731aed276192011d867c"
+        }
+    },
+    "bin": "bicep.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/Azure/bicep/releases/download/v$version/bicep-win-arm64.exe#/bicep.exe"
+            },
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/Azure/bicep/releases/download/v$version/bicep-win-x64.exe#/bicep.exe"
+            }
+        }
+    }
+}

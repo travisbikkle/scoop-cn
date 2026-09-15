@@ -1,0 +1,42 @@
+{
+    "version": "1.16.1",
+    "description": "The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more.",
+    "homepage": "https://anythingllm.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop.exe#/dl.7z",
+            "hash": "8b5d9583abbbb236a5f8f3970b8e9d47e6b167a7707a16c8fe6a655a32c92775"
+        },
+        "arm64": {
+            "url": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop-Arm64.exe#/dl.7z",
+            "hash": "cb692824a838ff49773812562db49f940120dc2492e421f073728b9209334286"
+        }
+    },
+    "installer": {
+        "script": [
+            "Get-Item -Path \"$dir\\`$PLUGINSDIR\\app*.7z\" | Expand-7zipArchive -DestinationPath \"$dir\" -Removal",
+            "Expand-7zipArchive -Path \"$dir\\resources\\backend.7z\" -DestinationPath \"$dir\\resources\\backend\" -Removal",
+            "Remove-Item -Path \"$dir\\`$*\", \"$dir\\Unintall*\" -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "AnythingLLM.exe",
+            "AnythingLLM"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Mintplex-Labs/anything-llm"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop-Arm64.exe#/dl.7z"
+            }
+        }
+    }
+}

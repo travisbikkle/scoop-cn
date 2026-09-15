@@ -1,0 +1,42 @@
+{
+    "version": "7.3.0",
+    "description": "Sophia Script for Windows is the largest PowerShell module on GitHub for Windows 10 and Windows 11 fine-tuning and automating the routine tasks.",
+    "license": "MIT",
+    "homepage": "https://github.com/farag2/Sophia-Script-for-Windows",
+    "notes": "This package provides only the Windows 11 version of Sophia Script. It may not work on Windows 10.",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.ghproxy.cn/https://github.com/farag2/Sophia-Script-for-Windows/releases/download/7.3.0/Sophia.Script.for.Windows.11.v7.3.0.zip",
+            "hash": "7bba9067cb45303ce63bed7d804513fcb943d3d8fbb92e44c4c497ff1a385c8a",
+            "extract_dir": "Sophia_Script_for_Windows_11_v7.3.0"
+        },
+        "arm64": {
+            "url": "https://www.ghproxy.cn/https://github.com/farag2/Sophia-Script-for-Windows/releases/download/7.3.0/Sophia.Script.for.Windows.11.Arm.v7.3.0.zip",
+            "hash": "cd8014223eae5189c9d64714c13f722a2c27d626a77dfaaa5c0aa885579fc503",
+            "extract_dir": "Sophia_Script_for_Windows_11_Arm_v7.3.0"
+        }
+    },
+    "bin": [
+        [
+            "Sophia.ps1",
+            "Sophia"
+        ],
+        [
+            "Sophia.ps1",
+            "SophiaScript"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.ghproxy.cn/https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$version/Sophia.Script.for.Windows.11.v$version.zip",
+                "extract_dir": "Sophia_Script_for_Windows_11_v$version"
+            },
+            "arm64": {
+                "url": "https://www.ghproxy.cn/https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$version/Sophia.Script.for.Windows.11.Arm.v$version.zip",
+                "extract_dir": "Sophia_Script_for_Windows_11_Arm_v$version"
+            }
+        }
+    }
+}
